@@ -1,0 +1,15 @@
+[user]
+    name = Edinei Cavalcanti
+    email = edinei.esc@gmail.com
+[color]
+    ui = auto
+[alias]
+    st = status
+    ps = push origin
+    fups = fetch upstream
+    cm = commit
+    ciamend = commit -a --amend
+[core]
+    excludesfile = ./.gitignore_global
+[push]
+    default = matching

@@ -1,0 +1,6 @@
+if [[ -x `which virtualenvwrapper_lazy.sh` ]]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/Development/Projects
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    source `which virtualenvwrapper_lazy.sh`
+fi

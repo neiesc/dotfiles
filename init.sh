@@ -12,3 +12,6 @@ ln -s $DOTFILES_FOLDER/.gitignore_global $HOME
 ln -s $DOTFILES_FOLDER/.vimrc $HOME
 ln -s $DOTFILES_FOLDER/.xinitrc $HOME
 ln -s $DOTFILES_FOLDER/.zshrc $HOME
+
+## Python
+pip install -r .requirements.txt

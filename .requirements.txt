@@ -1,0 +1,5 @@
+ipython
+lice
+pip-tools
+virtualenv
+virtualenvwrapper

@@ -57,6 +57,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/tools:/usr/bin/vendor_perl:/usr/bin/core_perl"
 export PATH="${PATH}:/opt/android-sdk/platform-tools:"
 export PATH="${PATH}:/usr/local/heroku/bin:"
+export GOPATH=$HOME/Development/go
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

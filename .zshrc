@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 DOTFILES_FOLDER=$HOME/dotfiles
 export ZSH=$HOME/.oh-my-zsh
-export BROWSER=/usr/bin/dwb
+export BROWSER=/usr/bin/uzbl-tabbed
 export EDITOR=/usr/bin/vim
 
 # Set name of the theme to load.
@@ -84,6 +84,7 @@ export GOPATH=$HOME/Development/go
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias uzbl="uzbl-tabbed"
 
 # .profile.d init
 source $DOTFILES_FOLDER/.profile.d/python

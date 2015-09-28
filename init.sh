@@ -15,3 +15,11 @@ ln -s $DOTFILES_FOLDER/.zshrc $HOME
 
 ## Python
 pip install -r .requirements.txt
+
+## Setup NeoBundle
+BUNDLE_DIR=$HOME/.vim/bundle
+
+if [ ! -d $BUNDLE_DIR ]; then
+  mkdir -p $BUNDLE_DIR
+  git clone https://github.com/Shougo/neobundle.vim $BUNDLE_DIR/neobundle.vim
+fi

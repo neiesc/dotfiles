@@ -1,6 +1,10 @@
 cinst microsoft-teams -y
 cinst slack -y
 
+# Terminal
+cinst microsoft-windows-terminal -y # This package requires at least Windows 10 version 1903/OS build 18362.x.
+#https://github.com/ohmybash/oh-my-bash
+
 cinst checksum -y
 
 cinst superbenchmarker -y
@@ -104,12 +108,3 @@ cinst autohotkey -y
  cinst firacode -y
  
  # https://www.microsoft.com/pt-br/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab
-
-# Terminal
-#Using Windows Terminal (Preview) https://www.microsoft.com/pt-br/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab 
-#https://github.com/ohmybash/oh-my-bash
-#cinst hyper -y
-#npm install -g hpm-cli
-
-#cinst cmder -y
-#cinst babun

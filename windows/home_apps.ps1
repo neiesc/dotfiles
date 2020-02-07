@@ -1,3 +1,8 @@
+# Python
+cinst python -y
+#cinst python2 -y
+#cinst anaconda3 -y
+
 #Game
 cinst gamebooster -y
 cinst steam -y

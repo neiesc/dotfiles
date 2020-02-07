@@ -1,4 +1,4 @@
-alias gvp-git='cd c:\\Dev-GVP\\gvp'
+alias gvp-git='cd c:\\Dev-AgileContent\\gvp'
 
 alias gvp-install='./Install.cmd'
 
@@ -9,7 +9,7 @@ alias gvp-prepare-build='gvp-prepare; gvp-build'
 alias gvp-package='.\\gvp.cmd package -all -env:local -nb'
 alias gvp-prepare-build-package='gvp-prepare; gvp-build; gvp-package'
 
-alias gvp-mib3-git='cd c:\\Dev-GVP\\mib3\\mib3'
+alias gvp-mib3-git='cd c:\\Dev-AgileContent\\mib\\mib3'
 alias gvp-mib3-server-update='Server\\update_mib_server.cmd'
 alias gvp-mib3-watcher='./MibWatcher.cmd'
 alias gvp-prepare-build-package-server-update='gvp-prepare; gvp-build; gvp-package; gvp-mib3-server-update'

@@ -1,13 +1,10 @@
-cinst rocketchat -y
-
-# Python
-cinst python -y
-#cinst python2 -y
-#cinst anaconda3 -y
-
 # Dotnet
+cinst visualstudio2019professional -y
+
+if (Test-PendingReboot) { Invoke-Reboot }
+
 cinst nuget.commandline -y
-cinst dotnetcore -y
+cinst dotnetcore-sdk -y
 
 # Node.js (javascript)
 cinst nodejs.install -y
@@ -23,7 +20,6 @@ npm install -g @angular/cli
 
 # PHP
 cinst bitnami-xampp -y
-
 # Functional programming
 cinst elixir -y
 
@@ -32,7 +28,7 @@ cinst greenshot -y
 # https://chocolatey.org/packages/changelog
 # https://chocolatey.org/packages/pullrequestreleasenotes
 
-cinst paket.powershell -y
+#cinst paket.powershell -y
 #nuget install paket
 
 # .NET decompiler
@@ -42,7 +38,6 @@ cinst paket.powershell -y
 #cinst testdriven.net -y
 #cinst yeoman -y
 cinst linqpad -y
-cinst psake -y
 #cinst asp-net-mvc-boilerplate -y
 
 # https://www.codeproject.com/Tips/1042975/Tips-to-Improve-Visual-Studio-Build-Performance
@@ -90,12 +85,8 @@ cinst papercut -y
 cinst putty.install -y
 cinst cygwin -y
 
-cinst everything -y
-cinst superbenchmarker -y
-
 #cinst octopustools
 #cinst workrave
-cinst autohotkey -y
 #cinst prefix
 
 #cinst chutzpah

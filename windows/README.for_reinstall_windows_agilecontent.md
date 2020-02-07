@@ -10,9 +10,9 @@
 
 For install new Windows:
 
+- Restore backup from USB
 - git clone git@github.com:neiesc/dotfiles.git
 - For fix eth disconect update de drive (C:\Users\neiesc\Dropbox\Dispositivos\Jobs\AgileCotent\Acer Aspire V3-571-9423\Ethernet_win_b57_x64-17.2.0.2.rar)
-- Enable Remote Desktop (https://support.microsoft.com/en-us/help/4028379/windows-10-how-to-use-remote-desktop)
 - Set ip eth (ipconfig_eth.png)
 - Configure API Key WakaTime.
 - Permission for hyper.js and Visual Studio 2017 as adiministrator (shortcut > properties > Advanced... > Run as administrator).
@@ -21,3 +21,4 @@ For install new Windows:
 - Copy "C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x" to "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\Microsoft\WiX\v3.x"
 - Create shortcut C:\ProgramData\chocolatey\lib\sysinternals\tools for C:\tools
 - tela-inicial-windows.png
+- Remove backup from USB

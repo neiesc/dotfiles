@@ -1,20 +1,25 @@
-if (-not (Test-Path env:USE_HOME_PC)) {
-  Write-Error "USE_HOME_PC Not Found"
-  return
+$ErrorActionPreference = "Stop"
+
+if ($env:USE_HOME_PC -eq "true") {
+  Write-Host "Using Home PC"
 }
-Write-Host "Using Home PC: $env:USE_HOME_PC"
+else {
+  Write-Host "Using Work PC"
+}
 
-Invoke-WebRequest https://chocolatey.org/install.ps1 -UseBasicParsing | Invoke-Expression
+Write-Host "Install pre-requirements"
+Invoke-Expression ".\pre_requirements.ps1"
 
+Write-Host "Boxstarter install and options"
 cinst boxstarter -y
+. { Invoke-WebRequest -useb https://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; Get-Boxstarter -Force
 
-# Boxstarter options
 $Boxstarter.RebookOk=$true # Allow reboots?
 $Boxstarter.NoPassword=$false # Is this a machine with no login password?
 $Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
 
-# Basic setup
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Write-Host "Basic setup"
+Enable-RemoteDesktop
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
 Enable-MicrosoftUpdate
 Disable-InternetExplorerESC # Turns off IE Enhansed Security Configuration that is on by default on Server OS versions
@@ -23,7 +28,7 @@ Set-TaskbarSmall
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
-# Power plan setup
+Write-Host "Power plan setup"
 function SetPowerPlan([string]$PreferredPlan)
 {
     Write-Host "Setting Powerplan to $PreferredPlan"
@@ -47,29 +52,15 @@ Write-BoxstarterMessage "Setting Disk Timeout to Never"
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
-# Update Windows and reboot if necessary
-Install-WindowsUpdate -Full -AcceptEula
-if (Test-PendingReboot) { Invoke-Reboot }
-
-#Apps
-#if ($env:USE_HOME_PC -eq "true") {
-#  cinst visualstudio2017enterprise -y # ¯\_(ツ)_/¯
-#}
-#else {
-#  cinst visualstudio2017professional -y
-#}
-
-#cinst visualstudio2017-workload-netweb -y
-#cinst visualstudio2017-workload-netcoretools -y
-
-if (Test-PendingReboot) { Invoke-Reboot }
+#Write-Host "Update Windows and reboot if necessary"
+#Install-WindowsUpdate -Full -AcceptEula
+#if (Test-PendingReboot) { Invoke-Reboot }
 
 Invoke-Expression ".\common_apps.ps1"
-Invoke-Expression ".\dev_apps.ps1"
+Invoke-Expression ".\dev\dev_apps.ps1"
 Invoke-Expression ".\design_apps.ps1"
 
-#Invoke-Expression ".\vs2017_extensions.ps1"
-Invoke-Expression ".\visualstudiocode_extensions.ps1"
+Invoke-Expression ".\dev\visualstudiocode_extensions.ps1"
 
 if ($env:USE_HOME_PC -eq "true") {
   Invoke-Expression ".\home_apps.ps1"
@@ -89,7 +80,7 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
-Install-ChocolateyPinnedTaskBarItem "C:\tools\cmder\Cmder.exe"
+#Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
+#Install-ChocolateyPinnedTaskBarItem "C:\tools\cmder\Cmder.exe"
 
 Install-ChocolateyFileAssociation ".md" "$env:programfiles\MarkdownPad 2\MarkdownPad2.exe"

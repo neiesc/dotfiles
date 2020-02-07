@@ -1,6 +1,8 @@
 # Windows environment installations
 
-Use `init.ps1`
+- Create environment variable USE_HOME_PC false ou true
+- Set `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
+- Use `.\init.ps1`
 
 Open CMD and execute START http://boxstarter.org/package/nr/url? FOLLOWED BY THIS GIST'S URL
 

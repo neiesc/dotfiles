@@ -17,6 +17,7 @@ For install new Windows:
 - Open CMD as ADM `mklink "C:\Users\neiesc\.bash_history" "C:\Users\neiesc\Dropbox\history\.bash_history"`
 - git clone git@github.com:neiesc/dotfiles.git
 - Set ip eth (ipconfig_eth.png)
+- Add Rocket.Chat link in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
 - Configure API Key WakaTime.
 - Permission for hyper.js and Visual Studio 2017 as adiministrator (shortcut > properties > Advanced... > Run as administrator).
 - The install of dotnet3.5 was NOT successful.

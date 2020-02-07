@@ -1,7 +1,6 @@
 # Dotnet
-cinst visualstudio2019professional -y
-
-if (Test-PendingReboot) { Invoke-Reboot }
+cinst visualstudio2019-workload-netweb -y
+cinst visualstudio2019-workload-webbuildtools -y
 
 cinst nuget.commandline -y
 cinst dotnetcore-sdk -y

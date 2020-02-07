@@ -3,6 +3,7 @@
 - C:\Users\neiesc\.ssh
 - C:\Users\neiesc\Downloads
 - C:\Users\neiesc\.bash_history
+- C:\Users\neiesc\.my_nuget.cfg # For use in `psake setup`
 - C:\Users\neiesc\.npmrc
 - C:\Users\neiesc\.wakatime.cfg
 - Backup de alguns coisas da pasta Dev (git) (As vezes não precisa)

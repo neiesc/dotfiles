@@ -102,7 +102,6 @@ cinst carnac -y
 
 cinst adevelopers.utils -y # UAdevelopers.Utilities includes a number of utilities including console2, fiddler, launchy, lessmsi, filezilla, expresso, 7zip, lockhunter, notepad++, stexbar, and sysinternals.
 cinst lessmsi -y
-cinst lockhunter -y
 #cinst stexbar -y
 
 # Git

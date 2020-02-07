@@ -43,7 +43,7 @@ cinst autohotkey -y
  cinst dns-benchmark -y
  cinst sysinternals -y
  
- cisnt aida64-engineer -y
+ cinst aida64-engineer -y
  cinst driverfusion -y
  
  # Disk and Files
@@ -52,6 +52,7 @@ cinst autohotkey -y
  cinst renamer -y
  cinst teracopy -y
  cinst windirstat -y
+ cinst lockhunter -y
  
  # Network
  cinst microsoft-message-analyzer -y

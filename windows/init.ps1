@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 
 if ($env:USE_HOME_PC -eq "true") {
   Write-Host "Using Home PC"

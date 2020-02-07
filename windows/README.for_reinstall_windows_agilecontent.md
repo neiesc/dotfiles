@@ -11,9 +11,11 @@
 
 For install new Windows:
 
-- Restore backup from USB
-- git clone git@github.com:neiesc/dotfiles.git
 - For fix eth disconect update de drive (C:\Users\neiesc\Dropbox\Dispositivos\Jobs\AgileCotent\Acer Aspire V3-571-9423\Ethernet_win_b57_x64-17.2.0.2.rar)
+- Restore backup from USB
+- Install git `choco install git -y`
+- Open CMD as ADM `mklink "C:\Users\neiesc\.bash_history" "C:\Users\neiesc\Dropbox\history\.bash_history"`
+- git clone git@github.com:neiesc/dotfiles.git
 - Set ip eth (ipconfig_eth.png)
 - Configure API Key WakaTime.
 - Permission for hyper.js and Visual Studio 2017 as adiministrator (shortcut > properties > Advanced... > Run as administrator).

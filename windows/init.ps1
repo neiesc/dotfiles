@@ -79,8 +79,8 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module $ChocolateyProfile
 }
 
-Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
-#Install-ChocolateyPinnedTaskBarItem "${env:ProgramFiles(x86)}\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
-#Install-ChocolateyPinnedTaskBarItem "C:\tools\cmder\Cmder.exe"
+Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
+Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe"
+Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles}\Microsoft VS Code\Code.exe"
 
-Install-ChocolateyFileAssociation ".md" "$env:programfiles\MarkdownPad 2\MarkdownPad2.exe"
+Install-ChocolateyFileAssociation ".md" "${env:ProgramFiles(x86)}\MarkdownPad 2\MarkdownPad2.exe"

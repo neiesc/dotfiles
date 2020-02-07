@@ -3,7 +3,6 @@ cinst slack -y
 
 cinst checksum -y
 
-#cinst everything -y
 cinst superbenchmarker -y
 
 cinst autohotkey -y
@@ -99,7 +98,17 @@ cinst autohotkey -y
  # Launcher
  cinst wox -y
  #cinst launchy -y
+ #cinst everything -y
  
  cinst firacode -y
  
  # https://www.microsoft.com/pt-br/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab
+
+# Terminal
+#Using Windows Terminal (Preview) https://www.microsoft.com/pt-br/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab 
+#https://github.com/ohmybash/oh-my-bash
+#cinst hyper -y
+#npm install -g hpm-cli
+
+#cinst cmder -y
+#cinst babun

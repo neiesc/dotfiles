@@ -68,14 +68,6 @@ cinst git -y
 
 #cinst devbox-common -y
 
-# Terminal
-#https://github.com/ohmybash/oh-my-bash
-cinst hyper -y
-npm install -g hpm-cli
-
-#cinst cmder -y
-#cinst babun
-
 cinst exercism-io-cli -y
 #exercism configure --workspace="C:\Dev\Problem-solving\Exercism"
 

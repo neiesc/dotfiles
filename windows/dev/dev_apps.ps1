@@ -22,8 +22,6 @@ cinst bitnami-xampp -y
 # Functional programming
 cinst elixir -y
 
-cinst greenshot -y
-
 # https://chocolatey.org/packages/changelog
 # https://chocolatey.org/packages/pullrequestreleasenotes
 

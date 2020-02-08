@@ -5,6 +5,8 @@ cinst slack -y
 cinst microsoft-windows-terminal -y # This package requires at least Windows 10 version 1903/OS build 18362.x.
 #https://github.com/ohmybash/oh-my-bash
 
+cinst greenshot -y
+
 cinst checksum -y
 
 cinst superbenchmarker -y

@@ -15,6 +15,7 @@ cinst autohotkey -y
 
  # Browsers
  cinst googlechrome -y
+ cinst httrack -y
 
  # Chrome exetensions
  #https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh

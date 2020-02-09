@@ -58,9 +58,10 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 Invoke-Expression ".\common_apps.ps1"
 Invoke-Expression ".\dev\dev_apps.ps1"
+Invoke-Expression ".\dev\devops_apps.ps1"
 Invoke-Expression ".\design_apps.ps1"
 
-Invoke-Expression ".\dev\visualstudiocode_extensions.ps1"
+Invoke-Expression ".\dev\vscode_extensions.ps1"
 
 if ($env:USE_HOME_PC -eq "true") {
   Invoke-Expression ".\home_apps.ps1"

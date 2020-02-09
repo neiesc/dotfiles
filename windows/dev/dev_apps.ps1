@@ -74,7 +74,6 @@ cinst papercut -y
 cinst putty.install -y
 cinst cygwin -y
 
-#cinst octopustools
 #cinst workrave
 #cinst prefix
 

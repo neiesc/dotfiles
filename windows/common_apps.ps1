@@ -9,6 +9,7 @@ cinst greenshot -y
 
 cinst checksum -y
 
+cinst hwmonitor -y
 cinst superbenchmarker -y
 
 cinst autohotkey -y

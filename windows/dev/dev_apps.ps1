@@ -1,3 +1,6 @@
+# Python
+pip install pylint # see note
+
 # Dotnet
 cinst visualstudio2019-workload-netweb -y
 cinst visualstudio2019-workload-webbuildtools -y

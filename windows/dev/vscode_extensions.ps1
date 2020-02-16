@@ -1,5 +1,6 @@
 # General
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension hediet.debug-visualizer
 
 # Pair programming
 code --install-extension MS-vsliveshare.vsliveshare

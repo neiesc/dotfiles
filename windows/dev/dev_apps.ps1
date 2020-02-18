@@ -15,7 +15,7 @@ cinst yarn -y
 refreshenv
 
 npm install -g npx
-#npm install -g bower
+npm install -g newman
 npm install -g json-server
 npm install -g http-server
 npm install -g @angular/cli

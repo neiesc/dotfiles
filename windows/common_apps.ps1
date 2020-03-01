@@ -34,6 +34,7 @@ cinst httrack -y
 #https://chrome.google.com/webstore/detail/mendeley-web-importer/dagcmkpagjlhakfdhnbomgmjdpkdklff
 #https://chrome.google.com/webstore/detail/mendeley-off-screen-patch/mnhhhlhafphmdgefikbhajpllfcnbiff
 #https://chrome.google.com/webstore/detail/kopernio-powered-by-web-o/fjgncogppolhfdpijihbpfmeohpaadpc
+#https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en-US
  
 cinst firefox-nightly -pre -y --ignore-checksums
  

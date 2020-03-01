@@ -30,6 +30,10 @@ cinst httrack -y
 #https://chrome.google.com/webstore/detail/kanban-wip-for-trello/oekefjibcnongmmmmkdiofgeppfkmdii
 #https://chrome.google.com/webstore/detail/cardcounter-for-trello-wi/jbdmgabkegidhagemkfdogmplgelaoab
 #https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai
+#https://chrome.google.com/webstore/detail/google-scholar-button/ldipcbpaocekfooobnbcddclnhejkcpn
+#https://chrome.google.com/webstore/detail/mendeley-web-importer/dagcmkpagjlhakfdhnbomgmjdpkdklff
+#https://chrome.google.com/webstore/detail/mendeley-off-screen-patch/mnhhhlhafphmdgefikbhajpllfcnbiff
+#https://chrome.google.com/webstore/detail/kopernio-powered-by-web-o/fjgncogppolhfdpijihbpfmeohpaadpc
  
 cinst firefox-nightly -pre -y --ignore-checksums
  

@@ -58,11 +58,14 @@ code --install-extension PKief.material-icon-theme
 code --install-extension ms-vscode.vs-keybindings
 # code --install-extension vscodevim.vim
 
+# Git
+code --install-extension eamodio.gitlens
+code --install-extension pomber.git-file-history
+code --install-extension mhutchie.git-graph
+
 # Others
 code --install-extension ms-vscode.PowerShell
 code --install-extension WakaTime.vscode-wakatime
-code --install-extension eamodio.gitlens
-code --install-extension pomber.git-file-history
 code --install-extension minhthai.vscode-todo-parser
 # code --install-extension MattiasPernhult.vscode-todo
 # code --install-extension code-stats-vscode #https://codestats.net/

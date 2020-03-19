@@ -58,18 +58,19 @@ if (Test-PendingReboot) { Invoke-Reboot }
 #if (Test-PendingReboot) { Invoke-Reboot }
 
 Invoke-Expression ".\common_apps.ps1"
-Invoke-Expression ".\dev\dev_apps.ps1"
-Invoke-Expression ".\dev\devops_apps.ps1"
-Invoke-Expression ".\design_apps.ps1"
-
-Invoke-Expression ".\dev\vscode_extensions.ps1"
-
 if ($UseHomePc) {
   Invoke-Expression ".\home_apps.ps1"
+  Invoke-Expression ".\dev\dev_home_apps.ps1"
 }
 else {
   Invoke-Expression ".\work_apps.ps1"
+  Invoke-Expression ".\dev\dev_work_apps.ps1"
 }
+Invoke-Expression ".\dev\dev_apps.ps1"
+Invoke-Expression ".\dev\vscode_extensions.ps1"
+Invoke-Expression ".\dev\devops_apps.ps1"
+Invoke-Expression ".\design_apps.ps1"
+
 
 cinst IIS-WebServerRole -source windowsfeatures
 cinst IIS-HttpCompressionDynamic -source windowsfeatures

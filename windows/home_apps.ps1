@@ -1,7 +1,3 @@
-# Python
-cinst python -y
-#cinst anaconda3 -y # Maybe use https://hub.docker.com/r/jupyter/datascience-notebook
-
 #Game
 cinst gamebooster -y
 cinst steam -y

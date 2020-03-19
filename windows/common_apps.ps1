@@ -15,7 +15,9 @@ cinst superbenchmarker -y
 cinst autohotkey -y
 
 # Browsers
+cinst firefox-nightly -pre -y
 cinst googlechrome -y
+cinst brave -y
 cinst httrack -y
 
 # Chrome exetensions
@@ -35,8 +37,6 @@ cinst httrack -y
 #https://chrome.google.com/webstore/detail/mendeley-off-screen-patch/mnhhhlhafphmdgefikbhajpllfcnbiff
 #https://chrome.google.com/webstore/detail/kopernio-powered-by-web-o/fjgncogppolhfdpijihbpfmeohpaadpc
 #https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en-US
- 
-cinst firefox-nightly -pre -y --ignore-checksums
  
 # Firefox exetensions
 #https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/?src=search

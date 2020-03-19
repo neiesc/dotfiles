@@ -75,7 +75,7 @@ cinst exercism-io-cli -y
 cinst papercut -y
 
 cinst putty.install -y
-cinst cygwin -y
+#cinst cygwin -y
 
 #cinst workrave
 #cinst prefix

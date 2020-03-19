@@ -1,6 +1,6 @@
 # Windows environment installations
 
-- Create environment variable USE_HOME_PC false ou true
+- Create environment variable `USE_HOME_PC` with  `false` or `true`
 - Set `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 - Use `.\init.ps1`
 

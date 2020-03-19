@@ -1,6 +1,7 @@
 $ErrorActionPreference = "Continue"
 
-if ($env:USE_HOME_PC -eq "true") {
+$UseHomePc = $env:USE_HOME_PC -eq "true"
+if ($UseHomePc) {
   Write-Host "Using Home PC"
 }
 else {
@@ -63,7 +64,7 @@ Invoke-Expression ".\design_apps.ps1"
 
 Invoke-Expression ".\dev\vscode_extensions.ps1"
 
-if ($env:USE_HOME_PC -eq "true") {
+if ($UseHomePc) {
   Invoke-Expression ".\home_apps.ps1"
 }
 else {

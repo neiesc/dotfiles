@@ -14,6 +14,8 @@
     "npm.enableScriptExplorer": true,
     "editor.renderWhitespace": "selection",
     "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
     "gitlens.keymap": "chorded",
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true

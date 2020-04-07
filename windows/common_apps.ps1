@@ -61,6 +61,7 @@ cinst driverfusion -y
 
 # Sys tools
 cinst ntop.portable -y
+cinst cpu-z -y
 
 # Disk and Files
 cinst crystaldiskmark -y

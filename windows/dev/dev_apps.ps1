@@ -1,3 +1,5 @@
+choco instal micro -y
+
 # Python
 pip install pylint # see note
 

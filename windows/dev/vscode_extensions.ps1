@@ -6,7 +6,7 @@ code --install-extension hediet.debug-visualizer
 code --install-extension MS-vsliveshare.vsliveshare
 
 # C#
-code --install-extension ms-vscode.csharp
+code --install-extension ms-dotnettools.csharp
 code --install-extension jchannon.csharpextensions
 code --install-extension josephwoodward.vscodeilviewer
 code --install-extension Leopotam.csharpfixformat # https://github.com/OmniSharp/omnisharp-vscode/issues/788
@@ -17,6 +17,9 @@ code --install-extension dongli.python-preview
 code --install-extension njpwerner.autodocstring
 code --install-extension LittleFoxTeam.vscode-python-test-adapter
 code --install-extension ms-pyright.pyright
+
+#DevOps
+code --install-extension ms-azuretools.vscode-docker
 
 # HTML CSS
 code --install-extension HookyQR.beautify

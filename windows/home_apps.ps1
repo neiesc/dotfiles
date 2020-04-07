@@ -9,7 +9,7 @@ cinst battle.net -y
 #cinst teamspeak -y
 cinst discord -y
 
-cinst obs-studio -y
+cinst streamlabs-obs -y
 cinst twitch-bandwidth-tester -y
 #cinst telegram -y
 

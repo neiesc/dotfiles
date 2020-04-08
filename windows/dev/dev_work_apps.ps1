@@ -17,3 +17,6 @@ function Install-Extension-VisualStudio2019([string]$UrlVsix, [string]$FileName)
 
 #https://github.com/wixtoolset/VisualStudioExtension/releases
 Install-Extension-VisualStudio2019 "https://github.com/wixtoolset/VisualStudioExtension/releases/download/v1.0.0.4/Votive2019.vsix" "Votive2019.vsix"
+
+# Kafka
+cinst kafka-tool -y

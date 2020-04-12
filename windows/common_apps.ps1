@@ -110,6 +110,7 @@ cinst xmind -y
 # https://github.com/fireeye/flare-ida/blob/master/python/flare/stackstrings.py
 
 cinst youtube-dl -y
+cinst ffmpeg -y
 
 # Launcher
 cinst wox -y

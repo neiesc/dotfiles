@@ -140,3 +140,5 @@ git config --global mergetool.keepBackup false
 git config --global mergetool.keepTemporaries false
 
 git config --global mergetool.meld.path "c:\Program Files (x86)\Meld\Meld.exe"
+
+git config fetch.parallel 10

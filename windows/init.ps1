@@ -69,7 +69,7 @@ else {
 Invoke-Expression ".\dev\dev_apps.ps1"
 Invoke-Expression ".\dev\vscode_extensions.ps1"
 Invoke-Expression ".\dev\devops_apps.ps1"
-Invoke-Expression ".\design_apps.ps1"
+Invoke-Expression ".\creative_apps.ps1"
 
 
 cinst IIS-WebServerRole -source windowsfeatures

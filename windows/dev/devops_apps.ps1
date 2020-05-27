@@ -1,6 +1,6 @@
-cinst terraform -y
+#cinst terraform -y
 
-cinst docker-desktop -y
+#cinst docker-desktop -y
 
 #cinst octopustools
 

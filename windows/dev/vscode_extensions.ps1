@@ -19,8 +19,8 @@ code --install-extension njpwerner.autodocstring
 code --install-extension LittleFoxTeam.vscode-python-test-adapter
 code --install-extension ms-pyright.pyright
 
-#DevOps
-code --install-extension ms-azuretools.vscode-docker
+# DevOps
+#code --install-extension ms-azuretools.vscode-docker
 
 # HTML CSS
 code --install-extension HookyQR.beautify

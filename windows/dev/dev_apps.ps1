@@ -2,6 +2,7 @@ choco instal micro -y
 
 # Python
 pip install pylint # see note
+pip install ipython
 
 # Dotnet
 cinst visualstudio2019-workload-netweb -y

@@ -1,18 +1,20 @@
-#Game
+# Game
 cinst gamebooster -y
 cinst steam -y
-#cinst rambox -y
+cinst battle.net -y
+cinst goggalaxy -y
 cinst origin -y
 cinst geforce-experience -y
-cinst battle.net -y
 
-#cinst teamspeak -y
+# Communication
 cinst discord -y
+#cinst teamspeak -y
+#cinst telegram -y
+#cinst rambox -y
+#cinst franz -pre -y
 
+# Stream
 cinst streamlabs-obs -y
 cinst twitch-bandwidth-tester -y
-#cinst telegram -y
 
 cinst kindle -y
-
-#cinst franz -pre -y

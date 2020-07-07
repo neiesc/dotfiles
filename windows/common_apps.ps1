@@ -60,7 +60,8 @@ cinst dns-benchmark -y
 cinst sysinternals -y
  
 cinst aida64-engineer -y
-cinst driverfusion -y
+#cinst driverfusion -y
+#cinst driverbooster -y # When need drive
 
 # Sys tools
 cinst ntop.portable -y

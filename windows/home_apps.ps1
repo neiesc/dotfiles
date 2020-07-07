@@ -6,6 +6,8 @@ cinst goggalaxy -y
 cinst origin -y
 cinst geforce-experience -y
 
+#cinst leagueoflegends -y
+
 # Communication
 cinst discord -y
 #cinst teamspeak -y

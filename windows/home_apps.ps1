@@ -1,11 +1,10 @@
 # Game
-cinst gamebooster -y
 cinst steam -y
 cinst battle.net -y
 cinst goggalaxy -y
 cinst origin -y
 cinst geforce-experience -y
-
+#cinst gamebooster -y
 #cinst leagueoflegends -y
 
 # Communication
@@ -17,6 +16,6 @@ cinst discord -y
 
 # Stream
 cinst streamlabs-obs -y
-cinst twitch-bandwidth-tester -y
+#cinst twitch-bandwidth-tester -y # Need stream key
 
 cinst kindle -y

@@ -7,6 +7,8 @@ cinst geforce-experience -y
 #cinst gamebooster -y
 #cinst leagueoflegends -y
 
+cinst zsnes -y
+
 # Communication
 cinst discord -y
 #cinst teamspeak -y

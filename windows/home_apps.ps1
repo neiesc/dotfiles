@@ -17,7 +17,8 @@ cinst discord -y
 #cinst franz -pre -y
 
 # Stream
-cinst streamlabs-obs -y
+cinst obs-studio -y
+#cinst streamlabs-obs -y
 #cinst twitch-bandwidth-tester -y # Need stream key
 
 cinst kindle -y

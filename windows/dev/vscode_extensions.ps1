@@ -1,5 +1,8 @@
 # General
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension coenraads.bracket-pair-colorizer-2
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 code --install-extension hediet.debug-visualizer
 code --install-extension hediet.vscode-drawio
 
@@ -23,6 +26,7 @@ code --install-extension ms-pyright.pyright
 #code --install-extension ms-azuretools.vscode-docker
 
 # HTML CSS
+code --install-extension formulahendry.auto-rename-tag
 code --install-extension HookyQR.beautify
 code --install-extension ilich8086.CSSfmt
 code --install-extension abusaidm.html-snippets
@@ -68,6 +72,7 @@ code --install-extension pomber.git-file-history
 code --install-extension mhutchie.git-graph
 
 # Others
+code --install-extension humao.rest-client
 code --install-extension ms-vscode.PowerShell
 code --install-extension WakaTime.vscode-wakatime
 code --install-extension minhthai.vscode-todo-parser

@@ -64,11 +64,6 @@ cinst dbeaver -y
 cinst robo3t -y
 cinst sqlitebrowser -y
 
-cinst git -y
-#cinst git-lfs -y
-#cinst sourcetree -y
-#cinst poshgit -y
-
 #cinst devbox-common -y
 
 cinst exercism-io-cli -y
@@ -107,6 +102,10 @@ cinst lessmsi -y
 #cinst stexbar -y
 
 # Git
+cinst git -y
+#cinst git-lfs -y
+#cinst sourcetree -y
+#cinst poshgit -y
 cinst gitextensions -y
 cinst meld -y
 

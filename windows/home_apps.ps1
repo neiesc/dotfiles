@@ -10,7 +10,7 @@ cinst geforce-experience -y
 cinst zsnes -y
 
 # Communication
-cinst discord -y
+#cinst discord -y # Using in web ou phone.
 #cinst teamspeak -y
 #cinst telegram -y
 #cinst rambox -y

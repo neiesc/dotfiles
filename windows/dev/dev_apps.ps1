@@ -103,6 +103,7 @@ cinst lessmsi -y
 
 # Git
 cinst git -y
+cinst gh -y
 #cinst git-lfs -y
 #cinst sourcetree -y
 #cinst poshgit -y

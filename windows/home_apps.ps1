@@ -20,6 +20,6 @@ cinst discord -y
 cinst obs-studio -y
 #cinst streamlabs-obs -y
 #cinst twitch-bandwidth-tester -y # Need stream key
-# https://www.dev47apps.com/ DroidCam PC Client
+# https://www.dev47apps.com/ ""DroidCam PC Client
 
 cinst kindle -y

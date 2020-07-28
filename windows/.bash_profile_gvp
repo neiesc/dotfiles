@@ -8,6 +8,8 @@ alias gvp-build-debug='.\\gvp.cmd build -debug'
 alias gvp-prepare-build='gvp-prepare; gvp-build'
 alias gvp-package='.\\gvp.cmd package -all -env:local -nb'
 alias gvp-prepare-build-package='gvp-prepare; gvp-build; gvp-package'
+alias gvp-migration-up='powershell -ExecutionPolicy RemoteSigned -File "Install.ps1" "UP"'
+alias gvp-migration-down='powershell -ExecutionPolicy RemoteSigned -File "Install.ps1" "DOWN"'
 
 alias gvp-mib3-git='cd c:\\Dev-AgileContent\\mib\\mib3'
 alias gvp-mib3-server-update='Server\\update_mib_server.cmd'

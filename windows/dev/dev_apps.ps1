@@ -126,6 +126,8 @@ git config --global color.status auto
 git config --global push.default current
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.prev "checkout HEAD^1"
+Write-Host "See .gitconfig for alias.next"
 
 git config --global diff.algorithm patience
 git config --global diff.tool meld

@@ -1,22 +1,33 @@
 #!/usr/bin/env bash
-DOTFILES_FOLDER=$HOME/dotfiles
-DB_FOLDER=$HOME/Dropbox
 
-if [ -d $DB_FOLDER ]; then
-  [ ! -L $HOME/.zsh_history ] && ln -s $DB_FOLDER/history/zsh_history $HOME/.zsh_history
-fi
+## Update
+sudo apt-get -o Acquire::Check-Valid-Until=false update # sudo apt update
 
-## link to $HOME
-ln -s $DOTFILES_FOLDER/.gitconfig $HOME
-ln -s $DOTFILES_FOLDER/.gitignore_global $HOME
-ln -s $DOTFILES_FOLDER/.vimrc $HOME
-ln -s $DOTFILES_FOLDER/.xinitrc $HOME
-ln -s $DOTFILES_FOLDER/.zshrc $HOME
+## SysAdmin
+sh ./sysadmin.sh
 
 ## Python
-pip3 install -r .requirements.txt
+# sudo -H pip3 install --upgrade pip
+# sudo -H pip2 install --upgrade pip
+# sudo pip3 install -r .requirements.txt
 
-## Setup NeoBundle
+## link to $HOME
+export DOTFILES_FOLDER=$HOME/Dev/dotfiles
+DROPBBOX_FOLDER=$HOME/Dropbox
+
+if [ -d $DROPBBOX_FOLDER ]; then
+  [ ! -L $HOME/.zsh_history ] && ln -s $DROPBBOX_FOLDER/history/zsh_history $HOME/.zsh_history
+fi
+
+ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME
+ln -sf $DOTFILES_FOLDER/common/.gitignore_global $HOME
+ln -sf $DOTFILES_FOLDER/common/.vimrc $HOME
+ln -sf $DOTFILES_FOLDER/linux/.xinitrc $HOME
+echo $DOTFILES_FOLDER/linux/.zshrc
+echo $HOME
+ln -sf $DOTFILES_FOLDER/linux/.zshrc $HOME
+
+## Setup NeoBundle # TODO: Migrate to dein.vim
 BUNDLE_DIR=$HOME/.vim/bundle
 
 if [ ! -d $BUNDLE_DIR ]; then

@@ -1,8 +1,8 @@
-# Windows environment installations
+# Windows 10 environment installations
 
 - Create environment variable `USE_HOME_PC` with  `false` or `true`
 - Set `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
-- Use `.\init.ps1`
+- Run `.\init.ps1` in powershell
 
 Open CMD and execute START http://boxstarter.org/package/nr/url? FOLLOWED BY THIS GIST'S URL
 

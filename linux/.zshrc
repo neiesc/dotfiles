@@ -1,5 +1,7 @@
+# My path
+export DOTFILES_FOLDER=$HOME/Dev/dotfiles
+
 # Path to your oh-my-zsh installation.
-DOTFILES_FOLDER=$HOME/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 export BROWSER=/usr/bin/uzbl-tabbed
 export EDITOR=/usr/bin/vim
@@ -48,10 +50,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git github heroku
-  python pip 
-  zsh-syntax-highlighting
-  archlinux systemd)
+plugins=(
+  ls
+  git github heroku
+  python pip
+  debian
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,4 +94,5 @@ export GOPATH=$HOME/Development/go
 alias uzbl="uzbl-tabbed"
 
 # .profile.d init
-source $DOTFILES_FOLDER/.profile.d/python
+source $DOTFILES_FOLDER/linux/.profile.d/default
+source $DOTFILES_FOLDER/linux/.profile.d/python

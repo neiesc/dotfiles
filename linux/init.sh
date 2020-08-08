@@ -14,7 +14,7 @@ ln -s $DOTFILES_FOLDER/.xinitrc $HOME
 ln -s $DOTFILES_FOLDER/.zshrc $HOME
 
 ## Python
-pip install -r .requirements.txt
+pip3 install -r .requirements.txt
 
 ## Setup NeoBundle
 BUNDLE_DIR=$HOME/.vim/bundle

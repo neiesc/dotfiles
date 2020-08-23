@@ -3,8 +3,10 @@
 ## Update
 sudo apt-get -o Acquire::Check-Valid-Until=false update # sudo apt update
 
-## SysAdmin
-sh ./sysadmin.sh
+sh ./common_apps.sh
+sh ./sysadmin_apps.sh
+sh ./dev/dev_apps.sh
+sh ./creative_apps.sh
 
 ## Python
 # sudo -H pip3 install --upgrade pip

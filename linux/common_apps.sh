@@ -10,3 +10,5 @@ sudo apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7F068E5D
 sudo apt-get update
 sudo apt-get install megasync -y
 sudo apt-get install nautilus-megasync -y
+
+#https://help.dropbox.com/pt-br/installs-integrations/desktop/linux-commands

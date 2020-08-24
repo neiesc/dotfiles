@@ -83,6 +83,7 @@ cinst teamviewer -y
  
 cinst yumi -y #Multiboot USB Creator
 
+# Cloud
 cinst dropbox -y
 cinst megasync -y
 

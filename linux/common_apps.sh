@@ -1,3 +1,5 @@
+sudo apt install curl -y
+
 sudo apt-get install keepass2 -y
 
 # Audio & video

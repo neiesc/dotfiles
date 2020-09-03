@@ -1,6 +1,7 @@
 sudo apt install curl -y
 
 sudo apt-get install keepass2 -y
+sudo apt install xdotool -y # keeppass2 need for Auto-Type
 
 # Audio & video
 sudo snap install vlc

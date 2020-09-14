@@ -7,6 +7,7 @@ sh ./common_apps.sh
 sh ./sysadmin_apps.sh
 sh ./dev/dev_apps.sh
 sh ./creative_apps.sh
+sh ./game_apps.sh
 
 ## Python
 # sudo -H pip3 install --upgrade pip

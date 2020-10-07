@@ -1,5 +1,6 @@
 # General
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian

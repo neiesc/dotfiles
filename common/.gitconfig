@@ -11,6 +11,7 @@
     ciamend = commit -a --amend
     prev = checkout HEAD^1
     next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
+    lgfiles = log --name-only --pretty=format: | sort | uniq -c | sort
 [core]
     excludesfile = ./.gitignore_global
 [push]

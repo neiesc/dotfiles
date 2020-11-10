@@ -10,11 +10,12 @@ code --install-extension hediet.vscode-drawio
 # Pair programming
 code --install-extension MS-vsliveshare.vsliveshare
 
-# C#
+# .NET
 code --install-extension ms-dotnettools.csharp
 code --install-extension jchannon.csharpextensions
 code --install-extension josephwoodward.vscodeilviewer
 code --install-extension Leopotam.csharpfixformat # https://github.com/OmniSharp/omnisharp-vscode/issues/788
+code --install-extension ms-dotnettools.dotnet-interactive-vscode
 
 # Python
 code --install-extension ms-python.python

@@ -1,3 +1,5 @@
+cinst nswagstudio -y
+
 cinst google-drive-file-stream -y
 cinst google-hangouts-chrome -y
 

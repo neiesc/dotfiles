@@ -114,6 +114,8 @@ cinst meld -y
 git config --global user.email "edinei.esc@gmail.com"
 git config --global user.name "Edinei Cavalcanti"
 
+git config --global init.defaultBranch main
+
 git config --global core.autocrlf true
 git config --global core.editor vim
 

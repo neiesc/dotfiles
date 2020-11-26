@@ -5,6 +5,7 @@ sudo apt install xdotool -y # keeppass2 need for Auto-Type
 
 # Audio & video
 sudo snap install vlc
+snap install spotify
 
 # Cloud
 echo deb https://mega.nz/linux/MEGAsync/xUbuntu_20.04/ ./ | sudo tee /etc/apt/sources.list.d/megasync.list

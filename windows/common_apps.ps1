@@ -94,7 +94,8 @@ cinst 7zip -y
 cinst keepass -y
 
 # Audio & video
-cinst clementine -y
+cinst spotify -y
+## cinst clementine -y
 cinst vlc -y
 ## cinst kodi -y
 

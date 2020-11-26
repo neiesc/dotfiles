@@ -15,3 +15,6 @@ sudo apt-get install megasync -y
 sudo apt-get install nautilus-megasync -y
 
 #https://help.dropbox.com/pt-br/installs-integrations/desktop/linux-commands
+
+# Fonts
+sudo apt install fonts-firacode -y

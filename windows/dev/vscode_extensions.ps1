@@ -1,4 +1,5 @@
 # General
+code --install-extension EditorConfig.EditorConfig
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension coenraads.bracket-pair-colorizer-2

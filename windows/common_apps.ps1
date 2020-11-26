@@ -123,6 +123,7 @@ cinst wox -y
 #cinst launchy -y
 #cinst everything -y
 
-cinst firacode -y
+# Fonts
+cinst firacode -y #Fira Code
 
 # https://www.microsoft.com/pt-br/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab

@@ -6,7 +6,6 @@ cinst origin -y
 cinst geforce-experience -y
 #cinst gamebooster -y
 #cinst leagueoflegends -y
-
 cinst zsnes -y
 
 # Communication
@@ -23,3 +22,4 @@ cinst obs-studio -y
 # https://www.dev47apps.com/ ""DroidCam PC Client
 
 cinst kindle -y
+cinst deluge -y

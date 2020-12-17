@@ -8,6 +8,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 sudo snap install code --classic
 
+## Python
+sudo apt-get install python-pip -y
+
 ## Node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs -y

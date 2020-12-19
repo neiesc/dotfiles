@@ -4,6 +4,10 @@
 - Set `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 - Run `.\init.ps1` in powershell
 
+[for work](README.for_work.md)
+
+# Resources
+
 Open CMD and execute START http://boxstarter.org/package/nr/url? FOLLOWED BY THIS GIST'S URL
 
 http://boxstarter.org/

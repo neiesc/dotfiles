@@ -4,7 +4,7 @@
 - Set `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 - Run `.\init.ps1` in powershell
 
-[for work](README.for_work.md)
+[README for work](README.for_work.md)
 
 # Resources
 

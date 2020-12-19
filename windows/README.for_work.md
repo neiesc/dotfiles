@@ -1,7 +1,7 @@
 ﻿Need backups of:
 
 - C:\Users\neiesc\source\repos
-- C:\Users\neiesc\.ssh
+- C:\Users\neiesc\\.ssh
 - C:\Users\neiesc\Downloads
 - C:\Users\neiesc\.bash_history
 - C:\Users\neiesc\.my_nuget.cfg # For use in `psake setup`

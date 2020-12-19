@@ -16,7 +16,7 @@ For install new Windows:
 - Restore backup from USB
 - Create environment `USE_HOME_PC` as `false`
 - Install git `choco install git -y`
-- git clone git@github.com:neiesc/dotfiles.git
+- ?`git clone git@github.com:neiesc/dotfiles.git`
 - Open CMD as ADM `mklink "C:\Users\neiesc\.bash_history" "C:\Users\neiesc\Dropbox\history\.bash_history_work"`
 - Set ip eth (ipconfig_eth.png)
 - Add Rocket.Chat link in `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup` or `shell:startup`

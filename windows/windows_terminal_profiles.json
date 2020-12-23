@@ -22,7 +22,7 @@
       "name": "Bash",
       "padding": "0, 0, 0, 0",
       "snapOnInput": true,
-      "startingDirectory": "%USERPROFILE%",q
+      "startingDirectory": "%USERPROFILE%",
       "useAcrylic": true
     },
     {

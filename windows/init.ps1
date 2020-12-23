@@ -67,7 +67,6 @@ else {
   Invoke-Expression ".\dev\dev_work_apps.ps1"
 }
 Invoke-Expression ".\dev\dev_apps.ps1"
-Invoke-Expression ".\dev\vscode_extensions.ps1"
 Invoke-Expression ".\dev\devops_apps.ps1"
 Invoke-Expression ".\creative_apps.ps1"
 

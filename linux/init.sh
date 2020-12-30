@@ -29,11 +29,3 @@ ln -sf $DOTFILES_FOLDER/linux/.xinitrc $HOME
 echo $DOTFILES_FOLDER/linux/.zshrc
 echo $HOME
 ln -sf $DOTFILES_FOLDER/linux/.zshrc $HOME
-
-## Setup NeoBundle # TODO: Migrate to dein.vim
-BUNDLE_DIR=$HOME/.vim/bundle
-
-if [ ! -d $BUNDLE_DIR ]; then
-  mkdir -p $BUNDLE_DIR
-  git clone https://github.com/Shougo/neobundle.vim $BUNDLE_DIR/neobundle.vim
-fi

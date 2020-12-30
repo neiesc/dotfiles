@@ -54,7 +54,7 @@ plugins=(
   ls
   git github heroku
   python pip
-  debian
+  ubuntu
 )
 
 source $ZSH/oh-my-zsh.sh

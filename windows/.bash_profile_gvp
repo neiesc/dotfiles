@@ -13,6 +13,6 @@ alias gvp-migration-down='powershell -ExecutionPolicy RemoteSigned -File "Instal
 
 alias gvp-mib3-git='cd c:\\Dev\\agilecontent\\mib\\mib3'
 alias gvp-mib3-server-update='Server\\update_mib_server.cmd'
-alias gvp-mib3-watcher='./MibWatcher.cmd'
+alias gvp-mib3-watcher='python c:\\Dev\\agilecontent\\mib\\mib3\\Server\\MibWatcher.py'
 alias gvp-prepare-build-server-update='gvp-prepare; gvp-build; gvp-mib3-server-update'
 alias gvp-prepare-build-package-server-update='gvp-prepare-build-server-update; gvp-package'

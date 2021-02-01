@@ -57,6 +57,7 @@ cinst markdownpad2 -y
 
 # Database
 cinst dbeaver -y
+# https://sqlectron.github.io/
 # Azure Data Studio For SQL Server https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-2017
 # https://github.com/gandarez/ssms-wakatime # need in https://chocolatey.org/packages
 # http://www.ssmsboost.com/

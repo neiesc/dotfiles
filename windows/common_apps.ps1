@@ -20,6 +20,9 @@ cinst googlechrome -y
 cinst brave -y
 cinst httrack -y
 
+# Browsers exetensions
+https://daily.dev/
+
 # Chrome exetensions
 #https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
 #https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh

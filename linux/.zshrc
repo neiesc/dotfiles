@@ -51,10 +51,12 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  ls wakatime
+  ls
+  wakatime
   git github heroku
   python pip
   ubuntu
+  docker docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh

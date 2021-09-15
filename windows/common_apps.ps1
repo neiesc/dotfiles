@@ -106,7 +106,9 @@ cinst vlc -y
 
 cinst wcat -y #Web Capacity Analysis Tool
 cinst diskspd -y
-#cinst jmeter
+#cinst jmeter -y
+#cinst k6 -y #load testing
+
 #cinst prime95
 cinst geogebra -y
 

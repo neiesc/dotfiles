@@ -4,8 +4,9 @@ Import-Module -Name Posh-Git
 Clear-Host
 Write-Host "edinei.dev"
 
-function work-dir {cd C:\Dev}
-function work-dir-way2 {cd C:\Dev\Way2\pim}
+function Work-Dir {cd C:\Dev}
+function Work-Dir-Way2 {cd C:\Dev\Way2\pim}
+function Work-Dir-Way2-Sln {C:\Dev\Way2\pim\Way2Pim.sln}
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"

@@ -25,3 +25,14 @@ For install new Windows:
 - Create shortcut `C:\ProgramData\chocolatey\lib\sysinternals\tools` for `C:\tools`
 - tela-inicial-windows.png
 - Remove backup from USB
+- Visual Studio as Adm https://www.andrecarlucci.com/dev/abrindo-o-visual-studio-sempre-como-administrador-no-windows-8/
+- Para resolver o problema e abrir sempre o Visual Studio com permissões de administrador, siga os passos:
+  1. Localize o executável do Visual Studio (devenv.exe), o meu fica em “C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE”
+  2. Clique com o botão direito no mesmo e selecione “Troubleshoot compatibility”
+  3. Selecione “Troubleshoot program”
+  4. Selecine “The program requires additional permissions”
+  5. Clique em “Next” e depois “Test the program…”
+  6. Espere o Visual Studio abrir
+  7. Clique em “Next”
+  8. Selecione “Yes, save these settings for this program”
+  9. Clique em “Close”

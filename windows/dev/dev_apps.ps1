@@ -13,7 +13,6 @@ cinst dotnetcore-sdk -y
 
 # Node.js (javascript)
 cinst nodejs.install -y
-cinst yarn -y
 
 refreshenv
 

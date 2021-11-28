@@ -1,2 +1,2 @@
-# GNU/Linux Debian
-* Run `./init.sh` in your terminal no use `sudo` because it use `$HOME`
+# GNU/Linux Archcraft (Yet another minimal Linux distribution, based on Arch Linux.)
+* Run `sudo ./init.sh` in your terminal

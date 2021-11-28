@@ -1,6 +1,5 @@
-# Streamming
-sudo apt-get install ffmpeg -y
-sudo apt-get install obs-studio -y # depend ffmpeg
+# Video
+sudo pacman -S --noconfirm obs-studio # depend ffmpeg
 
 # Image
-sudo apt-get install gimp -y
+sudo pacman -S --noconfirm gimp

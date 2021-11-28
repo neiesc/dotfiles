@@ -1,3 +1,0 @@
-ipython
-lice
-pip-tools

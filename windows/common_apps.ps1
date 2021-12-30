@@ -21,7 +21,7 @@ cinst brave -y
 cinst httrack -y
 
 # Browsers exetensions
-https://daily.dev/
+#https://daily.dev/
 
 # Chrome exetensions
 #https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh

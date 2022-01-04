@@ -136,6 +136,7 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
+alias gs='git status'
 
 # fnm
 export PATH=/home/neiesc/.fnm:$PATH

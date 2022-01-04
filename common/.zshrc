@@ -142,6 +142,9 @@ alias gs='git status'
 export PATH=/home/neiesc/.fnm:$PATH
 eval "`fnm env`"
 
+#dotnet
+export PATH=/home/neiesc/.dotnet:$PATH
+
 # Others
 alias ff='firefox -P &'
 source /home/neiesc/Dev/dotfiles/linux/.profile/default

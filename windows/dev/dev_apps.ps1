@@ -1,5 +1,7 @@
 # Tools
 winget install DevToys --accept-package-agreements --accept-source-agreements
+winget install -e --id Microsoft.PowerToys
+winget install -e --id egoist.devdocs-desktop
 
 #choco instal micro -y
 

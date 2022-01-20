@@ -1,4 +1,7 @@
-choco instal micro -y
+# Tools
+winget install DevToys --accept-package-agreements --accept-source-agreements
+
+#choco instal micro -y
 
 # Python
 pip install pylint # see note

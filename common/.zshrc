@@ -71,7 +71,10 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -145,6 +148,8 @@ eval "`fnm env`"
 #dotnet
 export PATH=/home/neiesc/.dotnet:$PATH
 
+
 # Others
+export PATH=$HOME/.local/bin:$PATH
 alias ff='firefox -P &'
 source /home/neiesc/Dev/dotfiles/linux/.profile/default

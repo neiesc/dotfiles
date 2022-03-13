@@ -153,3 +153,4 @@ export PATH=/home/neiesc/.dotnet:$PATH
 export PATH=$HOME/.local/bin:$PATH
 alias ff='firefox -P &'
 source /home/neiesc/Dev/dotfiles/linux/.profile/default
+source /opt/asdf-vm/asdf.sh

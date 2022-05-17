@@ -1,3 +1,6 @@
+# Git/Github
+yay extra/tk
+
 ## Editor
 sudo pacman -S --noconfirm code
 

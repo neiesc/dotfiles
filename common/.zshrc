@@ -141,16 +141,12 @@ alias gc='git commit -m'
 alias gp='git push origin master'
 alias gs='git status'
 
-# fnm
-export PATH=/home/neiesc/.fnm:$PATH
-eval "`fnm env`"
-
-#dotnet
-export PATH=/home/neiesc/.dotnet:$PATH
-
+# tools
+source /opt/asdf-vm/asdf.sh
 
 # Others
 export PATH=$HOME/.local/bin:$PATH
 alias ff='firefox -P &'
-source /home/neiesc/Dev/dotfiles/linux/.profile/default
-source /opt/asdf-vm/asdf.sh
+source ~/Dev/dotfiles/linux/.profile/default
+
+eval "$(starship init zsh)"

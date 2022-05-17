@@ -1,4 +1,5 @@
 alias my-work-dir='cd ~/Dev'
+alias my-work-dir-iVera='cd ~/Dev/iVera/iVera'
 alias my-ip='curl "https://api.ipify.org?format=json"'
 alias my-package-update='sudo apt-get -o Acquire::Check-Valid-Until=false update'
 alias my-package-upgrade-all='sudo apt-get upgrade -y'

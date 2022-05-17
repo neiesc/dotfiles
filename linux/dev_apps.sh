@@ -1,5 +1,6 @@
 # Git/Github
-yay extra/tk
+yay tk
+yay gitextensions
 
 ## Editor
 sudo pacman -S --noconfirm code

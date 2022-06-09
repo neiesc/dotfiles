@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export IS_HOME_PC=false #SET THIS
+
 ## Update System
 #sudo pacman -Syyu
 
@@ -9,18 +11,18 @@
 #sh ./creative_apps.sh
 # sh ./game_apps.sh
 
-## Python
-# sudo -H pip3 install --upgrade pip
-# sudo -H pip2 install --upgrade pip
-# sudo pip3 install -r .requirements.txt
-
 ## link to $HOME
 DOTFILES_FOLDER=$HOME/Dev/dotfiles
 DROPBBOX_FOLDER=$HOME/Dropbox
 
-ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history $HOME/.zsh_history
+if $IS_HOME_PC
+then
+    ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history_home $HOME/.zsh_history
+else
+    ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history_work $HOME/.zsh_history
+fi
 
-ln -sf $DROPBBOX_FOLDER/dotfiles/.gitconfig $HOME/.gitconfig
-ln -sf $DOTFILES_FOLDER/common/.gitignore_global $HOME/.gitignore_global
+# ln -sf $DROPBBOX_FOLDER/dotfiles/.gitconfig $HOME/.gitconfig
+# ln -sf $DOTFILES_FOLDER/common/.gitignore_global $HOME/.gitignore_global
 
 ln -sf $DOTFILES_FOLDER/common/.zshrc $HOME/.zshrc

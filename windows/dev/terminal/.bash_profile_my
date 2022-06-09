@@ -1,8 +1,0 @@
-alias my-work-dir='cd c:\\Dev'
-alias my-ip='curl "https://api.ipify.org?format=json"'
-alias my-package-upgrade-all='choco upgrade all --except="'anki'"'
-alias my-package-upgrade-all-except='choco upgrade all --except="'sql-server-express,python3,mongodb,nunit,anki'"'
-alias my-package-outdated='choco outdated'
-alias my-package-list-local='choco list -l'
-alias my-perfmon-report='perfmon /report'
-# curl wttr.in

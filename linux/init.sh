@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export IS_HOME_PC=false #SET THIS
+export IS_HOME_PC=true #SET THIS
 
 ## Update System
 #sudo pacman -Syyu

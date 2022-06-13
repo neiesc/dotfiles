@@ -1,6 +1,6 @@
 # Git/Github
-yay tk
-yay gitextensions
+yay tk # need for gitk and git gui
+#yay gitextensions
 
 ## Editor
 sudo pacman -S --noconfirm code

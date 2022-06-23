@@ -22,7 +22,7 @@ else
     ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history_work $HOME/.zsh_history
 fi
 
-# ln -sf $DROPBBOX_FOLDER/dotfiles/.gitconfig $HOME/.gitconfig
-# ln -sf $DOTFILES_FOLDER/common/.gitignore_global $HOME/.gitignore_global
+ln -sf $DROPBBOX_FOLDER/dotfiles/.gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES_FOLDER/common/.gitignore_global $HOME/.gitignore_global
 
 ln -sf $DOTFILES_FOLDER/common/.zshrc $HOME/.zshrc

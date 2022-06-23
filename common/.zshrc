@@ -148,6 +148,9 @@ alias vim='lvim'
 alias nvim='lvim'
 alias lvim='lvim'
 
+# code
+alias code='vscodium'
+
 # tools
 source /opt/asdf-vm/asdf.sh
 export PATH=$HOME/.asdf/shims:$PATH

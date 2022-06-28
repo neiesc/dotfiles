@@ -13,7 +13,7 @@ export IS_HOME_PC=true #SET THIS
 
 ## link to $HOME
 DOTFILES_FOLDER=$HOME/Dev/dotfiles
-DROPBBOX_FOLDER=$HOME/Dropbox
+DROPBBOX_FOLDER=$HOME/Insync/edinei3a@hotmail.com/Dropbox
 
 if $IS_HOME_PC
 then

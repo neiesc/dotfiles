@@ -126,10 +126,14 @@ add-zsh-hook -Uz precmd rehash_precmd
 alias zshconfig="lvim ~/.zshrc"
 alias ohmyzsh="thunar ~/.oh-my-zsh"
 
+# cat
+alias cat='bat --style=auto'
+
 # ls
+alias ls='exa --icons'
 alias l='ls -lh'
 alias ll='ls -lah'
-alias la='ls -A'
+alias la='ls -la'
 alias lm='ls -m'
 alias lr='ls -R'
 alias lg='ls -l --group-directories-first'

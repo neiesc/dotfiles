@@ -145,6 +145,7 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
 alias gs='git status'
+alias gg='git gui &'
 
 # vim
 alias vi='lvim'

@@ -161,6 +161,6 @@ source /opt/asdf-vm/asdf.sh
 export PATH=$HOME/.asdf/shims:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-source ~/Dev/dotfiles/linux/.profile/default
+source ~/Dev/dotfiles/linux/.profile/alias.sh
 
 eval "$(starship init zsh)"

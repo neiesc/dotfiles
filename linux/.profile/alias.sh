@@ -1,7 +1,7 @@
 # work
-alias my-work-dir='cd ~/Dev'
-alias my-work-dir-iVera='cd ~/Dev/iVera/iVera'
-alias my-work-build-iVera='npm run gulp && npm run uglify && npm run start'
+alias work-dir='cd ~/Dev'
+alias work-iVera-dir='cd ~/Dev/iVera/iVera'
+alias work-iVera-build-='npm run gulp && npm run uglify && npm run start'
 
 # obsoled
 alias my-package-update='sudo apt-get -o Acquire::Check-Valid-Until=false update'

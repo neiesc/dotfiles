@@ -18,6 +18,5 @@ if status is-interactive
     source /opt/asdf-vm/asdf.fish
     fish_add_path -m ~/.local/bin
 
-    #export (envsubst < .env)
-    alias LIBVA_DRIVER_NAME='radeonsi'
+    export (envsubst < $HOME/.config/fish/.env)
 end

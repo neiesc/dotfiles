@@ -1,5 +1,11 @@
+# Docker
+sudo pacman -S --noconfirm docker
+sudo pacman -S --noconfirm docker-buildx
+sudo pacman -S --noconfirm docker-compose
+yay -S --noconfirm docker-credential-secretservice
+
 # Git/Github
-yay tk # need for gitk and git gui
+yay -S --noconfirm tk # need for gitk and git gui
 #yay gitextensions
 
 ## Editor
@@ -10,9 +16,7 @@ sudo pacman -S --noconfirm python-pip
 sudo python -m pip install --upgrade pip
 
 ## Node
-curl -fsSL https://fnm.vercel.app/install | bash
-source /home/neiesc/.zshrc
-fnm install 17.1.0
+yay -S --noconfirm asdf-vm
 
 ## Training
 #sudo snap install exercism

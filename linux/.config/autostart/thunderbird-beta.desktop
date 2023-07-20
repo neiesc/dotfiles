@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Thunderbird beta
+Exec=/usr/bin/thunderbird-beta
+Icon=/usr/share/icons/hicolor/48x48/apps/firefox.png
+Comment=A web browser

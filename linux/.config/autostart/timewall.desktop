@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Wallpaper
+Exec=/usr/bin/timewall set /home/edinei/Insync/edinei3a@hotmail.com/Dropbox/Wallpaper/HEIC/Mojave+.heic --daemon
+Comment=Wallpaper

@@ -85,7 +85,7 @@
     </popupFixedPosition>
   </resize>
   <margins>
-    <top>0</top>
+    <top>48</top>
     <bottom>10</bottom>
     <left>10</left>
     <right>10</right>
@@ -404,9 +404,7 @@
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">592746
-      <action name="Execute">
-        <command>volume --dec</command>
-      </action>
+      <action name="Execute"><command>volume --dec</command></action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
@@ -500,7 +498,7 @@
     <!-- Rofi -->
     <keybind key="A-F1">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/launcher</command>
+        <command>launcher</command>
       </action>
     </keybind>
     <keybind key="W-n">
@@ -510,27 +508,27 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/music</command>
+        <command>music</command>
       </action>
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/powermenu</command>
+        <command>powermenu</command>
       </action>
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/screenshot</command>
+        <command>screenshot</command>
       </action>
     </keybind>
     <keybind key="W-i">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/network</command>
+        <command>network</command>
       </action>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>~/.config/openbox/rofi/bin/runner</command>
+        <command>runner</command>
       </action>
     </keybind>
     <keybind key="W-p">

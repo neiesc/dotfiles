@@ -49,5 +49,3 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 
 ## User Friendly Bluetooth Menu
 #blueman-applet &
-
-bash ~/.config/openbox/openbox/thunderbird-start.sh

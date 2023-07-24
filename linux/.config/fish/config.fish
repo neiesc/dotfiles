@@ -14,6 +14,9 @@ if status is-interactive
     alias gk='gitk'
     alias gg='git gui'
 
+    # editor
+    alias c='code'
+
     # other
     source /opt/asdf-vm/asdf.fish
     fish_add_path -m ~/.local/bin

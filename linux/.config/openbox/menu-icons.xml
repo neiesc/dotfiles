@@ -9,7 +9,7 @@
 <!--	<separator label="Main Menu"/>  -->
 		<item icon="&icons;/terminal.png" label="Terminal Emulator">
 			<action name="Execute">
-				<command>alacritty</command>
+				<command>xfce4-terminal</command>
 			</action>
 		</item>
 		<separator/>

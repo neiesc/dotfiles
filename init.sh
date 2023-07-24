@@ -35,4 +35,6 @@ ln -sf $DOTFILES_FOLDER/linux/.config/openbox/rc.xml $HOME/.config/openbox/rc.xm
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/theme.bash $HOME/.config/openbox-themes/themes/default/theme.bash
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/polybar/modules.ini $HOME/.config/openbox-themes/themes/default/polybar/modules.ini
 
+ln -sf $DOTFILES_FOLDER/linux/.config/Thunar/uca.xml $HOME/.config/Thunar/uca.xml
+
 ln -sf $DOTFILES_FOLDER/linux/.config/autostart/* $HOME/.config/autostart

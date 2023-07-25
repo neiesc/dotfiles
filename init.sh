@@ -32,6 +32,7 @@ ln -sf $DOTFILES_FOLDER/linux/.config/openbox/autostart $HOME/.config/openbox/au
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox/menu-icons.xml $HOME/.config/openbox/menu-icons.xml
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox/rc.xml $HOME/.config/openbox/rc.xml
 
+ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/apply.sh $HOME/.config/openbox-themes/themes/default/apply.sh
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/theme.bash $HOME/.config/openbox-themes/themes/default/theme.bash
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/polybar/modules.ini $HOME/.config/openbox-themes/themes/default/polybar/modules.ini
 

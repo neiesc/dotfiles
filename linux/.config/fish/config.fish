@@ -14,8 +14,22 @@ if status is-interactive
     alias gk='gitk'
     alias gg='git gui'
 
+    # ls
+    alias l='ls -lh'
+    alias ll='ls -lah'
+    alias la='ls -A'
+    alias lm='ls -m'
+    alias lr='ls -R'
+    alias lg='ls -l --group-directories-first'
+
     # editor
+    ## VS Code
     alias c='code'
+    
+    ## vim
+    alias vi='lvim'
+    alias vim='lvim'
+    alias nvim='lvim'
 
     # work
     alias work-dir='cd ~/Dev'

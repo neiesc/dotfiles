@@ -1,26 +1,29 @@
 <?xml version="1.0"?>
-<!-- Copyright (C) 2020-2021 Aditya Shakya <adi1090x@gmail.com> -->
-<!-- Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 -->
+<!-- Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com> -->
 <!-- ################################ General Settings ################################ -->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Resistance -->
   <resistance>
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
+  <!-- Focus -->
   <focus>
     <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
     <focusLast>yes</focusLast>
+    <followMouse>no</followMouse>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
   </focus>
+  <!-- Placement -->
   <placement>
     <policy>Smart</policy>
     <center>yes</center>
     <monitor>Mouse</monitor>
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
+  <!-- Theme -->
   <theme>
     <name>Arc-Dark</name>
     <titleLayout>DLIMC</titleLayout>
@@ -63,9 +66,11 @@
       <slant>Normal</slant>
     </font>
   </theme>
+  <!-- Workspace -->
   <desktops>
     <number>5</number>
     <firstdesk>0</firstdesk>
+    <popupTime>0</popupTime>
     <names>
       <name>1</name>
       <name>2</name>
@@ -73,8 +78,8 @@
       <name>4</name>
       <name>5</name>
     </names>
-    <popupTime>0</popupTime>
   </desktops>
+  <!-- Resize -->
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Always</popupShow>
@@ -84,12 +89,14 @@
       <y>10</y>
     </popupFixedPosition>
   </resize>
+  <!-- Margin -->
   <margins>
     <top>48</top>
     <bottom>10</bottom>
     <left>10</left>
     <right>10</right>
   </margins>
+  <!-- Dock -->
   <dock>
     <position>Bottom</position>
     <floatingX>0</floatingX>
@@ -104,8 +111,78 @@
   </dock>
   <!-- ################################ Keybindings ################################ -->
   <keyboard>
-    <chainQuitKey/>
-    <!-- Change Workspace/Desktop -->
+    <rebindOnMappingNotify>yes</rebindOnMappingNotify>
+    <chainQuitKey>C-g</chainQuitKey>
+    <!-- ######## Global Actions ######## -->
+    <!-- Action : ShowMenu -->
+    <keybind key="W-space">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="A-S-space">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="C-A-space">
+      <action name="ShowMenu">
+        <menu>app-menu</menu>
+      </action>
+    </keybind>
+    <!-- Action : NextWindow -->
+    <keybind key="W-Tab">
+      <action name="NextWindow">
+        <dialog>list</dialog>
+        <bar>no</bar>
+        <raise>yes</raise>
+        <allDesktops>yes</allDesktops>
+        <panels>no</panels>
+        <desktop>no</desktop>
+        <linear>no</linear>
+        <interactive>yes</interactive>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <dialog>list</dialog>
+        <bar>no</bar>
+        <raise>yes</raise>
+        <allDesktops>no</allDesktops>
+        <panels>no</panels>
+        <desktop>no</desktop>
+        <linear>no</linear>
+        <interactive>yes</interactive>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <!-- Action : GoToDesktop -->
+    <keybind key="C-A-Right">
+      <action name="GoToDesktop">
+        <to>next</to>
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Left">
+      <action name="GoToDesktop">
+        <to>previous</to>
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
     <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -131,7 +208,58 @@
         <to>5</to>
       </action>
     </keybind>
-    <!-- Move application to specific desktop -->
+    <!-- Action : Add/Remove Desktop -->
+    <keybind key="W-equal">
+      <action name="AddDesktop">
+        <where>last</where>
+      </action>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Added New Desktop"</command>
+      </action>
+    </keybind>
+    <keybind key="W-minus">
+      <action name="RemoveDesktop">
+        <where>last</where>
+      </action>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Removed Last Desktop"</command>
+      </action>
+    </keybind>
+    <!-- Action : ToggleShowDesktop -->
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
+    <!-- Action : Session -->
+    <keybind key="C-S-R">
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Configuration Reloaded!"</command>
+      </action>
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="C-S-BackSpace">
+      <action name="Restart"/>
+    </keybind>
+    <keybind key="C-A-Delete">
+      <action name="Exit">
+        <prompt>yes</prompt>
+      </action>
+    </keybind>
+    <!-- ######## Window Actions ######## -->
+    <!-- Action : SendToDesktop -->
+    <keybind key="W-S-Right">
+      <action name="SendToDesktop">
+        <to>next</to>
+        <wrap>yes</wrap>
+        <follow>yes</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-Left">
+      <action name="SendToDesktop">
+        <to>previous</to>
+        <wrap>yes</wrap>
+        <follow>yes</follow>
+      </action>
+    </keybind>
     <keybind key="S-W-1">
       <action name="SendToDesktop">
         <desktop>1</desktop>
@@ -157,29 +285,64 @@
         <desktop>5</desktop>
       </action>
     </keybind>
-    <!-- Switch b/w Applications -->
-    <keybind key="A-Tab">
-      <action name="NextWindow">
-        <allDesktops>no</allDesktops>
-        <raise>yes</raise>
-        <!-- Hide black border around windows -->
-        <bar>no</bar>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="UnshadeRaise"/>
-        </finalactions>
+    <!-- Action : MoveRelative -->
+    <keybind key="W-A-Up">
+      <action name="MoveRelative">
+        <x>0</x>
+        <y>-20</y>
       </action>
     </keybind>
-    <keybind key="W-Tab">
-      <action name="NextWindow">
-        <allDesktops>yes</allDesktops>
-        <!-- Hide black border around windows -->
-        <bar>no</bar>
-        <finalactions>
-          <action name="focus"/>
-          <action name="raise"/>
-        </finalactions>
+    <keybind key="W-A-Down">
+      <action name="MoveRelative">
+        <x>0</x>
+        <y>20</y>
       </action>
+    </keybind>
+    <keybind key="W-A-Left">
+      <action name="MoveRelative">
+        <x>-20</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="MoveRelative">
+        <x>20</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <!-- Action : ResizeRelative -->
+    <keybind key="W-C-Right">
+      <action name="ResizeRelative">
+        <right>20</right>
+      </action>
+    </keybind>
+    <keybind key="W-C-Left">
+      <action name="ResizeRelative">
+        <right>-20</right>
+      </action>
+    </keybind>
+    <keybind key="W-C-Down">
+      <action name="ResizeRelative">
+        <bottom>20</bottom>
+      </action>
+    </keybind>
+    <keybind key="W-C-Up">
+      <action name="ResizeRelative">
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
+    <!-- Action: Interactive Move/Resize -->
+    <keybind key="W-A-m">
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Begin Interactive Moving"</command>
+      </action>
+      <action name="Move"/>
+    </keybind>
+    <keybind key="W-A-r">
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Begin Interactive Resizing"</command>
+      </action>
+      <action name="Resize"/>
     </keybind>
     <!-- Window Tiling: Snap feature -->
     <keybind key="W-Left">
@@ -194,7 +357,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>49%</width>
+        <width>50%</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -209,63 +372,92 @@
       </action>
       <action name="MoveToCenter"/>
     </keybind>
+    <keybind key="W-S-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="Maximize">
+        <direction>horizontal</direction>
+      </action>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MoveToEdgeNorth"/>
+    </keybind>
+    <keybind key="W-S-Down">
+      <action name="UnmaximizeFull"/>
+      <action name="Maximize">
+        <direction>horizontal</direction>
+      </action>
+      <action name="MoveResizeTo">
+        <height>50%</height>
+      </action>
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
     <!-- Top right-->
     <keybind key="W-k">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>-5</x>
-        <y>5</y>
+        <x>-0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-S-k">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <!-- Top left-->
     <keybind key="W-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>5</x>
-        <y>5</y>
+        <x>0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-S-h">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <!-- Bottom left-->
     <keybind key="W-j">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>5</x>
-        <y>-5</y>
+        <x>0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-S-j">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <!-- Bottom right-->
     <keybind key="W-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>-5</x>
-        <y>-5</y>
+        <x>-0</x>
+        <y>-0</y>
       </action>
     </keybind>
-    <keybind key="A-z">
+    <keybind key="W-S-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>15</x>
-        <y>15</y>
-        <height>97%</height>
-        <width>32%</width>
-      </action>
-    </keybind>
-    <keybind key="A-x">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>34%</x>
-        <y>15</y>
-        <height>97%</height>
-        <width>32%</width>
-      </action>
-    </keybind>
-    <keybind key="A-c">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>-17</x>
-        <y>15</y>
-        <height>97%</height>
-        <width>32%</width>
+        <x>-0</x>
+        <y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <!-- Windows Tiling -->
@@ -344,73 +536,115 @@
         <height>50%</height>
       </action>
     </keybind>
-    <!-- Move -->
-    <keybind key="W-A-Up">
-      <action name="MoveRelative">
-        <x>0</x>
-        <y>-20</y>
+    <!-- Action: Window -->
+    <keybind key="W-c">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-F5">
+      <action name="Iconify"/>
+    </keybind>
+    <keybind key="A-F6">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="A-F7">
+      <action name="ToggleShade"/>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Toggled Shade"</command>
       </action>
     </keybind>
-    <keybind key="W-A-Down">
-      <action name="MoveRelative">
-        <x>0</x>
-        <y>20</y>
+    <keybind key="A-F8">
+      <action name="ToggleDecorations"/>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Toggled Decorations"</command>
       </action>
     </keybind>
-    <keybind key="W-A-Left">
-      <action name="MoveRelative">
-        <x>-20</x>
-        <y>0</y>
+    <keybind key="A-F9">
+      <action name="ToggleOmnipresent"/>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Toggled Omnipresent"</command>
       </action>
     </keybind>
-    <keybind key="W-A-Right">
-      <action name="MoveRelative">
-        <x>20</x>
-        <y>0</y>
+    <keybind key="A-F10">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="A-F11">
+      <action name="ToggleAlwaysOnTop"/>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Toggled Always-On-Top"</command>
       </action>
     </keybind>
-    <!-- Resize -->
-    <keybind key="C-A-Right">
-      <action name="ResizeRelative">
-        <right>20</right>
+    <keybind key="A-F12">
+      <action name="ToggleAlwaysOnBottom"/>
+      <action name="Execute">
+        <command>dunstify -u low -h string:x-dunst-stack-tag:obaction "Toggled Always-On-Bottom"</command>
       </action>
     </keybind>
-    <keybind key="C-A-Left">
-      <action name="ResizeRelative">
-        <right>-20</right>
+    <!-- ######## Actions: Execute ######## -->
+    <!-- Screenshot Keys -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>ob-screenshot --now</command>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
-      <action name="ResizeRelative">
-        <bottom>20</bottom>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>ob-screenshot --in5</command>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
-      <action name="ResizeRelative">
-        <bottom>-20</bottom>
+    <keybind key="S-Print">
+      <action name="Execute">
+        <command>ob-screenshot --in10</command>
       </action>
     </keybind>
-    <!-- Send Application to next/prev desktop -->
-    <keybind key="W-S-Left">
-      <action name="SendToDesktopLeft"/>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>ob-screenshot --win</command>
+      </action>
     </keybind>
-    <keybind key="W-S-Right">
-      <action name="SendToDesktopRight"/>
+    <keybind key="W-Print">
+      <action name="Execute">
+        <command>ob-screenshot --area</command>
+      </action>
     </keybind>
-    <!-- Media Controls-->
+    <!-- Brightness Control -->
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>ob-brightness --inc</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>ob-brightness --dec</command>
+      </action>
+    </keybind>
+    <!-- Volume -->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>volume --inc</command>
+        <command>ob-volume --inc</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioLowerVolume">592746
-      <action name="Execute"><command>volume --dec</command></action>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>ob-volume --dec</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>volume --toggle</command>
+        <command>ob-volume --toggle</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioMicMute">
+      <action name="Execute">
+        <command>ob-volume --toggle-mic</command>
+      </action>
+    </keybind>
+    <!-- Media Controls -->
     <keybind key="XF86AudioStop">
       <action name="Execute">
         <command>mpc stop</command>
@@ -431,53 +665,11 @@
         <command>mpc next</command>
       </action>
     </keybind>
-    <!-- Brightness Control -->
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>brightness --inc</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>brightness --dec</command>
-      </action>
-    </keybind>
-    <!-- Screenshot Keys -->
-    <keybind key="Print">
-      <action name="Execute">
-        <command>takeshot --now</command>
-      </action>
-    </keybind>
-    <keybind key="A-Print">
-      <action name="Execute">
-        <command>takeshot --in5</command>
-      </action>
-    </keybind>
-    <keybind key="S-Print">
-      <action name="Execute">
-        <command>takeshot --in10</command>
-      </action>
-    </keybind>
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>takeshot --win</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-Print">
-      <action name="Execute">
-        <command>takeshot --area</command>
-      </action>
-    </keybind>
     <!-- ################################ Launch Applications ################################ -->
     <!-- Apps -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>xfce4-terminal</command>
-      </action>
-    </keybind>
-    <keybind key="W-t">
-      <action name="Execute">
-        <command>furminal</command>
+        <command>alacritty</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -487,7 +679,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox -P</command>
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -506,6 +698,11 @@
         <command>networkmanager_dmenu</command>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>bluetooth</command>
+      </action>
+    </keybind>
     <keybind key="W-m">
       <action name="Execute">
         <command>music</command>
@@ -521,25 +718,9 @@
         <command>screenshot</command>
       </action>
     </keybind>
-    <keybind key="W-i">
-      <action name="Execute">
-        <command>network</command>
-      </action>
-    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>runner</command>
-      </action>
-    </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>color-gpick</command>
-        <!--<command>color-picker</command>-->
-      </action>
-    </keybind>
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>tasks</command>
       </action>
     </keybind>
     <!-- CLI Apps -->
@@ -550,97 +731,51 @@
     </keybind>
     <keybind key="C-A-v">
       <action name="Execute">
-        <command>xfce4-terminal -e vim</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-n">
-      <action name="Execute">
-        <command>xfce4-terminal -e nvim</command>
+        <command>alacritty -e vim</command>
       </action>
     </keybind>
     <keybind key="C-A-r">
       <action name="Execute">
-        <command>xfce4-terminal -e ranger</command>
+        <command>alacritty -e ranger</command>
       </action>
     </keybind>
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>xfce4-terminal -e htop</command>
+        <command>alacritty -e htop</command>
       </action>
     </keybind>
-    <keybind key="C-A-b">
-      <action name="Execute">
-        <command>xfce4-terminal -e bashtop</command>
-      </action>
-    </keybind>
-    <!-- Lockscreen -->
+    <!-- Misc -->
     <keybind key="C-A-l">
       <action name="Execute">
         <command>betterlockscreen --lock</command>
       </action>
     </keybind>
-    <!-- Openbox -->
-    <keybind key="C-S-Escape">
-      <action name="Exit"/>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>ob-furminal</command>
+      </action>
     </keybind>
-    <keybind key="C-S-BackSpace">
-      <action name="Restart"/>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>ob-colorpicker</command>
+      </action>
     </keybind>
-    <keybind key="C-S-R">
-      <action name="Reconfigure"/>
+    <keybind key="C-A-m">
+      <action name="Execute">
+        <command>ob-music</command>
+      </action>
     </keybind>
     <keybind key="W-Escape">
       <action name="Execute">
         <command>xkill</command>
       </action>
     </keybind>
-    <keybind key="W-c">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="W-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-F5">
-      <action name="Iconify"/>
-    </keybind>
-    <keybind key="A-F6">
-      <action name="ToggleMaximize"/>
-    </keybind>
-    <keybind key="A-F7">
-      <action name="ToggleDecorations"/>
-    </keybind>
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <!-- Activate Move/Resize -->
-    <keybind key="A-r">
-      <action name="Resize"/>
-    </keybind>
-    <keybind key="A-m">
-      <action name="Move"/>
-    </keybind>
-    <!-- Launch Openbox Menu -->
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="C-A-space">
-      <action name="ShowMenu">
-        <menu>app-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
   </keyboard>
   <!-- ################################ Mouse Settings ################################ -->
   <mouse>
     <dragThreshold>4</dragThreshold>
-    <doubleClickTime>400</doubleClickTime>
-    <screenEdgeWarpTime>600</screenEdgeWarpTime>
+    <doubleClickTime>200</doubleClickTime>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
     <context name="Frame">
       <mousebind action="Press" button="A-Left">
@@ -716,6 +851,13 @@
         <action name="Raise"/>
         <action name="ShowMenu">
           <menu>client-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind action="Press" button="Middle">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ShowMenu">
+          <menu>client-layer-menu</menu>
         </action>
       </mousebind>
     </context>
@@ -878,7 +1020,7 @@
       </mousebind>
       <mousebind action="Press" button="A-Right">
         <action name="ShowMenu">
-          <menu>client-list-combined-menu</menu>
+          <menu>client-list-menu</menu>
         </action>
       </mousebind>
       <mousebind action="Press" button="Right">
@@ -891,6 +1033,7 @@
   <!-- ################################ Menu Settings ################################ -->
   <menu>
     <file>menu-icons.xml</file>
+    <showIcons>yes</showIcons>
     <hideDelay>400</hideDelay>
     <middle>no</middle>
     <submenuShowDelay>100</submenuShowDelay>

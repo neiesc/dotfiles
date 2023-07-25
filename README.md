@@ -4,4 +4,4 @@
 - First change `export IS_HOME_PC=true/false`
 - Run `sudo ./init.sh`
 
-Thanks https://github.com/archcraft-os
+Thank https://github.com/archcraft-os

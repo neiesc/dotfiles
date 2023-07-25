@@ -25,9 +25,7 @@ PATH_XFCE="$PATH_CONF/xfce4/terminal"
 
 ## Wallpaper ---------------------------------
 apply_wallpaper() {
-	for head in {0..10}; do
-		/usr/bin/timewall set ~/Insync/edinei3a@hotmail.com/Dropbox/Wallpaper/HEIC/Mojave+.heic --daemon &
-	done
+	timewall set ~/Insync/edinei3a@hotmail.com/Dropbox/Wallpaper/HEIC/Mojave+.heic --daemon &
 }
 
 ## Polybar -----------------------------------

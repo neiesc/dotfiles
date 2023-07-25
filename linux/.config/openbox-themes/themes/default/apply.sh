@@ -26,7 +26,7 @@ PATH_XFCE="$PATH_CONF/xfce4/terminal"
 ## Wallpaper ---------------------------------
 apply_wallpaper() {
 	for head in {0..10}; do
-		nitrogen --head=$head --save --set-zoom-fill "$wallpaper" &>/dev/null
+		/usr/bin/timewall set ~/Insync/edinei3a@hotmail.com/Dropbox/Wallpaper/HEIC/Mojave+.heic --daemon &
 	done
 }
 

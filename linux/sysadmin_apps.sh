@@ -1,4 +1,3 @@
-sudo apt install zsh -y
-
-sudo apt install htop -y
-sudo apt install tree -y
+sudo pacman -S --noconfirm tealdeer
+sudo pacman -S --noconfirm bat
+sudo pacman -S --noconfirm dust

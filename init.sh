@@ -28,9 +28,6 @@ DROPBBOX_FOLDER=$HOME/Insync/edinei3a@hotmail.com/Dropbox
 # ln -sf $DOTFILES_FOLDER/linux/.config/fish/config.fish $HOME/.config/fish/config.fish
 # ln -sf $DOTFILES_FOLDER/linux/.config/fish/fish_plugins $HOME/.config/fish/fish_plugins
 
-cp $DOTFILES_FOLDER/dependences/archcraft-openbox/files/rc.xml $DOTFILES_FOLDER/linux/.config/openbox/rc.xml
-cp $DOTFILES_FOLDER/dependences/archcraft-openbox/files/scripts/ob-furminal $DOTFILES_FOLDER/linux/.config/openbox/scripts/ob-furminal
-
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox/autostart $HOME/.config/openbox/autostart
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox/menu-icons.xml $HOME/.config/openbox/menu-icons.xml
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox/rc.xml $HOME/.config/openbox/rc.xml

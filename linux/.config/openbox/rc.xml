@@ -669,7 +669,7 @@
     <!-- Apps -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty</command>
+        <command>xfce4-terminal</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -679,7 +679,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox</command>
+        <command>firefox -P</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -731,17 +731,17 @@
     </keybind>
     <keybind key="C-A-v">
       <action name="Execute">
-        <command>alacritty -e vim</command>
+        <command>xfce4-terminal -e vim</command>
       </action>
     </keybind>
     <keybind key="C-A-r">
       <action name="Execute">
-        <command>alacritty -e ranger</command>
+        <command>xfce4-terminal -e ranger</command>
       </action>
     </keybind>
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>alacritty -e htop</command>
+        <command>xfce4-terminal -e htop</command>
       </action>
     </keybind>
     <!-- Misc -->

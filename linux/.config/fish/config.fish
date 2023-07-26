@@ -15,12 +15,16 @@ if status is-interactive
     alias gg='git gui'
 
     # ls
+    alias ls='exa --icons'
     alias l='ls -lh'
     alias ll='ls -lah'
-    alias la='ls -A'
+    alias la='ls -la'
     alias lm='ls -m'
     alias lr='ls -R'
     alias lg='ls -l --group-directories-first'
+
+    # cat
+    alias cat="bat --style=auto"
 
     # editor
     ## VS Code

@@ -1,0 +1,3 @@
+[submodule "dependences/archcraft-openbox"]
+	path = dependences/archcraft-openbox
+	url = git@github.com:archcraft-os/archcraft-openbox.git

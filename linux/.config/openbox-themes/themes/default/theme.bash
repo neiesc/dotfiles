@@ -54,7 +54,7 @@ icon_theme='Dracula'
 cursor_theme='Qogirr'
 
 # Openbox
-ob_theme='Arc-Dark'
+ob_theme='Dracula-withoutBorder'
 ob_layout='DLIMC'
 ob_font='JetBrains Mono'
 ob_font_size='9'

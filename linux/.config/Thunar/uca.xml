@@ -6,10 +6,19 @@
 	<name>Open Terminal Here</name>
 	<unique-id>1581593230771688-1</unique-id>
 	<command>/usr/bin/xfce4-terminal</command>
-	<description>Example for a custom action</description>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
+</action>
+<action>
+	<icon>document-edit-sign</icon>
+	<name>Open Editor Here</name>
+	<unique-id>1581593230771689-1</unique-id>
+	<command>code .</command>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<text-files/>
 </action>
 <action>
 	<icon>go-parent-folder</icon>

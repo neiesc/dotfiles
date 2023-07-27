@@ -40,4 +40,4 @@ ln -sf $DOTFILES_FOLDER/linux/.config/openbox/scripts/ob-furminal $HOME/.config/
 
 # ln -sf $DOTFILES_FOLDER/linux/.config/Thunar/uca.xml $HOME/.config/Thunar/uca.xml
 
-# ln -sf $DOTFILES_FOLDER/linux/.config/autostart/* $HOME/.config/autostart
+ln -sf $DOTFILES_FOLDER/linux/.config/autostart/* $HOME/.config/autostart

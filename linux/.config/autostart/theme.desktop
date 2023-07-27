@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Change to Theme default
+Exec=/home/edinei/.config/openbox-themes/themes/default/apply.sh
+Terminal=false

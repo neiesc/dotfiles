@@ -61,5 +61,5 @@ if status is-interactive
 
     thefuck --alias | source
 
-    export (envsubst < $HOME/.config/fish/.env)
+    export (envsubst < $HOME/Dev/Pessoal/dotfiles/linux/.config/fish/.env)
 end

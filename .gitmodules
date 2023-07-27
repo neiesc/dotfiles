@@ -4,3 +4,6 @@
 [submodule "dependences/themes/gtk"]
 	path = dependences/themes/gtk
 	url = git@github.com:dracula/gtk.git
+[submodule "dependences/themes/openbox"]
+	path = dependences/themes/openbox
+	url = git@github.com:dracula/openbox.git

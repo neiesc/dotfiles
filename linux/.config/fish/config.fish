@@ -28,7 +28,7 @@ if status is-interactive
 
     # editor
     ## VS Code
-    alias c='code'
+    alias c='code .'
     
     ## vim
     alias vi='lvim'

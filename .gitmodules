@@ -7,3 +7,6 @@
 [submodule "dependences/themes/openbox"]
 	path = dependences/themes/openbox
 	url = git@github.com:dracula/openbox.git
+[submodule "dependences/themes/rofi"]
+	path = dependences/themes/rofi
+	url = git@github.com:dracula/rofi.git

@@ -10,3 +10,9 @@
 [submodule "dependences/themes/rofi"]
 	path = dependences/themes/rofi
 	url = git@github.com:dracula/rofi.git
+[submodule "dependences/themes/git"]
+	path = dependences/themes/git
+	url = git@github.com:dracula/git.git
+[submodule "dependences/themes/gitkraken"]
+	path = dependences/themes/gitkraken
+	url = git@github.com:dracula/gitkraken.git

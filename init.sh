@@ -38,7 +38,7 @@ ln -sf $DOTFILES_FOLDER/linux/.config/openbox/scripts/ob-furminal $HOME/.config/
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/theme.bash $HOME/.config/openbox-themes/themes/default/theme.bash
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/default/polybar/modules.ini $HOME/.config/openbox-themes/themes/default/polybar/modules.ini
 
-# ln -sf $DOTFILES_FOLDER/linux/.config/Thunar/uca.xml $HOME/.config/Thunar/uca.xml
+ln -sf $DOTFILES_FOLDER/linux/.config/Thunar/uca.xml $HOME/.config/Thunar/uca.xml
 
 ln -sf $DOTFILES_FOLDER/linux/.config/autostart $HOME/.config
 ln -sf $DOTFILES_FOLDER/linux/.config/plank/dock1/launchers $HOME/.config/plank/dock1

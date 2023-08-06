@@ -16,3 +16,6 @@
 [submodule "dependences/themes/gitkraken"]
 	path = dependences/themes/gitkraken
 	url = git@github.com:dracula/gitkraken.git
+[submodule "dependences/mopidy-docker"]
+	path = dependences/mopidy-docker
+	url = git@github.com:jojo141185/mopidy-docker.git

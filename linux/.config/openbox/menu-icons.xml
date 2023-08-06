@@ -21,7 +21,7 @@
 		<separator/>
 		<item icon="&icons;/browser.png" label="Web Browser">
 			<action name="Execute">
-				<command>firefox</command>
+				<command>vivaldi-stable</command>
 			</action>
 		</item>
 		<separator/>

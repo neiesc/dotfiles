@@ -679,12 +679,12 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>firefox -P</command>
+        <command>vivaldi-stable</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>geany</command>
+        <command>code</command>
       </action>
     </keybind>
     <!-- Rofi -->

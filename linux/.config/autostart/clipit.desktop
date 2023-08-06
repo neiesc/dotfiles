@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=ClipIt
+Exec=/usr/bin/clipit
+Terminal=false

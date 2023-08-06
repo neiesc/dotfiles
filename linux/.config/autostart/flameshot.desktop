@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Flameshot
+Exec=/usr/bin/flameshot
+Terminal=false

@@ -1,5 +1,7 @@
 # Terminal
 sudo pacman -S --noconfirm fish
+sudo pacman -S --noconfirm fisher
+fisher update
 
 sudo pacman -S --noconfirm tealdeer
 sudo pacman -S --noconfirm bat

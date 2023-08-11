@@ -1,6 +1,6 @@
 if status is-interactive
-    set -g theme_color_scheme dracula
-    set -g theme_nerd_fonts yes
+    # set -g theme_color_scheme dracula
+    # set -g theme_nerd_fonts yes
 
     # git
     alias g='git'

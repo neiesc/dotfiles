@@ -28,7 +28,7 @@ ln -sf $DOTFILES_FOLDER/linux/.config/fish/.env $HOME/.config/fish/.env
 ln -sf $DOTFILES_FOLDER/linux/.config/fish/config.fish $HOME/.config/fish/config.fish
 ln -sf $DOTFILES_FOLDER/linux/.config/fish/fish_plugins $HOME/.config/fish/fish_plugins
 
-# ln -sf $DOTFILES_FOLDER/linux/.config/openbox/autostart $HOME/.config/openbox/autostart
+ln -sf $DOTFILES_FOLDER/linux/.config/openbox/autostart $HOME/.config/openbox/autostart
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox/menu-icons.xml $HOME/.config/openbox/menu-icons.xml
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox/rc.xml $HOME/.config/openbox/rc.xml
 
@@ -38,9 +38,6 @@ ln -sf $DOTFILES_FOLDER/linux/.config/Thunar/uca.xml $HOME/.config/Thunar/uca.xm
 
 # ln -sf $DOTFILES_FOLDER/linux/.config/autostart $HOME/.config
 # ln -sf $DOTFILES_FOLDER/linux/.config/plank/dock1/launchers $HOME/.config/plank/dock1
-
-ln -sf $DOTFILES_FOLDER/dependences/archcraft-openbox/files/rc.xml $DOTFILES_FOLDER/linux/.config/openbox/rc.xml
-ln -sf $DOTFILES_FOLDER/dependences/archcraft-openbox/files/scripts/ob-furminal $DOTFILES_FOLDER/linux/.config/openbox/scripts/ob-furminal
 
 echo "Setting themes..."
 ln -sf $DOTFILES_FOLDER/dependences/themes/openbox/Dracula-withoutBorder $HOME/.themes

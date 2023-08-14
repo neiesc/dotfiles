@@ -49,8 +49,8 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Dracula'
-icon_theme='Dracula'
+gtk_theme='Dracula-withoutBorder'
+icon_theme='Tela-circle-dracula'
 cursor_theme='Qogirr'
 
 # Openbox

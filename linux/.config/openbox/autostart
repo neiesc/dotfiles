@@ -12,9 +12,9 @@ nitrogen --restore
 xfsettingsd &
 
 ## polkit agent
-# if [[ ! `pidof xfce-polkit` ]]; then
-# 	/usr/lib/xfce-polkit/xfce-polkit &
-# fi
+if [[ ! `pidof xfce-polkit` ]]; then
+	/usr/lib/xfce-polkit/xfce-polkit &
+fi
 
 ## Enable power management
 xfce4-power-manager &
@@ -29,7 +29,7 @@ bash ~/.config/openbox-themes/themes/launch-bar.sh
 exec dunst &
 
 ## Start Music Player Daemon
-#exec mpd &
+# exec mpd &
 
 ## Launch Plank
 exec plank &

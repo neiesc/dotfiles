@@ -49,12 +49,12 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Arc-Dark'
-icon_theme='Zafiro'
+gtk_theme='Dracula'
+icon_theme='Tela-circle-dracula'
 cursor_theme='Qogirr'
 
 # Openbox
-ob_theme='Arc-Dark'
+ob_theme='Dracula-withoutBorder'
 ob_layout='DLIMC'
 ob_font='JetBrains Mono'
 ob_font_size='9'

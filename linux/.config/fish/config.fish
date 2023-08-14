@@ -1,4 +1,5 @@
 if status is-interactive
+    set -U fish_greeting
     # set -g theme_color_scheme dracula
     # set -g theme_nerd_fonts yes
 
@@ -53,6 +54,9 @@ if status is-interactive
     # network
     alias my-ip='curl "https://api.ipify.org?format=json"'
     alias my-ports-open='lsof -i -P -n'
+
+    #tools
+    alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
 
     # other
     source /opt/asdf-vm/asdf.fish

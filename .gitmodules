@@ -19,3 +19,6 @@
 [submodule "dependences/mopidy-docker"]
 	path = dependences/mopidy-docker
 	url = git@github.com:jojo141185/mopidy-docker.git
+[submodule "dependences/themes/Tela-circle-icon-theme"]
+	path = dependences/themes/Tela-circle-icon-theme
+	url = git@github.com:vinceliuice/Tela-circle-icon-theme.git

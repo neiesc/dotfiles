@@ -38,12 +38,12 @@ if status is-interactive
 
     # work
     alias work-dir='cd ~/Dev'
-    alias work-iVera-dir='cd ~/Dev/iVera/iVera/src'
-    alias work-iVera-build='npm run gulp && npm run uglify && npm run start'
+    alias work-dir-iVera='cd ~/Dev/Work/iVera/src'
+    alias work-build-iVera='npm run gulp && npm run uglify && npm run start'
 
     # package manager
     alias my-package-update='sudo pacman -Syyu'
-    alias my-package-update-yay='yay'
+    alias my-package-update-aur='yay'
     alias my-package-update-cargo='cargo install-update -a'
     alias my-package-list-local='sudo pacman -Q'
     alias my-package-outdated='pacman -Qu'

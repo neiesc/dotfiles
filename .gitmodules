@@ -22,3 +22,6 @@
 [submodule "dependences/themes/Tela-circle-icon-theme"]
 	path = dependences/themes/Tela-circle-icon-theme
 	url = git@github.com:vinceliuice/Tela-circle-icon-theme.git
+[submodule "dependences/polybar-scripts"]
+	path = dependences/polybar-scripts
+	url = git@github.com:polybar/polybar-scripts.git

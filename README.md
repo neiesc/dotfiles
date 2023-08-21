@@ -4,7 +4,7 @@
 - Change env `DOTFILES_FOLDER` for your dotfiles
 - Run `make`
 
-### Theme Dracula (https://draculatheme.com)
+### Dracula Theme
 - git ✅
 - gitk ✅
 - gitkraken ✅

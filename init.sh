@@ -46,3 +46,8 @@ ln -sf $DOTFILES_FOLDER/dependences/themes/gitkraken/dracula-theme.jsonc $HOME/.
 ln -sf $DOTFILES_FOLDER/linux/.config/openbox-themes/themes/dracula $HOME/.config/openbox-themes/themes
 
 ./dependences/themes/Tela-circle-icon-theme/install.sh dracula -d $HOME/.icons
+
+mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
+ln -sf $DOTFILES_FOLDER/dependences/themes/xfce4-terminal/Dracula.theme $HOME/.local/share/xfce4/terminal/colorschemes/Dracula.theme
+
+ln -sf $DOTFILES_FOLDER/dependences/themes/gitk/gitk $HOME/.config/git/gitk

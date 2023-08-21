@@ -6,4 +6,4 @@
 - Run `make dependences_sync`
 - Run `make`
 
-Thank https://github.com/archcraft-os
+Thank https://github.com/archcraft-os for the best distro.

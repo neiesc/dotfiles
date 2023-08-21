@@ -25,3 +25,9 @@
 [submodule "dependences/polybar-scripts"]
 	path = dependences/polybar-scripts
 	url = git@github.com:polybar/polybar-scripts.git
+[submodule "dependences/themes/xfce4-terminal"]
+	path = dependences/themes/xfce4-terminal
+	url = git@github.com:dracula/xfce4-terminal.git
+[submodule "dependences/themes/gitk"]
+	path = dependences/themes/gitk
+	url = git@github.com:dracula/gitk.git

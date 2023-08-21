@@ -11,18 +11,7 @@ export IS_HOME_PC=false #SET THIS
 # sh ./creative_apps.sh
 # sh ./game_apps.sh
 
-## link to $HOME
-DOTFILES_FOLDER=$HOME/Dev/Pessoal/dotfiles
-DROPBBOX_FOLDER=$HOME/Insync/edinei3a@hotmail.com/Dropbox
-
-# if $IS_HOME_PC
-# then
-#     ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history_home $HOME/.zsh_history
-# else
-#     ln -sf $DROPBBOX_FOLDER/dotfiles/.zsh_history_work $HOME/.zsh_history
-# fi
-
-# ln -sf $DROPBBOX_FOLDER/dotfiles/.gitconfig $HOME/.gitconfig
+DOTFILES_FOLDER=$HOME/Dev/Pessoal/dotfiles # if you need set this
 
 ln -sf $DOTFILES_FOLDER/linux/.config/fish/.env $HOME/.config/fish/.env
 ln -sf $DOTFILES_FOLDER/linux/.config/fish/config.fish $HOME/.config/fish/config.fish
@@ -51,3 +40,5 @@ mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
 ln -sf $DOTFILES_FOLDER/dependences/themes/xfce4-terminal/Dracula.theme $HOME/.local/share/xfce4/terminal/colorschemes/Dracula.theme
 
 ln -sf $DOTFILES_FOLDER/dependences/themes/gitk/gitk $HOME/.config/git/gitk
+
+ln -sf $DOTFILES_FOLDER/dependences/themes/rofi/theme/config1.rasi $HOME/.config/rofi/config.rasi

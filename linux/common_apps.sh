@@ -31,3 +31,5 @@ sudo pacman -S --noconfirm yt-dlp
 
 sudo pacman -S --noconfirm thefuck
 sudo pacman -S --noconfirm exa
+
+sudo pacman -S --noconfirm rofimoji

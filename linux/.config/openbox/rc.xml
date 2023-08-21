@@ -693,12 +693,7 @@
         <command>launcher</command>
       </action>
     </keybind>
-    <keybind key="A-F2">
-      <action name="Execute">
-        <command>rofimoji</command>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-A-e">
       <action name="Execute">
         <command>rofimoji</command>
       </action>

@@ -1,16 +1,4 @@
 #!/usr/bin/env bash
-
-export IS_HOME_PC=false #SET THIS
-
-## Update System
-#sudo pacman -Syyu
-
-# sh ./common_apps.sh
-# sh ./sysadmin_apps.sh
-# sh ./dev_apps.sh
-# sh ./creative_apps.sh
-# sh ./game_apps.sh
-
 DOTFILES_FOLDER=$HOME/Dev/Pessoal/dotfiles # if you need set this
 
 ln -sf $DOTFILES_FOLDER/linux/.config/fish/.env $HOME/.config/fish/.env

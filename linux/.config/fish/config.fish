@@ -38,8 +38,11 @@ if status is-interactive
 
     # work
     alias work-dir='cd ~/Dev'
+
     alias work-dir-iVera='cd ~/Dev/Work/iVera/src'
     alias work-build-iVera='npm run gulp && npm run uglify && npm run start'
+
+    alias work-dir-acelera='cd ~/Dev/Work/iVeraCron'
 
     # package manager
     alias my-package-update='sudo pacman -Syyu'

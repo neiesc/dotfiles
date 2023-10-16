@@ -37,12 +37,12 @@ if status is-interactive
     alias nvim='lvim'
 
     # work
-    alias work-dir='cd ~/Dev'
+    alias work-pessoal-dir='cd ~/Dev/Pessoal'
 
-    alias work-dir-iVera='cd ~/Dev/Work/iVera/src'
-    alias work-build-iVera='npm run gulp && npm run uglify && npm run start'
+    # alias work-dir-iVera='cd ~/Dev/Work/iVera/src'
+    # alias work-build-iVera='npm run gulp && npm run uglify && npm run start'
 
-    alias work-dir-acelera='cd ~/Dev/Work/iVeraCron'
+    alias work-acelera-dir='cd ~/Dev/Work/acelera/AceleraLambda'
 
     # package manager
     alias my-package-update='sudo pacman -Syyu'
@@ -64,7 +64,7 @@ if status is-interactive
     # other
     source /opt/asdf-vm/asdf.fish
     fish_add_path -m ~/.local/bin
-    #/home/edinei/.cargo/bin
+    #~/.cargo/bin
 
     thefuck --alias | source
 

@@ -214,7 +214,7 @@ ac_disconnected_cmd = dunstify -u low -h string:x-dunst-stack-tag:tint2 'Charger
 #-------------------------------------
 # Executor 1
 execp = new
-execp_command = ~/.config/openbox-themes/scripts/t2-volume
+execp_command = tint2-volume
 execp_interval = 0
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -222,11 +222,11 @@ execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
 execp_tooltip = Volume
-execp_lclick_command = ~/.config/openbox-themes/scripts/t2-volume --toggle
-execp_rclick_command = ~/.config/openbox-themes/scripts/t2-volume --toggle-mic
+execp_lclick_command = tint2-volume --toggle
+execp_rclick_command = tint2-volume --toggle-mic
 execp_mclick_command = pavucontrol
-execp_uwheel_command = ~/.config/openbox-themes/scripts/t2-volume --inc
-execp_dwheel_command = ~/.config/openbox-themes/scripts/t2-volume --dec
+execp_uwheel_command = tint2-volume --inc
+execp_dwheel_command = tint2-volume --dec
 execp_font = JetBrainsMono Nerd Font 10
 execp_font_color = #ffffff 100
 execp_padding = 10 0
@@ -238,7 +238,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 2
 execp = new
-execp_command = ~/.config/openbox-themes/scripts/t2-brightness
+execp_command = tint2-brightness
 execp_interval = 0
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -249,8 +249,8 @@ execp_tooltip = Brightness
 execp_lclick_command = 
 execp_rclick_command = 
 execp_mclick_command = 
-execp_uwheel_command = ~/.config/openbox-themes/scripts/t2-brightness --inc
-execp_dwheel_command = ~/.config/openbox-themes/scripts/t2-brightness --dec
+execp_uwheel_command = tint2-brightness --inc
+execp_dwheel_command = tint2-brightness --dec
 execp_font = JetBrainsMono Nerd Font 10
 execp_font_color = #ffffff 100
 execp_padding = 10 0
@@ -262,7 +262,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 3
 execp = new
-execp_command = ~/.config/openbox-themes/scripts/t2-bluetooth
+execp_command = tint2-bluetooth
 execp_interval = 1
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -270,7 +270,7 @@ execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
 execp_tooltip = Bluetooth
-execp_lclick_command = ~/.config/openbox-themes/scripts/bluetooth
+execp_lclick_command = rofi-bluetooth
 execp_rclick_command = blueman-manager
 execp_mclick_command = 
 execp_uwheel_command = 
@@ -286,7 +286,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 4
 execp = new
-execp_command = ~/.config/openbox-themes/scripts/t2-network
+execp_command = tint2-network
 execp_interval = 1
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -310,7 +310,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 5
 execp = new
-execp_command = ~/.config/openbox-themes/scripts/t2-battery
+execp_command = tint2-battery
 execp_interval = 10
 execp_has_icon = 0
 execp_cache_icon = 0
@@ -337,8 +337,8 @@ button = new
 button_icon = /usr/share/archcraft/artworks/icons/distributor-logo-archcraft.svg
 button_text = 
 button_tooltip = Application Launcher
-button_lclick_command = ~/.config/openbox-themes/scripts/launcher
-button_rclick_command = ~/.config/openbox-themes/scripts/runner
+button_lclick_command = rofi-launcher
+button_rclick_command = rofi-runner
 button_mclick_command = 
 button_uwheel_command = 
 button_dwheel_command = 

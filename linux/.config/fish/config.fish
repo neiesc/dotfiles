@@ -39,11 +39,6 @@ if status is-interactive
     # work
     alias work-pessoal-dir='cd ~/Dev/Pessoal'
 
-    # alias work-dir-iVera='cd ~/Dev/Work/iVera/src'
-    # alias work-build-iVera='npm run gulp && npm run uglify && npm run start'
-
-    alias work-acelera-dir='cd ~/Dev/Work/acelera/AceleraLambda'
-
     # package manager
     alias my-package-update='sudo pacman -Syyu'
     alias my-package-update-aur='yay'
@@ -62,11 +57,9 @@ if status is-interactive
     alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
 
     # other
-    source /opt/asdf-vm/asdf.fish
+    # source /opt/asdf-vm/asdf.fish
     fish_add_path -m ~/.local/bin
     #~/.cargo/bin
 
-    thefuck --alias | source
-
-    export (envsubst < $HOME/Dev/Pessoal/dotfiles/linux/.config/fish/.env)
+    # export (envsubst < $HOME/Dev/dotfiles/linux/.config/fish/.env)
 end

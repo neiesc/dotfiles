@@ -31,3 +31,6 @@
 [submodule "dependences/themes/gitk"]
 	path = dependences/themes/gitk
 	url = git@github.com:dracula/gitk.git
+[submodule "dependences/theme/archcraft-openbox-dracula"]
+	path = dependences/theme/archcraft-openbox-dracula
+	url = git@github.com:neiesc/archcraft-openbox-dracula.git

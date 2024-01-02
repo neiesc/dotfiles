@@ -3,8 +3,10 @@
 ## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
 
 # Colors
-POWER_ON=`cat $HOME/.config/openbox-themes/themes/default/polybar/colors.ini | grep 'GREEN' | head -n1 | cut -d '=' -f2 | tr -d ' '`
-POWER_OFF=`cat $HOME/.config/openbox-themes/themes/default/polybar/colors.ini | grep 'ALTFOREGROUND' | head -n1 | cut -d '=' -f2 | tr -d ' '`
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+CDIR=`cd "$DIR" && cd .. && pwd`
+POWER_ON=`cat $CDIR/colors.ini | grep 'GREEN' | head -n1 | cut -d '=' -f2 | tr -d ' '`
+POWER_OFF=`cat $CDIR/colors.ini | grep 'ALTFOREGROUND' | head -n1 | cut -d '=' -f2 | tr -d ' '`
 
 # Checks if bluetooth controller is powered on
 power_on() {

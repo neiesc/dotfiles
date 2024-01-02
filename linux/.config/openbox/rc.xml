@@ -679,7 +679,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>vivaldi-stable</command>
+        <command>firefox -P</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -690,7 +690,7 @@
     <!-- Rofi -->
     <keybind key="A-F1">
       <action name="Execute">
-        <command>launcher</command>
+        <command>rofi-launcher</command>
       </action>
     </keybind>
     <keybind key="W-A-e">
@@ -705,27 +705,27 @@
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>bluetooth</command>
+        <command>rofi-bluetooth</command>
       </action>
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>music</command>
+        <command>rofi-music</command>
       </action>
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>powermenu</command>
+        <command>rofi-powermenu</command>
       </action>
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>screenshot</command>
+        <command>rofi-screenshot</command>
       </action>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>runner</command>
+        <command>rofi-runner</command>
       </action>
     </keybind>
     <!-- CLI Apps -->
@@ -736,17 +736,17 @@
     </keybind>
     <keybind key="C-A-v">
       <action name="Execute">
-        <command>xfce4-terminal -e vim</command>
+        <command>xfce4-terminal -evim</command>
       </action>
     </keybind>
     <keybind key="C-A-r">
       <action name="Execute">
-        <command>xfce4-terminal -e ranger</command>
+        <command>xfce4-terminal -eranger</command>
       </action>
     </keybind>
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>xfce4-terminal -e htop</command>
+        <command>xfce4-terminal -ehtop</command>
       </action>
     </keybind>
     <!-- Misc -->

@@ -21,7 +21,7 @@
 		<separator/>
 		<item icon="&icons;/browser.png" label="Web Browser">
 			<action name="Execute">
-				<command>vivaldi-stable</command>
+				<command>firefox -P</command>
 			</action>
 		</item>
 		<separator/>
@@ -141,7 +141,7 @@
 			<separator/>
 			<item icon="&icons;/sys-sleep.png" label="Suspend">
 				<action name="Execute">
-					<command>&pipes;/ac-powermenu --suspent</command>
+					<command>&pipes;/ac-powermenu --suspend</command>
 				</action>
 			</item>
 			<separator/>

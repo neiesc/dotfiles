@@ -46,7 +46,7 @@ alias my-package-orphans-list='pacman -Qdt'
 alias tealdeer='tldr'
 
 # network
-alias my-ip='curl "https://api.ipify.org?format=json"'
+alias my-ip='curl https://ident.me/json'
 alias my-ports-open='lsof -i -P -n'
 
 # tool

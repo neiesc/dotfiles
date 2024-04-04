@@ -12,4 +12,8 @@ ln -sf $DOTFILES_FOLDER/common/.config/fish/config.fish $HOME/.config/fish/confi
 ln -sf $DOTFILES_FOLDER/common/.config/fish/fish_plugins $HOME/.config/fish/fish_plugins
 ln -sf $DOTFILES_FOLDER/common/.config/fish/fish_variables $HOME/.config/fish/fish_variables
 
+echo "❤🧡💛💚💙💜🤎🖤🤍 .config/neofetch ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sf $DOTFILES_FOLDER/common/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf
+
+echo "❤🧡💛💚💙💜🤎🖤🤍 .config/starship ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sf $DOTFILES_FOLDER/common/.config/starship.toml $HOME/.config/starship.toml

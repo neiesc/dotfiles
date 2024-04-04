@@ -1,65 +1,45 @@
-if status is-interactive
-    set -U fish_greeting
-    # set -g theme_color_scheme dracula
-    # set -g theme_nerd_fonts yes
+source $HOME/.config/fish/alias.fish
 
-    # git
-    alias g='git'
-    alias gcl='git clone --depth 1'
-    alias gi='git init'
-    alias ga='git add'
-    alias gc='git commit -m'
-    alias gp='git push origin master'
-    alias gs='git status'
+# Configure Jump
+status --is-interactive; and source (jump shell fish | psub)
 
-    alias gk='gitk'
-    alias gg='git gui'
+set -U fish_greeting
+# set -g theme_color_scheme dracula
+# set -g theme_nerd_fonts yes
 
-    # ls
-    alias ls='exa --icons'
-    alias l='ls -lh'
-    alias ll='ls -lah'
-    alias la='ls -la'
-    alias lm='ls -m'
-    alias lr='ls -R'
-    alias lg='ls -l --group-directories-first'
+# other
+fish_add_path -m $HOME/.local/bin
+fish_add_path -m $HOME/.cargo/bin
+fish_add_path -m /home/linuxbrew/.linuxbrew/bin
 
-    # cat
-    alias cat="bat --style=auto"
+# proto
+set -gx PROTO_HOME "$HOME/.proto"
+set -gx PATH "$PROTO_HOME/shims:$PROTO_HOME/bin" $PATH
 
-    # editor
-    ## VS Code
-    alias c='code .'
-    
-    ## vim
-    alias vi='lvim'
-    alias vim='lvim'
-    alias nvim='lvim'
+# export (envsubst < $HOME/Dev/dotfiles/linux/.config/fish/.env)
 
-    # work
-    alias work-pessoal-dir='cd ~/Dev/Pessoal'
+# Fish syntax highlighting
+set -g fish_color_autosuggestion '555'  'brblack'
+set -g fish_color_cancel -r
+set -g fish_color_command --bold
+set -g fish_color_comment red
+set -g fish_color_cwd green
+set -g fish_color_cwd_root red
+set -g fish_color_end brmagenta
+set -g fish_color_error brred
+set -g fish_color_escape 'bryellow'  '--bold'
+set -g fish_color_history_current --bold
+set -g fish_color_host normal
+set -g fish_color_match --background=brblue
+set -g fish_color_normal normal
+set -g fish_color_operator bryellow
+set -g fish_color_param cyan
+set -g fish_color_quote yellow
+set -g fish_color_redirection brblue
+set -g fish_color_search_match 'bryellow'  '--background=brblack'
+set -g fish_color_selection 'white'  '--bold'  '--background=brblack'
+set -g fish_color_user brgreen
+set -g fish_color_valid_path --underline
 
-    # package manager
-    alias my-package-update='sudo pacman -Syyu'
-    alias my-package-update-aur='yay'
-    alias my-package-update-cargo='cargo install-update -a'
-    alias my-package-list-local='sudo pacman -Q'
-    alias my-package-outdated='pacman -Qu'
-    alias my-package-orphans-list='pacman -Qdt'
-
-    alias tealdeer='tldr'
-
-    # network
-    alias my-ip='curl "https://api.ipify.org?format=json"'
-    alias my-ports-open='lsof -i -P -n'
-
-    #tools
-    alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
-
-    # other
-    # source /opt/asdf-vm/asdf.fish
-    fish_add_path -m ~/.local/bin
-    #~/.cargo/bin
-
-    # export (envsubst < $HOME/Dev/dotfiles/linux/.config/fish/.env)
-end
+# Starship ☄🌌️
+starship init fish | source

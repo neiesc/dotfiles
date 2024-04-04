@@ -1,5 +1,5 @@
 #!/bin/sh
 
-brew install gum
+# brew install gum # menu
 
 ./common/init.sh

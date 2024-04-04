@@ -1,3 +1,8 @@
+[commit]
+	template = ~/.gitmessage
+[user]
+	email = hi@edinei.dev
+	name = Edinei Cavalcanti
 [alias]
     st = status
     ps = push origin
@@ -8,4 +13,7 @@
     next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lgfiles = log --name-only --pretty=format: | sort | uniq -c | sort
-
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true

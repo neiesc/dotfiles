@@ -13,13 +13,11 @@ brew install git unzip gzip xz
 curl -fsSL https://moonrepo.dev/install/proto.sh | bash
 proto completions > ~/.config/fish/completions/proto.fish
 
-# Audio & video
-sudo pacman -S --noconfirm yt-dlp
-
 # Fonts
-# sudo apt install fonts-firacode -y
+sudo apt install fonts-firacode
 
 brew install thefuck
+
 sudo pacman -S --noconfirm exa
 
 sudo pacman -S --noconfirm rofimoji

@@ -2,7 +2,7 @@
 
 DOTFILES_FOLDER=$(pwd)
 
-echo "❤🧡💛💚💙💜🤎🖤🤍 Setting .config ❤🧡💛💚💙💜🤎🖤🤍"
+echo "❤🧡💛💚💙💜🤎🖤🤍 .config ❤🧡💛💚💙💜🤎🖤🤍"
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/fish ❤🧡💛💚💙💜🤎🖤🤍"
 cp $DOTFILES_FOLDER/common/.config/fish/.env.sample $HOME/.config/fish/.env
 ln -sf $DOTFILES_FOLDER/common/.config/fish/completions/proto.fish $HOME/.config/fish/completions/proto.fish
@@ -17,3 +17,7 @@ ln -sf $DOTFILES_FOLDER/common/.config/neofetch/config.conf $HOME/.config/neofet
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/starship ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sf $DOTFILES_FOLDER/common/.config/starship.toml $HOME/.config/starship.toml
+
+echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage

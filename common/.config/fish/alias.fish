@@ -1,4 +1,4 @@
-# git
+# git & github
 alias g='git'
 alias gcl='git clone --depth 1'
 alias gi='git init'
@@ -6,6 +6,7 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
 alias gs='git status'
+alias oco='bunx opencommit'
 
 #alias gk='gitk'
 #alias gg='git gui'
@@ -36,6 +37,7 @@ alias work-pessoal-dir='cd ~/Dev/Pessoal'
 
 # package manager
 alias my-package-sync='sudo apt-get update && sudo apt-get upgrade'
+alias my-package-sync-cargo='proto upgrade'
 alias my-package-sync-cargo='cargo install-update -a'
 alias my-package-list-local='apt list --installed'
 alias my-package-outdated='apt list --upgradable'

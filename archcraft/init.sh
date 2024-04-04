@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # echo "❤🧡💛💚💙💜🤎🖤🤍 .config/openbox ❤🧡💛💚💙💜🤎🖤🤍"
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox/autostart $HOME/.config/openbox/autostart
 # ln -sf $DOTFILES_FOLDER/linux/.config/openbox/menu-icons.xml $HOME/.config/openbox/menu-icons.xml

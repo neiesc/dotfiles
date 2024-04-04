@@ -1,36 +1,36 @@
-[submodule "dependences/archcraft-openbox"]
-	path = dependences/archcraft-openbox
+[submodule "archcraft/dependences/archcraft-openbox"]
+	path = archcraft/dependences/archcraft-openbox
 	url = git@github.com:archcraft-os/archcraft-openbox.git
-[submodule "dependences/themes/gtk"]
-	path = dependences/themes/gtk
+[submodule "archcraft/dependences/themes/gtk"]
+	path = archcraft/dependences/themes/gtk
 	url = git@github.com:dracula/gtk.git
-[submodule "dependences/themes/openbox"]
-	path = dependences/themes/openbox
+[submodule "archcraft/dependences/themes/openbox"]
+	path = archcraft/dependences/themes/openbox
 	url = git@github.com:dracula/openbox.git
-[submodule "dependences/themes/rofi"]
-	path = dependences/themes/rofi
+[submodule "archcraft/dependences/themes/rofi"]
+	path = archcraft/dependences/themes/rofi
 	url = git@github.com:dracula/rofi.git
-[submodule "dependences/themes/git"]
-	path = dependences/themes/git
+[submodule "archcraft/dependences/themes/git"]
+	path = archcraft/dependences/themes/git
 	url = git@github.com:dracula/git.git
-[submodule "dependences/themes/gitkraken"]
-	path = dependences/themes/gitkraken
+[submodule "archcraft/dependences/themes/gitkraken"]
+	path = archcraft/dependences/themes/gitkraken
 	url = git@github.com:dracula/gitkraken.git
-[submodule "dependences/mopidy-docker"]
-	path = dependences/mopidy-docker
+[submodule "archcraft/dependences/mopidy-docker"]
+	path = archcraft/dependences/mopidy-docker
 	url = git@github.com:jojo141185/mopidy-docker.git
-[submodule "dependences/themes/Tela-circle-icon-theme"]
-	path = dependences/themes/Tela-circle-icon-theme
+[submodule "archcraft/dependences/themes/Tela-circle-icon-theme"]
+	path = archcraft/dependences/themes/Tela-circle-icon-theme
 	url = git@github.com:vinceliuice/Tela-circle-icon-theme.git
-[submodule "dependences/polybar-scripts"]
-	path = dependences/polybar-scripts
+[submodule "archcraft/dependences/polybar-scripts"]
+	path = archcraft/dependences/polybar-scripts
 	url = git@github.com:polybar/polybar-scripts.git
-[submodule "dependences/themes/xfce4-terminal"]
-	path = dependences/themes/xfce4-terminal
+[submodule "archcraft/dependences/themes/xfce4-terminal"]
+	path = archcraft/dependences/themes/xfce4-terminal
 	url = git@github.com:dracula/xfce4-terminal.git
-[submodule "dependences/themes/gitk"]
-	path = dependences/themes/gitk
+[submodule "archcraft/dependences/themes/gitk"]
+	path = archcraft/dependences/themes/gitk
 	url = git@github.com:dracula/gitk.git
-[submodule "dependences/theme/archcraft-openbox-dracula"]
-	path = dependences/theme/archcraft-openbox-dracula
+[submodule "archcraft/dependences/theme/archcraft-openbox-dracula"]
+	path = archcraft/dependences/theme/archcraft-openbox-dracula
 	url = git@github.com:neiesc/archcraft-openbox-dracula.git

@@ -1,2 +1,2 @@
 init:
-	./init.sh
+	./common/init.sh

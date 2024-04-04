@@ -19,7 +19,7 @@ sudo pacman -S --noconfirm yt-dlp
 # Fonts
 # sudo apt install fonts-firacode -y
 
-sudo pacman -S --noconfirm thefuck
+brew install thefuck
 sudo pacman -S --noconfirm exa
 
 sudo pacman -S --noconfirm rofimoji

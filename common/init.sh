@@ -16,6 +16,7 @@ echo "❤🧡💛💚💙💜🤎🖤🤍 .config/neofetch ❤🧡💛💚💙�
 ln -sf $DOTFILES_FOLDER/common/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/starship ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sf $DOTFILES_FOLDER/common/.config/starship_greeting.py $HOME/.config/starship_greeting.py
 ln -sf $DOTFILES_FOLDER/common/.config/starship.toml $HOME/.config/starship.toml
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"

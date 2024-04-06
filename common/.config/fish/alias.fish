@@ -8,8 +8,6 @@ alias gp='git push origin master'
 alias gs='git status'
 alias gl='git lg -7'
 
-alias oco='bunx opencommit'
-
 #alias gk='gitk'
 #alias gg='git gui'
 

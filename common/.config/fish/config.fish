@@ -15,6 +15,7 @@ fish_add_path -m /home/linuxbrew/.linuxbrew/bin
 # proto
 set -gx PROTO_HOME "$HOME/.proto"
 set -gx PATH "$PROTO_HOME/shims:$PROTO_HOME/bin" $PATH
+set -gx PATH "$PROTO_HOME/tools/node/20.11.1/bin" $PATH
 
 # export (envsubst < $HOME/Dev/dotfiles/linux/.config/fish/.env)
 

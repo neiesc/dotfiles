@@ -10,6 +10,7 @@ alias gl='git lg -7'
 
 #alias gk='gitk'
 #alias gg='git gui'
+alias nf='neofetch | lolcat'
 
 # Rewritten in Rust see: https://zaiste.net/posts/shell-commands-rust/
 ## ls

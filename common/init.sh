@@ -19,6 +19,9 @@ echo "❤🧡💛💚💙💜🤎🖤🤍 .config/starship ❤🧡💛💚💙�
 ln -sf $DOTFILES_FOLDER/common/.config/starship_greeting.py $HOME/.config/starship_greeting.py
 ln -sf $DOTFILES_FOLDER/common/.config/starship.toml $HOME/.config/starship.toml
 
+echo "❤🧡💛💚💙💜🤎🖤🤍 proto ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sf $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
+
 echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
 ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage

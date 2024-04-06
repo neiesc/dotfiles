@@ -1,0 +1,11 @@
+bun = "1.0.27"
+node = "20.11.1"
+npm = "10.4.0"
+pnpm = "8.15.3"
+python = "3.12.2"
+rust = "1.76.0"
+yarn = "4.1.1"
+
+[settings]
+telemetry = false
+auto-install = true

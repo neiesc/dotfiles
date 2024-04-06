@@ -1,6 +1,6 @@
 # dotfiles (GNU/Linux and Windows 10+ (WSL 2.01))
-![Last Commit Date Shield Badge](https://img.shields.io/github/last-commit/neiesc/dotfiles?logo=github&style=for-the-badge)
 ![Github Created At](https://img.shields.io/github/created-at/neiesc/dotfiles?logo=github&style=for-the-badge)
+![Last Commit Date Shield Badge](https://img.shields.io/github/last-commit/neiesc/dotfiles?logo=github&style=for-the-badge)
 
 ## GNU/Linux distro Archcraft (based in ArchLinux)
 1. `git clone https://github.com/neiesc/dotfiles.git`

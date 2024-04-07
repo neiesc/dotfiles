@@ -38,7 +38,8 @@ alias work-pessoal-dir='cd ~/Dev/Pessoal'
 
 # package manager
 alias my-package-sync='sudo apt-get update && sudo apt-get upgrade'
-alias my-package-sync-cargo='proto upgrade'
+alias my-package-sync-winget='powershell.exe winget upgrade --all'
+alias my-package-sync-proto='proto upgrade'
 alias my-package-sync-cargo='cargo install-update -a'
 alias my-package-list-local='apt list --installed'
 alias my-package-outdated='apt list --upgradable'

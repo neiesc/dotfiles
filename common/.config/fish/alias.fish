@@ -7,6 +7,7 @@ alias gc='git commit -m'
 alias gp='git push origin master'
 alias gs='git status'
 alias gl='git lg -7'
+alias gd='git diff'
 
 #alias gk='gitk'
 #alias gg='git gui'
@@ -32,6 +33,7 @@ alias vim='nvim'
 
 ## VS Code
 alias c='code .'
+alias c-dotfiles='code $HOME/Dev/Pessoal/dotfiles/'
 
 # work
 alias work-pessoal-dir='cd ~/Dev/Pessoal'

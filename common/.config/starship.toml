@@ -28,3 +28,4 @@ style_user = "bold #8be9fd"
 command = 'python3 $HOME/.config/starship_greeting.py'
 format = '[$symbol($output)](green)'
 when = true
+ignore_timeout = true

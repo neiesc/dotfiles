@@ -20,7 +20,7 @@ def greeting(current_time):
     elif current_time.hour < 18:
         part_of_day = "afternoon ☀️"
 
-    return f"{current_time.strftime(f'Good {part_of_day}! It\'s %A 📅%x 🕙%H:%M:%S')}"
+    return current_time.strftime(f'Good {part_of_day}! It\'s %A 📅%x 🕙%H:%M:%S')
 
 if __name__ == "__main__":
     print(greeting(datetime.datetime.now()))

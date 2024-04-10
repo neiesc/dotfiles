@@ -13,6 +13,7 @@ ln -sf $DOTFILES_FOLDER/common/.config/fish/fish_plugins $HOME/.config/fish/fish
 ln -sf $DOTFILES_FOLDER/common/.config/fish/fish_variables $HOME/.config/fish/fish_variables
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/neofetch ❤🧡💛💚💙💜🤎🖤🤍"
+mkdir $HOME/.config/neofetch
 ln -sf $DOTFILES_FOLDER/common/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/starship ❤🧡💛💚💙💜🤎🖤🤍"
@@ -20,6 +21,7 @@ ln -sf $DOTFILES_FOLDER/common/.config/starship_greeting.py $HOME/.config/starsh
 ln -sf $DOTFILES_FOLDER/common/.config/starship.toml $HOME/.config/starship.toml
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 proto ❤🧡💛💚💙💜🤎🖤🤍"
+mkdir $HOME/.proto
 ln -sf $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"

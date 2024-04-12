@@ -1,4 +1,4 @@
-# dotfiles (GNU/Linux and Windows 10+ (WSL 2.01))
+# dotfiles (GNU/Linux and Windows 10+ (WSL 2))
 ![Github Created At](https://img.shields.io/github/created-at/neiesc/dotfiles?logo=github&style=for-the-badge)
 ![Last Commit Date](https://img.shields.io/github/last-commit/neiesc/dotfiles?logo=github&style=for-the-badge)
 ![GitHub Repo stars](https://img.shields.io/github/stars/neiesc/dotfiles?logo=github&style=for-the-badge)

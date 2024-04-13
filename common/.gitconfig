@@ -11,6 +11,7 @@
     ciamend = commit -a --amend
     prev = checkout HEAD^1
     next = "!sh -c 'git log --reverse --pretty=%H master | awk \"/$(git rev-parse HEAD)/{getline;print}\" | xargs git checkout'"
+    rollback = reset HEAD^1
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     lgfiles = log --name-only --pretty=format: | sort | uniq -c | sort
 [init]

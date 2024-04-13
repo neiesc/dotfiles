@@ -8,6 +8,7 @@ alias gp='git push origin master'
 alias gs='git status'
 alias gl='git lg -7'
 alias gd='git diff'
+alias gr='git rollback'
 
 #alias gk='gitk'
 #alias gg='git gui'

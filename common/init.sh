@@ -27,3 +27,6 @@ ln -sf $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
 echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
 ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage
+
+echo "❤🧡💛💚💙💜🤎🖤🤍 fish_history ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sf "/mnt/x/My Drive/dotfiles/fish_history" ~/.local/share/fish/fish_history

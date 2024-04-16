@@ -48,6 +48,9 @@ proto install trufflehog
 # yay -S --noconfirm tk # need for gitk and git gui
 npm install -g opencommit
 
+
+npm i @abhagsain/ai-cli -g
+
 ## Training
 #sudo snap install exercism
 #exercism configure --token <my-token>

@@ -57,3 +57,4 @@ alias my-ports-open='lsof -i -P -n'
 # tool
 alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $PWD:/aws amazon/aws-cli'
 alias mockoon='docker run --rm -ti --mount type=bind,source=/data-file.json,target=/data,readonly -p 3000:3000 mockoon/cli:latest -d data -p 3000'
+alias smtp4dev='docker run --rm -it -p 3000:80 -p 2525:25 rnwood/smtp4dev'

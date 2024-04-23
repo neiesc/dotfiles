@@ -6,6 +6,7 @@ echo "❤🧡💛💚💙💜🤎🖤🤍 .config ❤🧡💛💚💙💜🤎�
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/fish ❤🧡💛💚💙💜🤎🖤🤍"
 cp $DOTFILES_FOLDER/common/.config/fish/.env.sample $HOME/.config/fish/.env
 ln -sf $DOTFILES_FOLDER/common/.config/fish/completions/proto.fish $HOME/.config/fish/completions/proto.fish
+ln -sf $DOTFILES_FOLDER/common/.config/fish/completions/exa.fish $HOME/.config/fish/completions/exa.fish
 ln -sf $DOTFILES_FOLDER/common/.config/fish/functions/fuck.fish $HOME/.config/fish/functions/fuck.fish
 ln -sf $DOTFILES_FOLDER/common/.config/fish/alias.fish $HOME/.config/fish/alias.fish
 ln -sf $DOTFILES_FOLDER/common/.config/fish/config.fish $HOME/.config/fish/config.fish

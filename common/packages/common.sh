@@ -22,4 +22,6 @@ sudo pacman -S --noconfirm exa
 
 sudo pacman -S --noconfirm rofimoji
 
-paru opencommit
+paru -S opencommit
+
+ sudo pacman -S mcfly

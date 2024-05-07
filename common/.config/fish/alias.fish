@@ -40,7 +40,8 @@ alias c-dotfiles='code $HOME/Dev/Pessoal/dotfiles/'
 alias work-pessoal-dir='cd ~/Dev/Pessoal'
 
 # package manager
-alias my-package-sync='sudo apt-get update && sudo apt-get upgrade'
+alias my-package-sync='sudo pacman -Syyu'
+alias my-package-sync-aur='paru'
 alias my-package-sync-winget='powershell.exe winget upgrade --all'
 alias my-package-sync-proto='proto upgrade'
 alias my-package-sync-cargo='cargo install-update -a'

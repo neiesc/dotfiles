@@ -894,5 +894,4 @@ $env.config = {
     ]
 }
 
-source ./alias.nu
-use ~/.cache/starship/init.nu
+source ./custom.nu

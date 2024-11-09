@@ -2,6 +2,9 @@
 DOTFILES_FOLDER=$(pwd)
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 common ❤🧡💛💚💙💜🤎🖤🤍"
+echo "❤🧡💛💚💙💜🤎🖤🤍 .config/alacritty ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sfb $DOTFILES_FOLDER/common/.config/alacritty/alacritty.toml $HOME/AppData/Roaming/alacritty/alacritty.toml
+
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/nushell ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sfb $DOTFILES_FOLDER/common/.config/nushell $HOME/AppData/Roaming
 

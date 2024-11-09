@@ -1,0 +1,3 @@
+D:\neiesc\dotfiles\
+make
+gs

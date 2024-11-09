@@ -1,12 +1,13 @@
 #!/bin/sh
 DOTFILES_FOLDER=$(pwd)
 
-echo "❤🧡💛💚💙💜🤎🖤🤍 .config ❤🧡💛💚💙💜🤎🖤🤍"
+echo "❤🧡💛💚💙💜🤎🖤🤍 common ❤🧡💛💚💙💜🤎🖤🤍"
 echo "❤🧡💛💚💙💜🤎🖤🤍 .config/nushell ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sfb $DOTFILES_FOLDER/common/.config/nushell $HOME/AppData/Roaming
+
 echo "❤🧡💛💚💙💜🤎🖤🤍 proto ❤🧡💛💚💙💜🤎🖤🤍"
-#mkdir $HOME/.proto
-#ln -sf $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
+ln -sfb $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"
-#ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
-#ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage
+ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
+ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage

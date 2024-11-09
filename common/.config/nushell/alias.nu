@@ -10,9 +10,17 @@ alias gl = git lg -7
 alias gd = git diff
 alias gr = git rollback
 
-#alias gk = gitk
-#alias gg = git gui
-#alias nf = neofetch | lolcat
+alias gk = gitk
+alias gg = git gui
+
+alias oco = C:\Users\neiesc\.proto\tools\node\22.9.0\oco
+
+# tools
+alias nf = macchina
+alias neofetch = macchina
+alias cpufetch = cpufetch_x86-64_windows.exe
+alias fastfetch = fastfetch.exe
+alias devtoys.cli = DevToys.CLI.exe
 
 # Rewritten in Rust see: https://zaiste.net/posts/shell-commands-rust/
 ## ls
@@ -33,11 +41,26 @@ alias vi = nvim
 alias vim = nvim
 
 ## VS Code
-alias c = code-insiders .
+alias c = code .
 #alias c-dotfiles = code $HOME/Dev/Pessoal/dotfiles/
 
 # work
-#alias work-pessoal-dir = cd ~/Dev/Pessoal
+alias ef6 = C:\Users\neiesc\.nuget\packages\entityframework\6.4.4\tools\net45\any\ef6.exe
+
+def --env "work cd edge" [] { cd D:\10123IO\edge }
+def --env "work cd edge.app" [] { cd D:\10123IO\edge\edge.app }
+def "work run iis" [projectName: string] { work cd edge; powershell devops\LocalDev\run-iis.ps1 -site $projectName }
+def "work run app" [] { work cd edge.app; npm run start }
+
+def "work migration list" [] {
+    ef6 migrations list --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
+}
+def "work migration update database" [] {
+    ef6 database update --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
+}
+def "work migration add" [name: string] {
+    ef6 migrations add $name --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
+}
 
 # package manager
 # alias my-package-sync = sudo pacman -Syyu

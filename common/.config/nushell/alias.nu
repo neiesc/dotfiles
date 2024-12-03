@@ -52,13 +52,17 @@ def --env "work cd edge.app" [] { cd D:\10123IO\edge\edge.app }
 def "work run iis" [projectName: string] { work cd edge; powershell devops\LocalDev\run-iis.ps1 -site $projectName }
 def "work run app" [] { work cd edge.app; npm run start }
 
-def "work migration list" [] {
+def "work db sync" [path: string, name: string] {
+   sqllocaldb info MSSQLLocalDB
+   SqlPackage /Action:Import /SourceFile:$'$path' /TargetServerName:"(LocalDB)\\MSSQLLocalDB" /TargetDatabaseName:$'$name'
+}
+def "work db migration list" [] {
     ef6 migrations list --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
 }
-def "work migration update database" [] {
+def "work db migration update database" [] {
     ef6 database update --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
 }
-def "work migration add" [name: string] {
+def "work db migration add" [name: string] {
     ef6 migrations add $name --connection-string-name EdgeDb --assembly D:\10123IO\edge\edge.domain\bin\Debug\net472\edge.domain.dll --project-dir D:\10123IO\edge\edge.domain\ --language C# --data-dir D:\10123IO\edge\edge.admin\App_Data --root-namespace edge.domain --config D:\10123IO\edge\edge.admin\Web.config  --prefix-output --verbose
 }
 

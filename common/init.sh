@@ -1,16 +1,17 @@
 #!/bin/sh
+
 DOTFILES_FOLDER=$(pwd)
 
 echo "❤🧡💛💚💙💜🤎🖤🤍 common ❤🧡💛💚💙💜🤎🖤🤍"
-echo "❤🧡💛💚💙💜🤎🖤🤍 .config/alacritty ❤🧡💛💚💙💜🤎🖤🤍"
-ln -sfb $DOTFILES_FOLDER/common/.config/alacritty/alacritty.toml $HOME/AppData/Roaming/alacritty/alacritty.toml
+echo "❤🧡💛💚💙💜🤎🖤🤍 configuring wezterm ❤🧡💛💚💙💜🤎🖤🤍"
+ln -sfb $DOTFILES_FOLDER/common/.wezterm.lua $HOME/.wezterm.lua
 
-echo "❤🧡💛💚💙💜🤎🖤🤍 .config/nushell ❤🧡💛💚💙💜🤎🖤🤍"
+echo "❤🧡💛💚💙💜🤎🖤🤍 configuring nushell ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sfb $DOTFILES_FOLDER/common/.config/nushell $HOME/AppData/Roaming
 
-echo "❤🧡💛💚💙💜🤎🖤🤍 proto ❤🧡💛💚💙💜🤎🖤🤍"
-ln -sfb $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
+#echo "❤🧡💛💚💙💜🤎🖤🤍 proto ❤🧡💛💚💙💜🤎🖤🤍"
+#ln -sfb $DOTFILES_FOLDER/common/.proto/.prototools $HOME/.proto/.prototools
 
-echo "❤🧡💛💚💙💜🤎🖤🤍 git ❤🧡💛💚💙💜🤎🖤🤍"
+echo "❤🧡💛💚💙💜🤎🖤🤍 configuring git ❤🧡💛💚💙💜🤎🖤🤍"
 ln -sf $DOTFILES_FOLDER/common/.gitconfig $HOME/.gitconfig
 ln -sf $DOTFILES_FOLDER/common/.gitmessage $HOME/.gitmessage

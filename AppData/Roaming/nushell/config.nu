@@ -18,4 +18,3 @@
 # them for future reference.
 
 source ./custom.nu
-source ~/.oh-my-posh.nu

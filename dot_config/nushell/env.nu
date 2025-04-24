@@ -16,3 +16,6 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+$env.config.shell_integration.osc133 = false
+$env.EDITOR = 'nvim'

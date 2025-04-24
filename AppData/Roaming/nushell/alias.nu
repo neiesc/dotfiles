@@ -24,16 +24,16 @@ alias devtoys.cli = DevToys.CLI.exe
 
 # Rewritten in Rust see: https://zaiste.net/posts/shell-commands-rust/
 ## ls
-#alias ls = exa --icons
+alias ls = eza --icons
 alias l = ls -lh
 alias ll = ls -lah
 alias la = ls -la
 alias lm = ls -m
-#alias lr = ls -R
-#alias lg = ls -l --group-directories-first
+alias lr = ls -R
+alias lg = ls -l --group-directories-first
 
 ## cat
-#alias cat="bat --style=auto"
+alias cat = bat --style=auto
 
 # editor
 ## vim

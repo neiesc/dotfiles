@@ -15,6 +15,7 @@ echo ### Installing HyDE ###
 
 pacman -S --needed git base-devel
 git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+
+cp pkg_user.lst ~/HyDE/Scripts
 cd ~/HyDE/Scripts
-cp pkg_extra.lst pkg_user.lst
-./install.sh pkg_user.lst
+./install.sh pkg_extra.lst pkg_user.lst

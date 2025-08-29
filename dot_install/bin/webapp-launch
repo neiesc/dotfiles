@@ -1,0 +1,3 @@
+webapp=$(sed -n 's/^Exec=\([^*]*\).*/\1/p' ~/.local/share/applications/$1.desktop)
+
+exec setsid uwsm app -- $webapp

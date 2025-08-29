@@ -6,7 +6,7 @@ echo "### Update system Arch Linux ###"
 
 echo "### Fix permisions ###"
 
-chmod +x ~/.install/bin/*
+#chmod +x ~/.install/bin/*
 
 echo "### Installing chyyezmoi (dotfiles manager) ###"
 

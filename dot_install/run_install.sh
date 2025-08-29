@@ -1,21 +1,23 @@
-echo ### Update system Arch Linux ###
+#!/bin/sh
+
+echo "### Update system Arch Linux ###"
 
 #sudo pacman -Syyu
 
-echo ### Fix permisions ###
+echo "### Fix permisions ###"
 
-chmod +x bin/*
+chmod +x ~/.install/bin/*
 
-echo ### Installing chyyezmoi (dotfiles manager) ###
+echo "### Installing chyyezmoi (dotfiles manager) ###"
 
 #sudo pacman -S chezmoi
 
-echo ### Installing nvim (LazyVim) ###
+echo "### Installing nvim (LazyVim) ###"
 
 #git clone https://github.com/LazyVim/starter ~/.config/nvim
 #rm -rf ~/.config/nvim/.git
 
-echo ### Installing HyDE ###
+echo "### Installing HyDE ###"
 
 #pacman -S --needed git base-devel
 #git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE

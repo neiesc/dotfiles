@@ -1,14 +1,52 @@
-# cli
-gum
+# Audio & Video
+spotify
+obs-studio
+
+# Design
+pinta
+gimp
+krita
+
+# Bittorrent
+rqbit
+rqbit-desktop
 
 # Dev
+nvim
 github-cli
 
+## Python
+uv
+
+# Docker
+docker
+docker-buildx
+docker-compose
+
+# Print
+cups
+cups-browsed
+cups-filters
+cups-pdf
+gsfonts
+ghostscript
+system-config-printer
+
+# Other
+gum
+typora
+whois
+zoxide
+ufw
+ufw-extras
+gufw
+ffmpegthumbnailer
 bitwarden
 bitwarden-cli
 localsend-bin
-
-# Print
-gsfonts 
-ghostscript
-system-config-printer
+btop
+bat
+bat-extras
+eza
+xan
+ripgrep

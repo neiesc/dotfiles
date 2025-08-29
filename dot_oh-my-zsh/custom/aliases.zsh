@@ -8,3 +8,7 @@ alias breath='zenta now --quick'
 alias breathe='zenta now'
 alias reflect='zenta reflect'
 
+# vim
+alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'

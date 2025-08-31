@@ -27,6 +27,7 @@ uv
 docker
 docker-buildx
 docker-compose
+lazydocker
 
 # Print
 cups

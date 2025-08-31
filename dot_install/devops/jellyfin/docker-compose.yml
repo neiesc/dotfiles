@@ -1,0 +1,15 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    network_mode: 'host'
+    volumes:
+      - ~/.config/docker/jellyfin:/config
+      - /var/cache/docker/jellyfin:/cache
+      - type: bind
+        source: /run/media/neiesc/Ultramassive/jellyfin-libraries/
+        target: /media
+        read_only: true
+    restart: 'unless-stopped'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'

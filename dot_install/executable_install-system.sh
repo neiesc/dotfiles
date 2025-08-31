@@ -40,10 +40,11 @@ webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboa
 webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
 webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/discord.png
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png
+webapp-install "Linkedin" https://www.linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png
 
 echo "### Configure docker ###"
 
-sudo systemctl enable docker
-sudo systemctl daemon-reload
-sudo systemctl start docker
-sudo usermod -aG docker neiesc
+#sudo systemctl enable docker
+#sudo systemctl daemon-reload
+#sudo systemctl start docker
+#sudo usermod -aG docker neiesc

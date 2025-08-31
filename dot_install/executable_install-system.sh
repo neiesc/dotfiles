@@ -31,6 +31,7 @@ webapp-install "Google Gemini" https://gemini.google.com https://www.gstatic.com
 webapp-install "Google NotebookLM" https://notebooklm.google.com https://notebooklm.google.com/_/static/branding/v5/dark_mode/favicon/favicon.svg
 webapp-install "ChatGPT" https://chatgpt.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/chatgpt.png
 webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
+webapp-install "Perplexity" https://www.perplexity.ai https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/perplexity-book-dark.png
 
 # Social network
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png

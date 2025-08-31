@@ -16,12 +16,22 @@ echo "### Installing HyDE ###"
 
 echo "### Installing Webapp ###"
 
+# Comunication
 webapp-install "WhatsApp" https://web.whatsapp.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whatsapp.png
+webapp-install "Telegram" https://web.telegram.org https://web.telegram.org/a/favicon.svg
+webapp-install "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png
+
+# Video & Photo
 webapp-install "Google Photos" https://photos.google.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-photos.png
 webapp-install "Google Contacts" https://contacts.google.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-contacts.png
-webapp-install "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png
-webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
+
+# AI
+webapp-install "Google Gemini" https://gemini.google.com https://www.gstatic.com/lamda/images/gemini_sparkle_4g_512_lt_f94943af3be039176192d.png
+webapp-install "Google NotebookLM" https://notebooklm.google.com https://notebooklm.google.com/_/static/branding/v5/dark_mode/favicon/favicon.svg
 webapp-install "ChatGPT" https://chatgpt.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/chatgpt.png
+webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
+
+# Social network
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
 webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
 webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/x-light.png

@@ -37,6 +37,7 @@ webapp-install "Perplexity" https://www.perplexity.ai https://cdn.jsdelivr.net/g
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
 webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
 webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/x-light.png
+webapp-install "Bluesky" https://bsky.app https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/bluesky.png
 webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
 webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/discord.png
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png

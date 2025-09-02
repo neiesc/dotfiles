@@ -18,6 +18,7 @@ echo "### Installing Webapp ###"
 
 # Comunication
 webapp-install "Gmail" https://mail.google.com https://ssl.gstatic.com/images/branding/product/1x/hh_gmail_512dp.png
+webapp-install "Tuta Mail" https://app.tuta.com https://app.tuta.com/images/logo-favicon-192.png
 webapp-install "WhatsApp" https://web.whatsapp.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whatsapp.png
 webapp-install "Telegram" https://web.telegram.org https://web.telegram.org/a/favicon.svg
 webapp-install "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png

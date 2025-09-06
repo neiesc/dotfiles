@@ -34,12 +34,15 @@ webapp-install "ChatGPT" https://chatgpt.com https://cdn.jsdelivr.net/gh/homarr-
 webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
 webapp-install "Perplexity" https://www.perplexity.ai https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/perplexity-book-dark.png
 
+# Dev
+webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
+webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
+webapp-install "ToDiagram" https://todiagram.com/editor https://todiagram.com/logo-48x48.png
+
 # Social network
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
-webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
 webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/x-light.png
 webapp-install "Bluesky" https://bsky.app https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/bluesky.png
-webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
 webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/discord.png
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png
 webapp-install "Linkedin" https://www.linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png

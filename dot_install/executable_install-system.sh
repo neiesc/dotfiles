@@ -38,6 +38,8 @@ webapp-install "Perplexity" https://www.perplexity.ai https://cdn.jsdelivr.net/g
 webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
 webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
 webapp-install "ToDiagram" https://todiagram.com/editor https://todiagram.com/logo-48x48.png
+webapp-install "Hacker News" https://news.ycombinator.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hacker-news.png
+webapp-install "Reddit" https://www.reddit.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/reddit.png
 
 # Social network
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png

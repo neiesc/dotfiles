@@ -41,6 +41,7 @@ ghostscript
 system-config-printer
 
 # Other
+flatpak
 gum
 whois
 zoxide

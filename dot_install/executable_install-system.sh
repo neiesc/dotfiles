@@ -14,6 +14,9 @@ echo "### Installing HyDE ###"
 #cd ~/HyDE/Scripts
 #./install.sh pkg_extra.lst pkg_user.lst
 
+echo "### Installing Flarpak ###"
+flatpak install flathub ch.openboard.OpenBoard
+
 echo "### Installing Webapp ###"
 
 # Comunication

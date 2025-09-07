@@ -25,6 +25,7 @@ webapp-install "Tuta Mail" https://app.tuta.com https://app.tuta.com/images/logo
 webapp-install "WhatsApp" https://web.whatsapp.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whatsapp.png
 webapp-install "Telegram" https://web.telegram.org https://web.telegram.org/a/favicon.svg
 webapp-install "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png
+webapp-install "Google Translate" https://translate.google.com.br https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-translate.png
 
 # Video & Photo
 webapp-install "Google Photos" https://photos.google.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-photos.png

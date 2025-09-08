@@ -52,6 +52,8 @@ webapp-install "Bluesky" https://bsky.app https://cdn.jsdelivr.net/gh/homarr-lab
 webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/discord.png
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png
 webapp-install "Linkedin" https://www.linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png
+webapp-install "Headspace" https://my.headspace.com https://my.headspace.com/images/icon-120x120.png
+webapp-install "Duolingo" https://www.duolingo.com https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png
 
 webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
 

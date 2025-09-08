@@ -40,6 +40,10 @@ gsfonts
 ghostscript
 system-config-printer
 
+# Security
+nordvpn-bin
+nordvpn-gui
+
 # Other
 flatpak
 gum

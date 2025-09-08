@@ -53,6 +53,8 @@ webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.n
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png
 webapp-install "Linkedin" https://www.linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png
 
+webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
+
 echo "### Configure docker ###"
 
 #sudo systemctl enable docker

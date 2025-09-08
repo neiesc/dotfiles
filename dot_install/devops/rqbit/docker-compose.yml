@@ -12,6 +12,7 @@ services:
       - db:/home/rqbit/db
       - cache:/home/rqbit/cache
       - ~/Downloads:/home/rqbit/downloads
+    restart: 'unless-stopped'
 
 volumes:
   db: {}

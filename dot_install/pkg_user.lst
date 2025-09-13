@@ -21,6 +21,13 @@ rqbit-desktop
 # Dev
 nvim
 github-cli
+exercism-bin
+
+# AI
+gemini-cli
+chatbox-bin
+kaggle-api
+python-bleach # kaggle needs
 
 ## Python
 uv
@@ -65,4 +72,3 @@ ripgrep
 chezmoi
 zenta
 rofi-calc
-gemini-cli

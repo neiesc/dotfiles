@@ -1,0 +1,8 @@
+[window]
+opacity = 0.9
+dynamic_title = true
+
+[font]
+size = 10
+
+[terminal]

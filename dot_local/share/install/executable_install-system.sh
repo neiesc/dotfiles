@@ -57,6 +57,11 @@ webapp-install "Duolingo" https://www.duolingo.com https://d35aaqx5ub95lt.cloudf
 
 webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
 
+# Streaming
+webapp-install "HBO Max" https://www.hbomax.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hbo-light.png
+webapp-install "Disney+" https://www.disneyplus.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/disney-plus.png
+webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/6a2e2e6b4186720e5d4f.png
+
 echo "### Configure docker ###"
 
 #sudo systemctl enable docker

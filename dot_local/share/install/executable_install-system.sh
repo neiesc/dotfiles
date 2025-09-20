@@ -60,7 +60,7 @@ webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:30
 # Streaming
 webapp-install "HBO Max" https://www.hbomax.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hbo-light.png
 webapp-install "Disney+" https://www.disneyplus.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/disney-plus.png
-webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/6a2e2e6b4186720e5d4f.png
+webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/f5bbb798cb2c65908633.png
 
 echo "### Configure docker ###"
 

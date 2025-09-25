@@ -20,4 +20,4 @@ services:
               capabilities: [gpu]
     restart: 'unless-stopped'
     extra_hosts:
-      - 'host.docker.internal:host-gateway'r
+      - 'host.docker.internal:host-gateway'

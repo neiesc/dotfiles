@@ -68,3 +68,7 @@ echo "### Configure docker ###"
 #sudo systemctl daemon-reload
 #sudo systemctl start docker
 #sudo usermod -aG docker neiesc
+
+# sudo /usr/bin/dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
+# docker run --gpus all nvidia/cuda:12.1.1-runtime-ubuntu22.04 nvidia-smi
+# docker run --runtime=nvidia nvidia/cuda:9.0-base nvidia-smi

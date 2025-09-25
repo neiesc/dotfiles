@@ -37,6 +37,7 @@ uv
 docker
 docker-buildx
 docker-compose
+nvidia-container-toolkit # for gpu in container
 lazydocker
 
 # Print

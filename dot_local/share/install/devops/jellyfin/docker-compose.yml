@@ -10,6 +10,14 @@ services:
         source: /run/media/neiesc/Ultramassive/jellyfin-libraries/
         target: /media
         read_only: true
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
     restart: 'unless-stopped'
     extra_hosts:
-      - 'host.docker.internal:host-gateway'
+      - 'host.docker.internal:host-gateway'r

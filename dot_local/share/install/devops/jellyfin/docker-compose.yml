@@ -10,6 +10,9 @@ services:
         source: /run/media/neiesc/Ultramassive/jellyfin-libraries/
         target: /media
         read_only: true
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     runtime: nvidia
     deploy:
       resources:

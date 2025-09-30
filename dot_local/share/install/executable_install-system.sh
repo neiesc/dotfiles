@@ -18,7 +18,7 @@ echo "### Installing Flarpak ###"
 #flatpak install flathub ch.openboard.OpenBoard
 
 echo "### Installing Webapp ###"
-./executable_install-system.sh
+./install-webapp.sh
 
 echo "### Configure docker ###"
 

@@ -22,7 +22,12 @@ webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-la
 webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/application/app-icon-7/figma-1?s=256
 webapp-install "ToDiagram" https://todiagram.com/editor https://todiagram.com/logo-48x48.png
 webapp-install "Hacker News" https://news.ycombinator.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hacker-news.png
-webapp-install "Reddit" https://www.reddit.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/reddit.png
+webapp-install "Reddit" https://reddit.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/reddit.png
+
+webapp-install "Pluralsight" https://app.pluralsight.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pluralsight.png
+webapp-install "Domestika" https://domestika.org https://www.domestika.org/favicon-32x32.png
+webapp-install "Stack Overflow" https://stackoverflow.com https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a
+webapp-install "DeepLearning.AI" https://deeplearning.ai https://www.deeplearning.ai/static/favicons/favicon.ico
 
 # Social network
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
@@ -37,6 +42,6 @@ webapp-install "Duolingo" https://www.duolingo.com https://d35aaqx5ub95lt.cloudf
 webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
 
 # Streaming
-webapp-install "HBO Max" https://www.hbomax.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hbo-light.png
-webapp-install "Disney+" https://www.disneyplus.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/disney-plus.png
+webapp-install "HBO Max" https://hbomax.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hbo-light.png
+webapp-install "Disney+" https://disneyplus.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/disney-plus.png
 webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/f5bbb798cb2c65908633.png

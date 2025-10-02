@@ -23,3 +23,6 @@ alias lg='ls -l --group-directories-first'
 alias breath='zenta now --quick'
 alias breathe='zenta now'
 alias reflect='zenta reflect'
+
+# tool with docker
+alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $PWD:/aws amazon/aws-cli'

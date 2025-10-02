@@ -23,6 +23,7 @@ webapp-install "Figma" https://figma.com https://www.veryicon.com/download/png/a
 webapp-install "ToDiagram" https://todiagram.com/editor https://todiagram.com/logo-48x48.png
 webapp-install "Hacker News" https://news.ycombinator.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hacker-news.png
 webapp-install "Reddit" https://reddit.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/reddit.png
+webapp-install "StackEdit" https://stackedit.io/app https://stackedit.io/icons-c75a9472175cc17394ba6428d867fbcf/favicon-32x32.png
 
 webapp-install "Pluralsight" https://app.pluralsight.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pluralsight.png
 webapp-install "Domestika" https://domestika.org https://www.domestika.org/favicon-32x32.png

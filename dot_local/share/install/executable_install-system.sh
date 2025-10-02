@@ -5,6 +5,10 @@ echo "### Installing nvim (LazyVim) ###"
 #git clone https://github.com/LazyVim/starter ~/.config/nvim
 #rm -rf ~/.config/nvim/.git
 
+echo "### Installing proto ###"
+
+#bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
+
 echo "### Installing HyDE ###"
 
 #pacman -S --needed git base-devel

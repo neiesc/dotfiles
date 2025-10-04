@@ -23,8 +23,9 @@ nvim
 github-cli
 exercism-bin
 tk # gitk needs
+mise
 
-# AI
+## AI
 gemini-cli
 chatbox-bin
 kaggle-api

@@ -15,7 +15,11 @@ webapp-install "Google Gemini" https://gemini.google.com https://www.gstatic.com
 webapp-install "Google NotebookLM" https://notebooklm.google.com https://notebooklm.google.com/_/static/branding/v5/dark_mode/favicon/favicon.svg
 webapp-install "ChatGPT" https://chatgpt.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/chatgpt.png
 webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
-webapp-install "Perplexity" https://www.perplexity.ai https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/perplexity-book-dark.png
+webapp-install "Perplexity" https://perplexity.ai https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/perplexity-book-dark.png
+
+# Book & Audibook
+webapp-install "Goodreads" https://goodreads.com/ https://grok.com/images/favicon-light.png
+webapp-install "Audible" https://audible.com.br https://grok.com/images/favicon-light.png
 
 # Dev
 webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
@@ -36,9 +40,9 @@ webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboa
 webapp-install "Bluesky" https://bsky.app https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/bluesky.png
 webapp-install "Discord" https://discord.com/channels/@me https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/discord.png
 webapp-install "Zoom" https://app.zoom.us/wc/home https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zoom.png
-webapp-install "Linkedin" https://www.linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png
+webapp-install "Linkedin" https://linkedin.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/linkedin.png
 webapp-install "Headspace" https://my.headspace.com https://my.headspace.com/images/icon-120x120.png
-webapp-install "Duolingo" https://www.duolingo.com https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png
+webapp-install "Duolingo" https://duolingo.com https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png
 
 webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
 

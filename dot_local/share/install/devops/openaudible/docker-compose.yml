@@ -11,4 +11,4 @@ services:
       PUID: "${PUID}"
       PGID: "${PGID}"
     volumes:
-      - "${HOME}/OpenAudible:/config/OpenAudible"
+      - ${HOME}/.config/docker/OpenAudible:/config/OpenAudible

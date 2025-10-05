@@ -10,7 +10,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=all
     volumes:
-      - ~/.config/docker/jellyfin:/config
+      - ${HOME}/.config/docker/jellyfin:/config
       - /var/cache/docker/jellyfin:/cache
       - type: bind
         source: /run/media/neiesc/Ultramassive/jellyfin-libraries/

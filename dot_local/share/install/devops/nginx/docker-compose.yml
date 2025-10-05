@@ -7,5 +7,5 @@ services:
       - '81:81'
       - '443:443'
     volumes:
-      - ~/.config/docker/nginx/data:/data
-      - ~/.config/docker/nginx/letsencrypt:/etc/letsencrypt
+      - ${HOME}/.config/docker/nginx/data:/data
+      - ${HOME}/.config/docker/nginx/letsencrypt:/etc/letsencrypt

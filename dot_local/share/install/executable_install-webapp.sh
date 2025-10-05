@@ -18,8 +18,8 @@ webapp-install "Grok" https://grok.com https://grok.com/images/favicon-light.png
 webapp-install "Perplexity" https://perplexity.ai https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/perplexity-book-dark.png
 
 # Book & Audibook
-webapp-install "Goodreads" https://goodreads.com/ https://grok.com/images/favicon-light.png
-webapp-install "Audible" https://audible.com.br https://grok.com/images/favicon-light.png
+webapp-install "Goodreads" https://goodreads.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/goodreads.png
+webapp-install "Audible" https://audible.com.br https://images-na.ssl-images-amazon.com/images/G/01/audiblemobile/store/image/favicons/icons32px.png
 
 # Dev
 webapp-install "GitHub" https://github.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png

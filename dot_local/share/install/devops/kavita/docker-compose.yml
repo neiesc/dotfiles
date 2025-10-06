@@ -9,7 +9,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ${HOME}/.config/docker/kavita/config:/config
-      - /run/media/neiesc/Ultramassive/jellyfin-libraries/Books:/data
+      - /media/neiesc/Ultramassive/jellyfin-libraries/Books:/data
     ports:
       - 5000:5000
     restart: unless-stopped

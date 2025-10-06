@@ -7,7 +7,7 @@ services:
     volumes:
       - /var/cache/docker/polaris:/var/cache/polaris
       - type: bind
-        source: /run/media/neiesc/Ultramassive/jellyfin-libraries/Music
+        source: /media/neiesc/Ultramassive/jellyfin-libraries/Music
         target: /media
         read_only: true
     restart: 'unless-stopped'

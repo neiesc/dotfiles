@@ -13,7 +13,7 @@ services:
       - ${HOME}/.config/docker/jellyfin:/config
       - /var/cache/docker/jellyfin:/cache
       - type: bind
-        source: /run/media/neiesc/Ultramassive/jellyfin-libraries/
+        source: /media/neiesc/Ultramassive/jellyfin-libraries
         target: /media
         read_only: true
     ports:

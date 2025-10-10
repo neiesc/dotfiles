@@ -1,3 +1,5 @@
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock 
+
 export PATH=$PATH:$HOME/.local/share/install/bin
 
 export DOTNET_ROOT=$HOME/.dotnet

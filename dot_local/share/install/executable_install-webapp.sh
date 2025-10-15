@@ -35,6 +35,7 @@ webapp-install "Stack Overflow" https://stackoverflow.com https://cdn.sstatic.ne
 webapp-install "DeepLearning.AI" https://deeplearning.ai https://www.deeplearning.ai/static/favicons/favicon.ico
 
 # Social network
+webapp-install "Phanpy" https://phanpy.social https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/phanpy.png
 webapp-install "YouTube" https://youtube.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
 webapp-install "X" https://x.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/x-light.png
 webapp-install "Bluesky" https://bsky.app https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/bluesky.png

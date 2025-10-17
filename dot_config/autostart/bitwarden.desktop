@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=2025.8.1
+Name=Bitwarden
+Comment=Bitwarden startup script
+Exec=flatpak run com.bitwarden.desktop
+StartupNotify=false
+Terminal=false

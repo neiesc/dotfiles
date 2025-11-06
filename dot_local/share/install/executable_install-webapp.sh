@@ -45,10 +45,10 @@ webapp-install "Linkedin" https://linkedin.com https://cdn.jsdelivr.net/gh/homar
 webapp-install "Headspace" https://my.headspace.com https://my.headspace.com/images/icon-120x120.png
 webapp-install "Duolingo" https://duolingo.com https://d35aaqx5ub95lt.cloudfront.net/images/duolingo-touch-icon2.png
 
-webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
+# webapp-install "rqbit BitTorrent" http://localhost:3030/web/ http://localhost:3030/web/assets/logo.svg
 
 # Streaming
 webapp-install "HBO Max" https://hbomax.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hbo-light.png
 webapp-install "Disney+" https://disneyplus.com https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/disney-plus.png
-webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/f5bbb798cb2c65908633.png
-webapp-install "Kavita" http://localhost:5000 http://localhost:5000/assets/icons/favicon-32x32.png
+# webapp-install "Jellyfin" http://localhost:8096 http://localhost:8096/web/f5bbb798cb2c65908633.png
+# webapp-install "Kavita" http://localhost:5000 http://localhost:5000/assets/icons/favicon-32x32.png

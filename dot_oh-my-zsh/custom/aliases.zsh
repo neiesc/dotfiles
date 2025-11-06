@@ -26,3 +26,4 @@ alias reflect='zenta reflect'
 
 # tool with docker
 alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $PWD:/aws amazon/aws-cli'
+alias awslocal='docker run --rm -ti --network="host" -v ~/.aws:/root/.aws -v $PWD:/aws amazon/aws-cli --endpoint-url=http://localhost:4566'

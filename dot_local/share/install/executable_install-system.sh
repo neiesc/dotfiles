@@ -25,7 +25,7 @@ echo "### Set helium default web browser ###"
 xdg-settings set default-web-browser helium-browser.desktop
 
 echo "### Installing Webapp ###"
-./install-webapp.sh
+# ./install-webapp.sh
 
 echo "### Configure docker ###"
 

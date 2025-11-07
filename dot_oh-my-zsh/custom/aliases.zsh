@@ -2,6 +2,8 @@
 alias g="git"
 alias gs="git status"
 alias gc="git commit -m"
+alias gpull="git pull"
+alias gswitch="git switch"
 
 alias gk='gitk'
 alias gg='git gui'

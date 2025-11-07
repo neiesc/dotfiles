@@ -1,11 +1,13 @@
 services:
   rqbit:
-    image: ikatson/rqbit
-    network_mode: host
+    image: ikatson/rqbit:v7.0.0-beta.3
+    ports:
+      - 3030:3030 # HTTP API port
+      - 4240:4240 # TCP/uTP BitTorrent port
     environment:
       RQBIT_UPNP_SERVER_ENABLE: "true"
       RQBIT_UPNP_SERVER_FRIENDLY_NAME: rqbit-docker
-      #RQBIT_HTTP_API_LISTEN_ADDR: 0.0.0.0:3030
+      RQBIT_HTTP_API_LISTEN_ADDR: 0.0.0.0:3030
     volumes:
       - db:/home/rqbit/db
       - cache:/home/rqbit/cache

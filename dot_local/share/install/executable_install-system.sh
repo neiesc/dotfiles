@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo "##### Install Oh My Zsh #####"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 echo "### Installing nvim (LazyVim) ###"
 
 #git clone https://github.com/LazyVim/starter ~/.config/nvim
@@ -18,11 +21,11 @@ echo "### Installing HyDE ###"
 #cd ~/HyDE/Scripts
 #./install.sh pkg_extra.lst pkg_user.lst
 
-echo "### Installing Flarpak ###"
-#flatpak install flathub ch.openboard.OpenBoard
+echo "### Installing Flatpak ###"
+# flatpak install flathub ch.openboard.OpenBoard
 
 echo "### Set helium default web browser ###"
-xdg-settings set default-web-browser helium-browser.desktop
+# xdg-settings set default-web-browser helium-browser.desktop
 
 echo "### Installing Webapp ###"
 # ./install-webapp.sh

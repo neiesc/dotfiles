@@ -44,6 +44,11 @@ docker-compose
 nvidia-container-toolkit # for gpu in container
 lazydocker
 
+# Oh My Zsh
+ttf-meslo-nerd-font-powerlevel10k
+powerline-fonts
+awesome-terminal-fonts
+
 # Print
 cups
 cups-browsed

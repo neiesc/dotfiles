@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo "##### Install chezmoi #####"
+
+sudo pacman -S chezmoi
+
 echo "##### Install git #####"
 
 sudo pacman -S git

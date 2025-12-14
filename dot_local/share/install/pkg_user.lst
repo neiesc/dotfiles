@@ -46,6 +46,7 @@ lazydocker
 
 # terminal
 ghostty
+starship
 ttf-meslo-nerd-font-powerlevel10k
 powerline-fonts
 awesome-terminal-fonts

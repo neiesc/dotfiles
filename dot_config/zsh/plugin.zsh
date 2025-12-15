@@ -52,6 +52,8 @@ zinit light zsh-users/zsh-history-substring-search
 # Snippet: Oh My Zsh git plugin
 # Loads useful git aliases and functions from Oh My Zsh's git plugin.
 zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
+zinit snippet https://github.com/edineicavalcantibecomplice/dotfiles/blob/main/dot_oh-my-zsh/custom/aliases.zsh
+zinit snippet https://github.com/edineicavalcantibecomplice/dotfiles/blob/main/dot_oh-my-zsh/custom/env.zsh
 
 # Plugin: zsh-autopair
 # Automatically inserts matching brackets, quotes, etc., as you type.

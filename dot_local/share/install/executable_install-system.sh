@@ -34,7 +34,7 @@
 #     cp pkg_user.lst ~/HyDE/Scripts
 #     cd ~/HyDE/Scripts
 #     git pull origin master
-#     ./install.sh -r pkg_user.lst
+#     ./install.sh pkg_user.lst
 # fi
 
 # echo "### Change shell ###"
@@ -52,10 +52,8 @@
 
 # echo "### Configure docker ###"
 
-# sudo systemctl enable docker
-# sudo systemctl daemon-reload
-# sudo systemctl start docker
-# sudo usermod -aG docker neiesc
+# systemctl --user enable --now docker
+# sudo /sbin/sysctl -w net.ipv4.ip_unprivileged_port_start=0
 
 # sudo /usr/bin/dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
 # docker run --gpus all nvidia/cuda:12.1.1-runtime-ubuntu22.04 nvidia-smi

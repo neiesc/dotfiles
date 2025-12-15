@@ -3,7 +3,7 @@ pyprland
 
 # Knowledge
 obsidian
-logseq
+logseq-desktop-bin
 typora
 
 # Audio & Video
@@ -22,6 +22,8 @@ rqbit
 rqbit-desktop
 
 # Dev
+claude-code
+jetbrains-toolbox
 nvim
 github-cli
 exercism-bin
@@ -39,6 +41,7 @@ uv
 
 # Docker
 docker
+docker-rootless-extras
 docker-buildx
 docker-compose
 nvidia-container-toolkit # for gpu in container
@@ -50,6 +53,7 @@ starship
 ttf-meslo-nerd-font-powerlevel10k
 powerline-fonts
 awesome-terminal-fonts
+tree
 
 # Browser
 helium-browser-bin
@@ -68,6 +72,7 @@ system-config-printer
 #nordvpn-gui
 
 # Other
+vesktop-bin
 alacritty
 flatpak
 gum

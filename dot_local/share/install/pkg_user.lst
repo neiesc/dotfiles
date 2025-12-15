@@ -71,6 +71,9 @@ system-config-printer
 #nordvpn-bin
 #nordvpn-gui
 
+# Office
+onlyoffice-bin
+
 # Other
 vesktop-bin
 alacritty

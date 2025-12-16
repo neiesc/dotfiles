@@ -1,54 +1,63 @@
 #!/bin/sh
 
-echo "##### Install chezmoi #####"
+# echo "##### Install chezmoi #####"
 
-sudo pacman -S chezmoi
+# sudo pacman -S chezmoi
 
-echo "##### Install git #####"
+# echo "##### Install git #####"
 
-sudo pacman -S git
+# sudo pacman -S git
 
-echo "##### Install Oh My Zsh #####"
+# echo "##### Install Oh My Zsh #####"
 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-echo "### Installing nvim (LazyVim) ###"
+# echo "### Installing nvim (LazyVim) ###"
 
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
+# git clone https://github.com/LazyVim/starter ~/.config/nvim
+# rm -rf ~/.config/nvim/.git
 
-echo "### Installing proto ###"
+# echo "### Installing proto ###"
 
-#bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
+# #bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
 
-echo "### Installing HyDE ###"
+# echo "### (Re)Installing HyDE ###"
 
-pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+# if [ ! -d ~/HyDE/Scripts ]; then
+#     pacman -S --needed git base-devel
+#     git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
 
-cp pkg_user.lst ~/HyDE/Scripts
-cd ~/HyDE/Scripts
-./install.sh pkg_extra.lst pkg_user.lst
+#     cp pkg_user.lst ~/HyDE/Scripts
+#     cd ~/HyDE/Scripts
+#     ./install.sh pkg_extra.lst pkg_user.lst
+# else
+#     cp pkg_user.lst ~/HyDE/Scripts
+#     cd ~/HyDE/Scripts
+#     git pull origin master
+#     ./install.sh pkg_user.lst
+# fi
 
-echo "### Installing Flatpak ###"
-flatpak install flathub ch.openboard.OpenBoard
+# echo "### Change shell ###"
 
-echo "### Set helium default web browser ###"
-xdg-settings set default-web-browser helium-browser.desktop
+# chsh -s /usr/bin/zsh
 
-echo "### Installing Webapp ###"
-./install-webapp.sh
+# echo "### Installing Flatpak ###"
+# flatpak install flathub ch.openboard.OpenBoard
 
-echo "### Configure docker ###"
+# echo "### Set helium default web browser ###"
+# xdg-settings set default-web-browser helium-browser.desktop
 
-sudo systemctl enable docker
-sudo systemctl daemon-reload
-sudo systemctl start docker
-sudo usermod -aG docker neiesc
+# echo "### Installing Webapp ###"
+# ./install-webapp.sh
 
-sudo /usr/bin/dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
-docker run --gpus all nvidia/cuda:12.1.1-runtime-ubuntu22.04 nvidia-smi
-docker run --runtime=nvidia nvidia/cuda:9.0-base nvidia-smi
+# echo "### Configure docker ###"
 
-# systemd-mount
-#sudo systemd-mount /dev/sdb1 /media/neiesc/Ultramassive
+# systemctl --user enable --now docker
+# sudo /sbin/sysctl -w net.ipv4.ip_unprivileged_port_start=0
+
+# sudo /usr/bin/dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
+# docker run --gpus all nvidia/cuda:12.1.1-runtime-ubuntu22.04 nvidia-smi
+# docker run --runtime=nvidia nvidia/cuda:9.0-base nvidia-smi
+
+# # systemd-mount
+# #sudo systemd-mount /dev/sdb1 /media/neiesc/Ultramassive

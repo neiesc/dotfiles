@@ -74,6 +74,9 @@ system-config-printer
 # Office
 onlyoffice-bin
 
+# Cloud
+insync
+
 # Other
 vesktop-bin
 alacritty

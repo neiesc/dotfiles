@@ -82,6 +82,7 @@ plugins=(
     zsh-256color
     zsh-autosuggestions
     zsh-syntax-highlighting
+    zsh-history-substring-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,15 +116,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Load the search widgets
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-
-# Bind the keys (Terminals vary, so we bind the most common codes)
-bindkey "^[[A" up-line-or-beginning-search # Arrow Up
-bindkey "^[[B" down-line-or-beginning-search # Arrow Down

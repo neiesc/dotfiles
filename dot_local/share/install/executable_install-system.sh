@@ -21,9 +21,9 @@
 
 # #bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
 
-# echo "### (Re)Installing HyDE ###"
-
+# HyDE
 # if [ ! -d ~/HyDE/Scripts ]; then
+#     echo "### Installing HyDE ###"
 #     pacman -S --needed git base-devel
 #     git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
 
@@ -31,6 +31,7 @@
 #     cd ~/HyDE/Scripts
 #     ./install.sh pkg_extra.lst pkg_user.lst
 # else
+#     echo "### Updating HyDE ###"
 #     cp pkg_user.lst ~/HyDE/Scripts
 #     cd ~/HyDE/Scripts
 #     git pull origin master

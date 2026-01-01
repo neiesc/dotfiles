@@ -55,6 +55,15 @@ powerline-fonts
 awesome-terminal-fonts
 tree
 
+## zsh
+zsh
+zsh-autocomplete
+zsh-autosuggestions
+zsh-completions
+zsh-history-substring-search
+zsh-syntax-highlighting
+oh-my-zsh-git
+
 # Browser
 helium-browser-bin
 

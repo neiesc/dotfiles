@@ -3,6 +3,9 @@
 # Updated config.toml file can be found at $HOME/.local/share/hyde/config.toml
 "$schema" = "https://raw.githubusercontent.com/HyDE-Project/HyDE/refs/heads/master/Configs/.local/share/hyde/schema/config.toml.json"
 
+[screenshot.ocr]
+tesseract_languages = ["por", "en"]
+
 [weather]
 location = "São José do Rio Preto, Brazil"
 temperature_unit = "C"

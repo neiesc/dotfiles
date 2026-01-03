@@ -2,3 +2,13 @@
 # Environment variables should be on top
 # Updated config.toml file can be found at $HOME/.local/share/hyde/config.toml
 "$schema" = "https://raw.githubusercontent.com/HyDE-Project/HyDE/refs/heads/master/Configs/.local/share/hyde/schema/config.toml.json"
+
+[weather]
+location = "São José do Rio Preto, Brazil"
+temperature_unit = "C"
+windspeed_unit = "km/h"
+time_format = "24h"
+forecast_days = 3
+show_icon = true
+show_location = true
+show_today = true

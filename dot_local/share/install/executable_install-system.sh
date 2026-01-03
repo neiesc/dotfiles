@@ -23,19 +23,19 @@
 
 # echo "### (Re)Installing HyDE ###"
 
-if [ ! -d ~/HyDE/Scripts ]; then
-    pacman -S --needed git base-devel
-    git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+# if [ ! -d ~/HyDE/Scripts ]; then
+#     pacman -S --needed git base-devel
+#     git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
 
-    cp pkg_user.lst ~/HyDE/Scripts
-    cd ~/HyDE/Scripts
-    ./install.sh pkg_extra.lst pkg_user.lst
-else
-    cp pkg_user.lst ~/HyDE/Scripts
-    cd ~/HyDE/Scripts
-    git pull origin master
-    ./install.sh pkg_user.lst
-fi
+#     cp pkg_user.lst ~/HyDE/Scripts
+#     cd ~/HyDE/Scripts
+#     ./install.sh pkg_extra.lst pkg_user.lst
+# else
+#     cp pkg_user.lst ~/HyDE/Scripts
+#     cd ~/HyDE/Scripts
+#     git pull origin master
+#     ./install.sh pkg_user.lst
+# fi
 
 # echo "### Change shell ###"
 

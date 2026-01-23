@@ -62,3 +62,6 @@
 
 # # systemd-mount
 # #sudo systemd-mount /dev/sdb1 /media/neiesc/Ultramassive
+
+# Install work tools
+# uv tool install git-remote-codecommit

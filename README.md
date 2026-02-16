@@ -13,3 +13,22 @@
 - If you're on wifi, start by running `iwctl`, then type `station wlan0 scan`, then `station wlan0 connect <tab>`, pick your network, and enter the password. If you're on ethernet, you don't need this.
 
 - `sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME`
+
+## Configuring the system
+- ~/.config/chezmoi/chezmoi.toml
+
+### Work
+```toml
+[data]
+    contexto = "trabalho"
+    nome = "Seu Nome Completo"
+    email = "seu.email@trabalho.com"
+```
+
+### Pessoal
+```toml
+[data]
+    contexto = "pessoal"
+    nome = "Seu Nome Completo"
+    email = "seu.email@pessoal.com"
+```

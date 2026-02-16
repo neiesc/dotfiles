@@ -1,42 +1,26 @@
 #!/bin/sh
 
-# echo "##### Install chezmoi #####"
+if [ ! -d ~/.config/nvim ]; then
+    echo "### Installing nvim (LazyVim) ###"
+    git clone https://github.com/LazyVim/starter ~/.config/nvim
+    rm -rf ~/.config/nvim/.git
+fi
 
-# sudo pacman -S chezmoi
+if [ ! -d ~/.local/share/proto ]; then
+    echo "### Installing proto ###"
+    bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
+fi
 
-# echo "##### Install git #####"
+echo "### HyDE ###"
+if [ ! -d ~/.local/share/install/HyDE ]; then
+    echo "### clonando HyDE ###"
+    pacman -S --needed git base-devel
+    git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/.local/share/install/HyDE
+fi
 
-# sudo pacman -S git
-
-# echo "##### Install Oh My Zsh #####"
-
-# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-# echo "### Installing nvim (LazyVim) ###"
-
-# git clone https://github.com/LazyVim/starter ~/.config/nvim
-# rm -rf ~/.config/nvim/.git
-
-# echo "### Installing proto ###"
-
-# #bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
-
-# HyDE
-# if [ ! -d ~/HyDE/Scripts ]; then
-#     echo "### Installing HyDE ###"
-#     pacman -S --needed git base-devel
-#     git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-
-#     cp pkg_user.lst ~/HyDE/Scripts
-#     cd ~/HyDE/Scripts
-#     ./install.sh pkg_extra.lst pkg_user.lst
-# else
-#     echo "### Updating HyDE ###"
-#     cp pkg_user.lst ~/HyDE/Scripts
-#     cd ~/HyDE/Scripts
-#     git pull origin master
-#     ./install.sh pkg_user.lst
-# fi
+#cd ~/.local/share/install/HyDE/Scripts
+#git pull origin master
+#./install.sh ../../pkg/pkg_common.lst
 
 # echo "### Change shell ###"
 
@@ -46,10 +30,7 @@
 # flatpak install flathub ch.openboard.OpenBoard
 
 # echo "### Set helium default web browser ###"
-# xdg-settings set default-web-browser helium-browser.desktop
-
-# echo "### Installing Webapp ###"
-# ./install-webapp.sh
+xdg-settings set default-web-browser helium.desktop
 
 # echo "### Configure docker ###"
 
@@ -59,9 +40,3 @@
 # sudo /usr/bin/dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
 # docker run --gpus all nvidia/cuda:12.1.1-runtime-ubuntu22.04 nvidia-smi
 # docker run --runtime=nvidia nvidia/cuda:9.0-base nvidia-smi
-
-# # systemd-mount
-# #sudo systemd-mount /dev/sdb1 /media/neiesc/Ultramassive
-
-# Install work tools
-# uv tool install git-remote-codecommit

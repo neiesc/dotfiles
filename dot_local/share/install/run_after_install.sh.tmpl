@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eufo pipefail
+
+echo "📦 Instalando pacotes comuns..."
+./install-system.sh
+
+{{ if eq .contexto "pessoal" -}}
+echo "🏠 Instalando pacotes pessoais..."
+./pkg/install-webapp-pessoal.sh
+{{ end -}}
+
+{{ if eq .contexto "trabalho" -}}
+echo "🏢 Instalando pacotes de trabalho..."
+./pkg/install-webapp-work.sh
+
+uv tool install git-remote-codecommit
+{{ end -}}
+
+echo "✅ Instalação concluída!"

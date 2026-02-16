@@ -1,4 +1,4 @@
-echo "🌎 Instalando webapps..."
+echo "🌎 Instalando webapps pessoais..."
 
 # Comunication
 webapp-install "Telegram" https://web.telegram.org https://web.telegram.org/a/favicon.svg

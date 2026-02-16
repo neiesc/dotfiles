@@ -18,9 +18,9 @@ if [ ! -d ~/.local/share/install/HyDE ]; then
     git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/.local/share/install/HyDE
 fi
 
-cd ~/.local/share/install/HyDE/Scripts
-git pull origin master
-./install.sh ../../pkg/pkg_common.lst
+#cd ~/.local/share/install/HyDE/Scripts
+#git pull origin master
+#./install.sh ../../pkg/pkg_common.lst
 
 # echo "### Change shell ###"
 

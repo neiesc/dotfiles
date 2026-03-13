@@ -1,1 +1,1 @@
-echo "🌎 Instalando webapps..."
+echo "🌎 Instalando webapps de trabalho..."

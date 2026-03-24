@@ -5,8 +5,8 @@ echo "📦 Instalando pacotes comuns..."
 install_pkg package/pkg_common.lst
 
 echo "🏠 Instalando pacotes pessoais..."
-install_pkg package/pkg_pessoal.lst
-./package/install-webapp-pessoal.sh
+install_pkg.sh package/pkg_pessoal.lst
+#./package/install-webapp-pessoal.sh
 
 # echo "### Change shell ###"
 

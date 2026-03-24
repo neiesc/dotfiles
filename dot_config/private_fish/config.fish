@@ -1,3 +1,11 @@
+if status is-interactive
+# Commands to run in interactive sessions can go here
+end
+
+set PATH $HOME/.local/share/neiesc/bin $PATH
+set PATH $HOME/.local/share/mise/shims $PATH
+set PATH $HOME/.cargo/bin $PATH
+
 # git & github
 alias g="git"
 alias gs="git status"

@@ -1,0 +1,1 @@
+echo "🌎 Instalando webapps de trabalho..."

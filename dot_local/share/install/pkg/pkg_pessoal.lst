@@ -1,0 +1,121 @@
+# System
+pyprland
+swaylock-effects
+electron
+zsh-theme-powerlevel10k
+tesseract-data-eng
+tesseract-data-por
+inetutils
+
+# Knowledge
+obsidian
+logseq-desktop-bin
+typora
+
+# Audio & Video
+spotify
+obs-studio
+kdenlive
+handbrake
+yt-dlp
+
+# Design
+pinta
+gimp
+krita
+
+# Bittorrent
+rqbit
+rqbit-desktop
+
+# Dev
+claude-code
+jetbrains-toolbox
+nvim
+github-cli
+exercism-bin
+tk # gitk needs
+mise
+
+## AI
+gemini-cli
+chatbox-bin
+kaggle-api
+python-bleach # kaggle needs
+
+## Python
+uv
+
+# Docker
+docker
+docker-rootless-extras
+docker-buildx
+docker-compose
+nvidia-container-toolkit # for gpu in container
+lazydocker
+
+# terminal
+ghostty
+starship
+ttf-meslo-nerd-font-powerlevel10k
+powerline-fonts
+awesome-terminal-fonts
+tree
+
+## zsh
+zsh
+zsh-autocomplete
+zsh-autosuggestions
+zsh-completions
+zsh-history-substring-search
+zsh-syntax-highlighting
+oh-my-zsh-git
+
+# Browser
+helium-browser-bin
+
+# Print
+cups
+cups-browsed
+cups-filters
+cups-pdf
+gsfonts
+ghostscript
+system-config-printer
+
+# Security
+#nordvpn-bin
+#nordvpn-gui
+
+# Office
+onlyoffice-bin
+
+# Cloud
+insync
+
+# Other
+vesktop-bin
+alacritty
+flatpak
+gum
+whois
+zoxide
+ufw
+ufw-extras
+gufw
+ffmpegthumbnailer
+bitwarden
+bitwarden-cli
+localsend-bin
+btop
+bat
+bat-extras
+eza
+xan
+ripgrep
+chezmoi
+zenta
+rofi-calc
+vhs
+solaar
+input-remapper-bin

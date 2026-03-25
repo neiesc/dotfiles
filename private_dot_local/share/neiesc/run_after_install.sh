@@ -2,6 +2,8 @@
 set -eufo pipefail
 
 echo "📦 Instalando pacotes comuns..."
+curl -fsSL https://install.danklinux.com | sh
+dms doctor
 install_pkg package/pkg_common.lst
 
 echo "🏠 Instalando pacotes pessoais..."

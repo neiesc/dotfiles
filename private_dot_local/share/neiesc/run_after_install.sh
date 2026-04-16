@@ -2,15 +2,18 @@
 set -eufo pipefail
 
 echo "📦 Instalando pacotes comuns..."
-curl -fsSL https://install.danklinux.com | sh
-dms doctor
-install_pkg package/pkg_common.lst
+#curl -fsSL https://install.danklinux.com | sh
+#dms doctor
+
+#sudo pacman -Sy fish
+#export PATH=$PATH:/home/neiesc/.local/share
+./bin/install_pkg.sh package/pkg_common.lst
 
 echo "🏠 Instalando pacotes pessoais..."
-install_pkg.sh package/pkg_pessoal.lst
-./package/install-webapp-pessoal.sh
-flatpak install flathub ch.openboard.OpenBoard
-flatpak install flathub com.obsproject.Studio
+#install_pkg.sh package/pkg_pessoal.lst
+#./package/install-webapp-pessoal.sh
+#flatpak install flathub ch.openboard.OpenBoard
+#flatpak install flathub com.obsproject.Studio
 
 # echo "### Change shell ###"
 

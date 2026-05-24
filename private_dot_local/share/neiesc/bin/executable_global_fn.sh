@@ -14,8 +14,6 @@ aurList=("paru")
 shlList=("fish")
 pacmanCmd=${cloneDir}/bin/pm.sh
 
-echo $pacmanCmd
-
 export cloneDir
 export cacheDir
 export aurList
@@ -49,7 +47,7 @@ chk_list() {
 pkg_available() {
     local PkgIn=$1
 
-    if ${pacmanCmd} query "${PkgIn}" &>/dev/null; then
+    if pacman -Si "${PkgIn}" &>/dev/null; then
         return 0
     else
         return 1

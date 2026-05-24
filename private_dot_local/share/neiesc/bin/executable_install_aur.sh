@@ -17,7 +17,7 @@ if chk_list "aurhlpr" "${aurList[@]}"; then
     exit 0
 fi
 
-aurhlpr="${1:-yay-bin}"
+aurhlpr="${1:-paru-bin}"
 
 if [ -d "$HOME/Clone" ]; then
     print_log -sec "AUR" -stat "exist" "$HOME/Clone directory..."

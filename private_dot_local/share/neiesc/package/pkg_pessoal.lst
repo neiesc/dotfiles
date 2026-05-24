@@ -1,7 +1,4 @@
 # System
-pyprland
-swaylock-effects
-electron
 zsh-theme-powerlevel10k
 tesseract-data-eng
 tesseract-data-por
@@ -27,9 +24,7 @@ rqbit
 rqbit-desktop
 
 # Dev
-claude-code
-jetbrains-toolbox
-nvim
+neovim
 github-cli
 exercism-bin
 tk # gitk needs
@@ -92,8 +87,6 @@ onlyoffice-bin
 insync
 
 # Other
-vesktop-bin
-alacritty
 flatpak
 gum
 whois

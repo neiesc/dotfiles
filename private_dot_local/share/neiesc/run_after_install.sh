@@ -1,23 +1,29 @@
 #!/bin/sh
 set -eufo pipefail
 
-echo "📦 Instalando pacotes comuns..."
-#curl -fsSL https://install.danklinux.com | sh
-#dms doctor
+export PATH=$PATH:/home/neiesc/.local/share/neiesc/bin
 
-#sudo pacman -Sy fish
-#export PATH=$PATH:/home/neiesc/.local/share
-./bin/install_pkg.sh package/pkg_common.lst
+echo "📦 Instalando pacotes comuns..."
+#sudo pacman -Sy
+#sudo pacman -S --needed git base-devel
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si
+
+#paru -S noctalia-shell
+
+install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_common.lst
+#./package/install-webapp-common.sh
 
 echo "🏠 Instalando pacotes pessoais..."
-#install_pkg.sh package/pkg_pessoal.lst
-#./package/install-webapp-pessoal.sh
-#flatpak install flathub ch.openboard.OpenBoard
-#flatpak install flathub com.obsproject.Studio
+install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_pessoal.lst
+./package/install-webapp-pessoal.sh
+flatpak install flathub ch.openboard.OpenBoard
+flatpak install flathub com.obsproject.Studio
 
 # echo "### Change shell ###"
 
-# chsh -s /usr/bin/zsh
+#chsh -s /usr/bin/zsh
 
 # echo "### Set helium default web browser ###"
 #xdg-settings set default-web-browser helium.desktop

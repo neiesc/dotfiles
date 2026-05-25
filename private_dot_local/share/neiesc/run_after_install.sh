@@ -12,14 +12,14 @@ echo "📦 Instalando pacotes comuns..."
 
 #paru -S noctalia-shell
 
-install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_common.lst
+#install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_common.lst
 #./package/install-webapp-common.sh
 
 echo "🏠 Instalando pacotes pessoais..."
-install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_pessoal.lst
-./package/install-webapp-pessoal.sh
-flatpak install flathub ch.openboard.OpenBoard
-flatpak install flathub com.obsproject.Studio
+#install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_pessoal.lst
+#./package/install-webapp-pessoal.sh
+#flatpak install flathub ch.openboard.OpenBoard
+#flatpak install flathub com.obsproject.Studio
 
 # echo "### Change shell ###"
 

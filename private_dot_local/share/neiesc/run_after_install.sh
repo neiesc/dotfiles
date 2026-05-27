@@ -21,11 +21,9 @@ echo "🏠 Instalando pacotes pessoais..."
 #flatpak install flathub ch.openboard.OpenBoard
 #flatpak install flathub com.obsproject.Studio
 
-# echo "### Change shell ###"
-
 #chsh -s /usr/bin/zsh
 
-# echo "### Set helium default web browser ###"
+#echo "### Set helium default web browser ###"
 #xdg-settings set default-web-browser helium.desktop
 
 # echo "### Configure docker ###"

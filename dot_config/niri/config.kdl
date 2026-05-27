@@ -20,6 +20,16 @@ binds {
 
     XF86MonBrightnessUp { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
     XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+
+    // #"Window Management"
+    Mod+Q hotkey-overlay-title="Close window" { close-window; }
+
+    // #"Workspaces"
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+
+    // #"Applications"
+    Mod+T hotkey-overlay-title="Terminal" { spawn "ghostty"; }
 }
 
 environment {

@@ -4,7 +4,7 @@ binds {
     Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     Mod+Comma { spawn-sh "qs -c noctalia-shell ipc call settings toggle"; }
     Mod+C { spawn-sh "qs -c noctalia-shell ipc call calendar toggle"; }
-    Mod+L { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Mod+L { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+M { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
 
     // Audio & Brightness
@@ -20,6 +20,10 @@ binds {
 
     XF86MonBrightnessUp { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "increase"; }
     XF86MonBrightnessDown { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+}
+
+environment {
+  QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
 spawn-at-startup "qs" "-c" "noctalia-shell"

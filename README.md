@@ -31,3 +31,6 @@
 ```
 
 - `sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME`
+
+## References
+ - https://github.com/Princesseuh/dotfiles/tree/main/linux

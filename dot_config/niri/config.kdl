@@ -1,7 +1,6 @@
-include "~/.config/niri/binds.kdl"
+include "output.kdl"
 
-environment {
-  QT_QPA_PLATFORMTHEME "qt6ct"
-}
+include "binds.kdl"
+include "environment.kdl"
 
-spawn-at-startup "qs" "-c" "noctalia-shell"
+include "autostart.kdl"

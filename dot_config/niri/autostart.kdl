@@ -1,0 +1,5 @@
+spawn-at-startup "spotify-launcher"
+spawn-sh-at-startup "steam -silent"
+spawn-sh-at-startup "webcord --start-minimized"
+
+spawn-at-startup "qs" "-c" "noctalia-shell"

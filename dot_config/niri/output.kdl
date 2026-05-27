@@ -1,0 +1,5 @@
+output "HDMI-A-1" {
+}
+
+output "DP-3" {
+}

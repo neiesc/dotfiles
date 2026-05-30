@@ -10,7 +10,7 @@ echo "📦 Instalando pacotes comuns..."
 #cd paru
 #makepkg -si
 
-#paru -S noctalia-shell
+#paru -S niri noctalia-shell
 
 #install_pkg.sh /home/neiesc/.local/share/neiesc/package/pkg_common.lst
 #./package/install-webapp-common.sh

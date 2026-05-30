@@ -3,4 +3,6 @@ include "output.kdl"
 include "binds.kdl"
 include "environment.kdl"
 
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
 include "autostart.kdl"

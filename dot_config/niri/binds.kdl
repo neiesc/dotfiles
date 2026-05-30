@@ -40,6 +40,12 @@ binds {
     Mod+Ctrl+Up    { move-window-up-or-to-workspace-up; }
     Mod+Ctrl+Right { move-column-right-or-to-monitor-right; }
 
+    // #"Screenshots"
+    Print { spawn-sh "niri msg action screenshot && niri msg --json event-stream | grep -m 1 ScreenshotCaptured && wl-paste | swappy -f -"; }
+    Ctrl+P { spawn-sh "niri msg action screenshot && niri msg --json event-stream | grep -m 1 ScreenshotCaptured && wl-paste | satty -f -"; }
+    Alt+Print { spawn-sh "niri msg action screenshot && niri msg --json event-stream | grep -m 1 ScreenshotCaptured && wl-paste | swappy -f -"; }
+
     // #"Applications"
     Mod+T hotkey-overlay-title="Terminal" { spawn "ghostty"; }
+    Mod+F hotkey-overlay-title="File Manager" { spawn-sh "xdg-open ~"; }
 }

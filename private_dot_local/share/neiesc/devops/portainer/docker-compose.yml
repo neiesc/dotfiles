@@ -4,7 +4,7 @@ services:
     image: portainer/portainer-ce:sts
     restart: always
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - $XDG_RUNTIME_DIR/docker.sock:/var/run/docker.sock
       - portainer_data:/data
     ports:
       - 9443:9443

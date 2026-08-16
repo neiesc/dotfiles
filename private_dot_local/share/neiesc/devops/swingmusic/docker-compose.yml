@@ -1,0 +1,17 @@
+services:
+  swingmusic:
+    image: ghcr.io/swingmx/swingmusic:latest
+    container_name: swingmusic
+    ports:
+      - 1970:1970
+    volumes:
+      - ${HOME}/.config/docker/swingmusic/config:/config
+      - ${HOME}/Music:/music
+      - type: bind
+        source: /media/neiesc/Ultramassive/jellyfin-libraries/Music
+        target: /music-jellyfin
+        read_only: true
+    environment:
+      - SWINGMUSIC_PORT=1970
+      - SWINGMUSIC_DEVICE_NAME=Host name here
+    restart: unless-stopped

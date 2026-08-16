@@ -1,0 +1,34 @@
+services:
+  languagetool:
+    image: meyay/languagetool:latest
+    container_name: languagetool
+    restart: unless-stopped
+
+    # Executa sem root dentro do contêiner
+    user: "783:783"
+
+    # Restrições de segurança
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+    # Somente seu computador pode acessar
+    ports:
+      - "127.0.0.1:8081:8081"
+
+    # O LanguageTool precisa escrever arquivos temporários
+    tmpfs:
+      - /tmp:rw,exec,nosuid,nodev,size=128m
+
+    environment:
+      # O LibreOffice já informa o idioma pt-BR
+      DISABLE_FASTTEXT: "true"
+
+      JAVA_XMS: "128m"
+      JAVA_XMX: "768m"
+      LOG_LEVEL: "WARN"
+
+    mem_limit: 1g
+    pids_limit: 256

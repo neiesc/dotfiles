@@ -39,6 +39,26 @@
     recommendedServices.enable = true;
   };
 
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+  services.printing = {
+    enable = true;
+
+    drivers = with pkgs; [
+      hplip
+      hplipWithPlugin
+    ];
+  };
+
+  hardware.sane = {
+    enable = true;
+    extraBackends = [ pkgs.hplipWithPlugin ];
+  };
+
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
 
@@ -109,7 +129,7 @@
   # };
   users.users.neiesc = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" ];
+     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" ];
      shell = pkgs.fish;
   };
   # programs.firefox.enable = true;

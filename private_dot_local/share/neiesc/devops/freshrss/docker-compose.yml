@@ -16,6 +16,8 @@ services:
     logging:
       options:
         max-size: 10m
+    ports:
+      - 1971:80
     volumes:
       - data:/var/www/FreshRSS/data
       - extensions:/var/www/FreshRSS/extensions

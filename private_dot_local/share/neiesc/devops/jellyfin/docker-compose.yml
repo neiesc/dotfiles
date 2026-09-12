@@ -11,16 +11,16 @@ services:
       - NVIDIA_DRIVER_CAPABILITIES=all
     volumes:
       - ${HOME}/.config/docker/jellyfin:/config
-      - /var/cache/docker/jellyfin:/cache
+      - cache:/cache
       - type: bind
-        source: /media/neiesc/Ultramassive/jellyfin-libraries
+        source: /run/media/neiesc/Ultramassive/jellyfin-libraries
         target: /media
         read_only: true
     ports:
       - 8096:8096
       - 8920:8920 #optional
       - 7359:7359/udp #optional
-      - 1900:1900/udp #optional
+      - 1901:1900/udp #optional
     runtime: nvidia
     deploy:
       resources:
@@ -30,3 +30,5 @@ services:
               count: all
               capabilities: [gpu]
     restart: unless-stopped
+volumes:
+    cache:

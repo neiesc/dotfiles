@@ -60,8 +60,11 @@
     gcr
     element-desktop
     davinci-resolve
+    handbrake
     spotify
     gimp
+    krita
+    pinta
     blender
     aseprite
   ];

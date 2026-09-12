@@ -57,6 +57,8 @@
     fuzzel
     waybar
     mako
+    gcr
+    element-desktop
   ];
 
   xdg.configFile."niri/config.kdl".source =

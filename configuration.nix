@@ -23,6 +23,10 @@
   boot.kernelPackages = pkgs.linuxPackages_7_1;
 
   # networking.hostName = "nixos"; # Define your hostname.
+
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.greetd.enableGnomeKeyring = true;
+
   programs.localsend.enable = true;
   networking.firewall = {
     enable = true;

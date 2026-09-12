@@ -59,6 +59,11 @@
     mako
     gcr
     element-desktop
+    davinci-resolve
+    spotify
+    gimp
+    blender
+    aseprite
   ];
 
   xdg.configFile."niri/config.kdl".source =

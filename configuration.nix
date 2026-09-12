@@ -144,7 +144,6 @@
     localsend
     gram
     fuzzel
-    spotify
     insync
     tailscale
     xwayland-satellite
@@ -152,7 +151,6 @@
     thunar
     thunar-volman
     tumbler
-    davinci-resolve
   ];
 
   services.gvfs.enable = true;

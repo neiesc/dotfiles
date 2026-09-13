@@ -67,6 +67,8 @@
     pinta
     blender
     aseprite
+    catt
+    yt-dlp
   ];
 
   xdg.configFile."niri/config.kdl".source =

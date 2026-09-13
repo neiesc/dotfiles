@@ -67,6 +67,7 @@
     pinta
     blender
     aseprite
+    gnome-network-displays
     catt
     yt-dlp
   ];

@@ -67,9 +67,10 @@
     pinta
     blender
     aseprite
-    gnome-network-displays
     catt
     yt-dlp
+    ffmpeg
+    chromium
   ];
 
   xdg.configFile."niri/config.kdl".source =

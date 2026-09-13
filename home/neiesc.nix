@@ -59,6 +59,7 @@
     mako
     gcr
     element-desktop
+    kdePackages.kdenlive
     davinci-resolve
     handbrake
     spotify
@@ -71,6 +72,7 @@
     yt-dlp
     ffmpeg
     chromium
+    mpv
   ];
 
   xdg.configFile."niri/config.kdl".source =

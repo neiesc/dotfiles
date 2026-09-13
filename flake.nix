@@ -14,13 +14,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia-greeter = {
+      url = "github:noctalia-dev/noctalia-greeter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, helium, noctalia, home-manager, ... }:
+  outputs = { self, nixpkgs, helium, noctalia, noctalia-greeter, home-manager, ... }:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -30,6 +35,7 @@
 
           helium.nixosModules.default
           noctalia.nixosModules.default
+          noctalia-greeter.nixosModules.default
           home-manager.nixosModules.home-manager
 
           {

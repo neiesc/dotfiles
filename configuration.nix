@@ -27,6 +27,15 @@
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.greetd.enableGnomeKeyring = true;
 
+  programs.noctalia-greeter = {
+    enable = true;
+
+    settings = {
+      keyboard.layout = "br";
+      keyboard.variant = "abnt2";
+    };
+  };
+
   programs.localsend.enable = true;
   networking.firewall = {
     enable = true;

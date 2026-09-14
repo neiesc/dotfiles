@@ -23,6 +23,7 @@
   boot.kernelPackages = pkgs.linuxPackages_7_1;
 
   # networking.hostName = "nixos"; # Define your hostname.
+  nixpkgs.config.allowUnfree = true;
 
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.greetd.enableGnomeKeyring = true;
@@ -31,8 +32,11 @@
     enable = true;
 
     settings = {
+      session.default = "niri";
+
       keyboard.layout = "br";
-      keyboard.variant = "abnt2";
+
+      cursor.size = 24;
     };
   };
 
@@ -141,22 +145,11 @@
      extraGroups = [ "wheel" "networkmanager" "lp" "scanner" ];
      shell = pkgs.fish;
   };
+
   # programs.firefox.enable = true;
   programs.niri.enable = true;
   programs.git.enable = true;
   programs.fish.enable = true;
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${config.programs.niri.package}/bin/niri-session";
-        user = "neiesc";
-      };
-    };
-  };
-
-  nixpkgs.config.allowUnfree = true;
-
   services.tailscale.enable = true;
 
   programs.foot = {

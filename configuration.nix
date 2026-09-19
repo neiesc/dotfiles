@@ -23,9 +23,22 @@
   boot.kernelPackages = pkgs.linuxPackages_7_1;
 
   # networking.hostName = "nixos"; # Define your hostname.
+  nixpkgs.config.allowUnfree = true;
 
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.greetd.enableGnomeKeyring = true;
+
+  services.displayManager.noctalia-greeter = {
+    enable = true;
+
+    settings = {
+      session.default = "niri";
+
+      keyboard.layout = "br";
+
+      cursor.size = 24;
+    };
+  };
 
   programs.localsend.enable = true;
   networking.firewall = {
@@ -37,6 +50,26 @@
   programs.noctalia = {
     enable = true;
     recommendedServices.enable = true;
+  };
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+  services.printing = {
+    enable = true;
+
+    drivers = with pkgs; [
+      hplip
+      hplipWithPlugin
+    ];
+  };
+
+  hardware.sane = {
+    enable = true;
+    extraBackends = [ pkgs.hplipWithPlugin ];
   };
 
   # Configure network connections interactively with nmcli or nmtui.
@@ -109,9 +142,10 @@
   # };
   users.users.neiesc = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" ];
+     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" ];
      shell = pkgs.fish;
   };
+
   # programs.firefox.enable = true;
   programs.niri.enable = true;
   programs.git.enable = true;
@@ -125,8 +159,6 @@
       };
     };
   };
-
-  nixpkgs.config.allowUnfree = true;
 
   services.tailscale.enable = true;
 

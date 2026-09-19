@@ -150,6 +150,16 @@
   programs.niri.enable = true;
   programs.git.enable = true;
   programs.fish.enable = true;
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${config.programs.niri.package}/bin/niri-session";
+        user = "neiesc";
+      };
+    };
+  };
+
   services.tailscale.enable = true;
 
   programs.foot = {

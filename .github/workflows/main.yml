@@ -1,0 +1,16 @@
+name: kdlfmt
+on:
+  - push
+  - workflow_dispatch
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install kdlfmt
+        uses: hougesen/kdlfmt@main
+
+      - name: Run kdlfmt format
+        run: kdlfmt check .

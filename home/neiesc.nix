@@ -53,6 +53,7 @@
   programs.foot.enable = true;
 
   home.packages = with pkgs; [
+    kdlfmt
     eza
     fuzzel
     waybar

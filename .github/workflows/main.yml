@@ -16,7 +16,8 @@ jobs:
           uses: DeterminateSystems/determinate-nix-action@v3
         - name: Build default package
           run: nix build
-  check niri:
+  check:
+    name: Check niri
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

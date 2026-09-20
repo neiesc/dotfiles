@@ -15,7 +15,7 @@ jobs:
         - name: Install Nix
           uses: DeterminateSystems/determinate-nix-action@v3
         - name: Build default package
-        run: nix build .#nixosConfigurations.nixos.config.system.build.toplevel
+          run: nix build .#nixosConfigurations.nixos.config.system.build.toplevel
   check:
     name: Check niri
     runs-on: ubuntu-latest

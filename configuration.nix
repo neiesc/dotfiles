@@ -183,6 +183,7 @@
     thunar
     thunar-volman
     tumbler
+    playerctl
   ];
 
   services.gvfs.enable = true;

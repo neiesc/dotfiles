@@ -1,9 +1,22 @@
-name: kdlfmt
 on:
-  - push
-  - workflow_dispatch
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
 jobs:
-  format:
+  build:
+      name: Build Nix targets
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v6
+        - name: Check Nix flake inputs
+          uses: DeterminateSystems/flake-checker-action@main # This action
+        - name: Install Nix
+          uses: DeterminateSystems/determinate-nix-action@v3
+        - name: Build default package
+          run: nix build
+  check niri:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

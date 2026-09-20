@@ -142,7 +142,7 @@
   # };
   users.users.neiesc = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" ];
+     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" "gamemode" ];
      shell = pkgs.fish;
   };
 

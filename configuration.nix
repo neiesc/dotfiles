@@ -142,7 +142,7 @@
   # };
   users.users.neiesc = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" ];
+     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" "gamemode" ];
      shell = pkgs.fish;
   };
 
@@ -183,6 +183,7 @@
     thunar
     thunar-volman
     tumbler
+    playerctl
   ];
 
   services.gvfs.enable = true;
@@ -193,7 +194,18 @@
     protontricks.enable = true;
   };
 
-  programs.gamemode.enable = true;
+  programs.gamemode = {
+    enable = true;
+
+    settings = {
+      general = {
+        desiredgov = "performance";
+        renice = 10;
+        ioprio = 4;
+        inhibit_screensaver = 1;
+      };
+    };
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

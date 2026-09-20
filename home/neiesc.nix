@@ -53,6 +53,10 @@
   programs.foot.enable = true;
 
   home.packages = with pkgs; [
+    kdlfmt
+    nodejs
+    yaml-language-server
+    nil
     eza
     fuzzel
     waybar

@@ -1,9 +1,29 @@
-name: kdlfmt
+name: CI Pipeline
+
 on:
-  - push
-  - workflow_dispatch
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  format:
+  build:
+      name: Build Nix targets
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v6
+        - name: Check Nix flake inputs
+          uses: DeterminateSystems/flake-checker-action@main # This action
+        - name: Install Nix
+          uses: DeterminateSystems/determinate-nix-action@v3
+        - name: Build default package
+          run: nix build .#nixosConfigurations.nixos.config.system.build.toplevel
+  check:
+    name: Check niri
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

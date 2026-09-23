@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  pkgs-unstable,
+  ...
+}:
 
 {
   home.username = "neiesc";
@@ -7,38 +12,38 @@
   home.stateVersion = "26.05";
 
   programs.fish = {
-      enable = true;
+    enable = true;
 
-      shellAliases = {
-        # Git & GitHub
-        g = "git";
-        gs = "git status";
-        gc = "git commit -m";
-        gpull = "git pull";
-        gswitch = "git switch";
-        gk = "gitk";
-        gg = "git gui";
+    shellAliases = {
+      # Git & GitHub
+      g = "git";
+      gs = "git status";
+      gc = "git commit -m";
+      gpull = "git pull";
+      gswitch = "git switch";
+      gk = "gitk";
+      gg = "git gui";
 
-        # Neovim
-        v = "nvim";
-        vi = "nvim";
-        vim = "nvim";
+      # Neovim
+      v = "nvim";
+      vi = "nvim";
+      vim = "nvim";
 
-        # ls / eza
-        ls = "eza --icons";
-        l = "ls -lh";
-        ll = "ls -lah";
-        la = "ls -la";
-        lm = "ls -m";
-        lr = "ls -R";
-        lg = "ls -l --group-directories-first";
+      # ls / eza
+      ls = "eza --icons";
+      l = "ls -lh";
+      ll = "ls -lah";
+      la = "ls -la";
+      lm = "ls -m";
+      lr = "ls -R";
+      lg = "ls -l --group-directories-first";
 
-        # Zen
-        breath = "zenta now --quick";
-        breathe = "zenta now";
-        reflect = "zenta reflect";
-      };
+      # Zen
+      breath = "zenta now --quick";
+      breathe = "zenta now";
+      reflect = "zenta reflect";
     };
+  };
 
   programs.git = {
     enable = true;
@@ -77,8 +82,10 @@
     ffmpeg
     chromium
     mpv
+    godot_4_7-mono
+    dotnet-sdk_10
+    fontconfig
   ];
 
-  xdg.configFile."niri/config.kdl".source =
-    ./niri/config.kdl;
+  xdg.configFile."niri/config.kdl".source = ./niri/config.kdl;
 }

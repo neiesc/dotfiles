@@ -2,13 +2,18 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Use the GRUB 2 boot loader.
   # boot.loader.grub.enable = true;
@@ -86,7 +91,6 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-
   services.xserver.videoDrivers = [ "nvidia" ];
 
   # Set your time zone.
@@ -109,9 +113,6 @@
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
-
-
-
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
   # services.xserver.xkb.options = "eurosign:e,caps:escape";
@@ -130,7 +131,10 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   # users.users.alice = {
@@ -141,9 +145,15 @@
   #   ];
   # };
   users.users.neiesc = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" "lp" "scanner" "gamemode" ];
-     shell = pkgs.fish;
+    isNormalUser = true;
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "lp"
+      "scanner"
+      "gamemode"
+    ];
+    shell = pkgs.fish;
   };
 
   # programs.firefox.enable = true;

@@ -1,7 +1,6 @@
 xwayland-satellite {
     path "/nix/store/x5q35dhib6z5ps6xnahzxf32lzb96y40-xwayland-satellite-0.8.0-536bd32/bin/xwayland-satellite"
 }
-
 input {
     keyboard {
         xkb {

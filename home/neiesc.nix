@@ -82,8 +82,9 @@
     chromium
     mpv
     godot_4_7-mono
-    dotnet-sdk_10
-    fontconfig
+    dotnet-sdk_8
+    zip
+    unzip
   ];
 
   xdg.configFile."niri/config.kdl".source = ./niri/config.kdl;

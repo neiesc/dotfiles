@@ -21,3 +21,6 @@
 
 ## Configuring and installing programs
 - `sudo nixos-rebuild switch --flake ~/Projects/dotfiles#nixos`
+
+## Update Flakes
+- `nix flake update`
